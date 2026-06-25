@@ -1,0 +1,5 @@
+.env
+bastion.json
+__pycache__/
+*.pyc
+.vscode/
