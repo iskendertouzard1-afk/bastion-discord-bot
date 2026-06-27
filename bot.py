@@ -19,6 +19,86 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
+OBJETOS_MAGICOS_INFRECUENTES = [
+    "Poción de la resistencia acida",
+    "Poción trato con animales",
+    "Poción de resistencia al frio",
+    "Poción aliento de fuego",
+    "Poción resistencia al fuego",
+    "poción resistencia a la fuerza",
+    "Poción de curación mayor",
+    "Poción de crecimiento",
+    "Poción fuerza gigante de la montaña",
+    "Poción resistencia eléctrica",
+    "Poción resistencia necrótica",
+    "Poción de veneno",
+    "Poción resistencia veneno",
+    "Póción resistencia físico",
+    "Poción de pugilista",
+    "Poción resistencia radiante",
+    "Poción resistencia trueno",
+    "Poción de respirar bajo el agua",
+    "Pergamino auxilio",
+    "Pergamino alterar", 
+    "Pergamino mensajero animal",
+    "Pergamino cerradura arcana",
+    "Pergamino Vigor acarano",
+    "Pergamino Augurio",
+    "Pergamino Piel robliza",
+    "Pergamino Sentido animal",
+    "Pergamino Cegar/ensordecer",
+    "Pergamino contorno borroso",
+    "Pergamino calmar emociones",
+    "Pergamino nube de dagas",
+    "Pergamino Corona de la locura",
+    "Pergamino oscuridad",
+    "Detectar pensamientos",
+    "Pergamino aliento de dragón",
+    "Pergamino mejorar habilidad",
+    "Pergamino agrandar reducir",
+    "Pergamino cautivar",
+    "Pergamino Encontrar montura",
+    "Pergamino Encontrar trampas",
+    "Pergamino Hoja de fuego",
+    "Pergamino Esfera flamígera",
+    "Pergamino Reposo gentil",
+    "Pergamino Ráfaga de viento",
+    "Pergamino Calentar metal",
+    "Pergamino Inmovilizar persona",
+    "Pergamino Invisibilidad",
+    "Pergamino Abrir cerraduras",
+    "Pergamino Restauración menor",
+    "Pergamino Levitar",
+    "Pergamino Localizar animales o plantas",
+    "Pergamino Localizar objeto",
+    "Pergamino Boca mágica",
+    "Pergamino Arma mágica",
+    "Pergamino Flecha ácida de Melf",
+    "Pergamino Imagen múltiple",
+    "Pergamino Imagen reflejada",
+    "Pergamino Paso brumoso",
+    "Pergamino Rayo lunar",
+    "Pergamino Aura mágica de Nystul",
+    "Pergamino Paso sin dejar rastro",
+    "Pergamino Fuerza fantasmal",
+    "Pergamino Oración de curación",
+    "Pergamino Protección contra el veneno",
+    "Pergamino Rayo de debilitamiento",
+    "Pergamino Cuerda trucada",
+    "Pergamino Nube de dagas",
+    "Pergamino Ver invisibilidad",
+    "Pergamino Romper",
+    "Pergamino Golpe fulgurante",
+    "Pergamino Silencio",
+    "Pergamino Trepar cual arácnido",
+    "Pergamino Crecimiento espinoso",
+    "Pergamino Arma espiritual",
+    "Pergamino Sugestión",
+    "Pergamino Ráfaga abrasadora",
+    "Pergamino Vínculo protector",
+    "Pergamino Telaraña",
+    "Pergamino Zona de verdad",
+]
 
 def cargar_bastion():
     if ARCHIVO.exists():
@@ -26,20 +106,22 @@ def cargar_bastion():
             datos = json.load(f)
     else:
         datos = {}
-
+    datos.setdefault("evento_pendiente", None)
     datos.setdefault("arcas", 0)
     datos.setdefault("suministros", 0)
     datos.setdefault("pociones_curacion", 0)
     datos.setdefault("venenos", 0)
     datos.setdefault("acciones_semana", 0)
     datos.setdefault("acciones_diarias", {})
+    datos.setdefault("defensores", 0)
     datos.setdefault("personajes", {})
     datos.setdefault("asalariados", 0)
     datos.setdefault("instalaciones", {
         "huerto":True,
         "almacen":True,
         "armeria": False,
-        "bilioteca": False,
+        "barracon":False,
+        "biblioteca": False,
         "estudio arcano": False,
         "herreria": False,
         "santuario": False,
@@ -57,7 +139,7 @@ def cargar_bastion():
         "archivo": False,
         "cámara de meditación": False,
         "casa de fieras": False,
-        "obervatorio": False,
+        "observatorio": False,
         "relicario": False,
         "taberna": False,
         "casa gremial": False,
@@ -95,9 +177,123 @@ def puede_actuar(datos, usuario_id):
     hoy = str(date.today())
     return datos["acciones_diarias"].get(usuario_id) != hoy
 
+def tiene_barracon(datos):
+    return datos["instalaciones"].get("barracon", False)
+
+
+def max_defensores(datos):
+    if tiene_barracon(datos):
+        return 12
+    return 6
+
+
+def costo_defensor(datos):
+    if tiene_barracon(datos):
+        return 1
+    return 2
 
 def registrar_accion(datos, usuario_id):
     datos["acciones_diarias"][usuario_id] = str(date.today())
+
+def generar_evento_semanal(datos):
+    tirada = random.randint(1, 100)
+
+# SOLO PARA PRUEBAS=============================================================
+    tirada = 63
+
+    if tirada <= 50:
+        return (
+            "🎲 **Evento semanal**\n\n"
+            f"Tirada: **{tirada}**\n"
+            "🌤️ Todo va bien.\n\n"
+            "La semana transcurre sin incidentes. "
+            "Los asalariados cumplen sus labores, los defensores mantienen la vigilancia "
+            "y el bastión conserva su rutina habitual."
+        )
+    
+    if 51 <= tirada <= 53:
+        datos["evento_pendiente"] = {
+        "tipo": "asalariado_criminal"
+    }
+
+        return (
+        "🎲 **Evento semanal**\n\n"
+        f"Tirada: **{tirada}**\n"
+        "⚠️ **Asalariado criminal**\n\n"
+        "Uno de los asalariados del bastión ha sido reconocido por agentes del poder local. "
+        "Tiene una orden de captura pendiente.\n\n"
+        "**Opciones:**\n"
+        "`!resolver entregar` — Entregarlo a las autoridades. Pierdes **1 asalariado**.\n"
+        "`!resolver sobornar` — Pagar un soborno de **1d6 × 100 PO**."
+    )
+
+    if 54 <= tirada <= 56:
+        perdidos = random.randint(1, 4)
+
+        perdidos = min(perdidos, datos["asalariados"])
+        datos["asalariados"] -= perdidos
+
+        return (
+        "🎲 **Evento semanal**\n\n"
+        f"Tirada: **{tirada}**\n"
+        "🚶 **Asalariados perdidos**\n\n"
+        f"**{perdidos}** asalariado(s) abandonan el bastión en busca de mejores oportunidades.\n\n"
+        f"👷 Asalariados restantes: **{datos['asalariados']}**"
+    )
+
+    if 57 <= tirada <= 61:
+        dados = [random.randint(1, 6) for _ in range(6)]
+        bajas = dados.count(1)
+
+        defensores_antes = datos["defensores"]
+        bajas_reales = min(bajas, defensores_antes)
+        datos["defensores"] -= bajas_reales
+
+    mensaje_instalacion = ""
+
+    if datos["defensores"] == 0:
+        instalaciones_activas = [
+            nombre for nombre, activa in datos["instalaciones"].items()
+            if activa
+        ]
+
+        if instalaciones_activas:
+            instalacion_dañada = random.choice(instalaciones_activas)
+            datos["instalaciones"][instalacion_dañada] = False
+
+            mensaje_instalacion = (
+            f"\n\n🏚️ Como el bastión quedó sin defensores, "
+            f"la instalación **{instalacion_dañada}** queda deshabilitada."
+            )
+
+        return (
+        "🎲 **Evento semanal**\n\n"
+        f"Tirada: **{tirada}**\n"
+        "⚔️ **Ataque al bastión**\n\n"
+        f"Dados de ataque: **{dados}**\n"
+        f"Resultados de 1: **{bajas}**\n"
+        f"🛡️ Defensores perdidos: **{bajas_reales}**\n"
+        f"🛡️ Defensores restantes: **{datos['defensores']}**"
+        f"{mensaje_instalacion}"
+    )
+
+
+    if 62 <= tirada <= 65:
+        objeto = random.choice(OBJETOS_MAGICOS_INFRECUENTES)
+
+        return (
+        "🎲 **Evento semanal**\n\n"
+        f"Tirada: **{tirada}**\n"
+        "✨ **Descubrimiento mágico**\n\n"
+        "Durante sus labores, los asalariados encuentran o comercian un objeto mágico menor.\n\n"
+        f"🎁 Objeto obtenido: **{objeto}**"
+    )
+
+    return (
+    "🎲 **Evento semanal**\n\n"
+    f"Tirada: **{tirada}**\n"
+    "⚙️ Este evento todavía no está programado."
+    )
 
 def avanzar_semana(datos):
     datos["acciones_semana"] += 1
@@ -107,34 +303,80 @@ def avanzar_semana(datos):
 
     datos["acciones_semana"] = 0
 
+    mensaje_evento = generar_evento_semanal(datos)
     asalariados = datos["asalariados"]
-    salario_total = asalariados
+    defensores = datos.get("defensores", 0)
+    tiene_barracon = datos["instalaciones"].get("barracon", False)
 
-    if asalariados <= 0:
-        return "📜 **Fin de semana del bastión**\n\nNo hay asalariados que cobrar salario."
+    costo_asalariados = asalariados
+    costo_por_defensor = 1 if tiene_barracon else 2
+    costo_defensores = defensores * costo_por_defensor
+    costo_total = costo_asalariados + costo_defensores
 
-    if datos["arcas"] >= salario_total:
-        datos["arcas"] -= salario_total
+    mensaje_barracon = ""
+    if defensores > 0 and not tiene_barracon:
+        mensaje_barracon = (
+            "\n\n🏕️ El bastión no tiene barracón. "
+            "Los defensores han acampado dentro del bastión, "
+            "por lo que cada uno cobra **2 PO** esta semana."
+        )
+
+    if costo_total <= 0:
+        return "📜 **Fin de semana del bastión**\n\nNo hay personal que cobre salario."
+    f"\n\n{mensaje_evento}"
+
+    if datos["arcas"] >= costo_total:
+        datos["arcas"] -= costo_total
 
         return (
             "📜 **Fin de semana del bastión**\n\n"
-            f"👷 Asalariados: **{asalariados}**\n"
-            f"💰 Salarios pagados: **{salario_total} PO**\n"
+            f"👷 Asalariados: **{asalariados}** → **{costo_asalariados} PO**\n"
+            f"🛡️ Defensores: **{defensores}** → **{costo_defensores} PO**\n"
+            f"💰 Salarios pagados: **{costo_total} PO**\n"
             f"🏯 Arcas restantes: **{datos['arcas']} PO**"
+            f"{mensaje_barracon}"
+            f"\n\n{mensaje_evento}"
         )
 
-    asalariados_pagados = datos["arcas"]
-    asalariados_que_se_van = asalariados - asalariados_pagados
+    oro_disponible = datos["arcas"]
 
-    datos["arcas"] = 0
+    asalariados_pagados = min(asalariados, oro_disponible)
+    oro_disponible -= asalariados_pagados
+
+    defensores_pagados = min(defensores, oro_disponible // costo_por_defensor)
+    oro_disponible -= defensores_pagados * costo_por_defensor
+
+    asalariados_que_se_van = asalariados - asalariados_pagados
+    defensores_que_se_van = defensores - defensores_pagados
+
+    datos["arcas"] = oro_disponible
     datos["asalariados"] = asalariados_pagados
+    datos["defensores"] = defensores_pagados
+
+    if datos["asalariados"] == 0 and datos["defensores"] == 0:
+        return (
+            "📜 **Fin de semana en la Casa de las Máscaras**\n\n"
+            "💰 Las arcas están vacías.\n\n"
+            "👷 Los asalariados abandonan el bastión en busca de un empleador que pueda pagar su trabajo.\n"
+            "🛡️ Los defensores levantan el campamento y parten hacia otras tierras.\n\n"
+            "🏚️ El bastión queda prácticamente deshabitado.\n"
+            "🏯 Arcas restantes: **0 PO**"
+            f"{mensaje_barracon}"
+            f"\n\n{mensaje_evento}"
+        )
 
     return (
-        "📜 **Fin de semana del bastión**\n\n"
-        f"💰 Las arcas solo alcanzaron para pagar a **{asalariados_pagados}** asalariados.\n"
-        f"🚶 Se marchan **{asalariados_que_se_van}** asalariados por falta de pago.\n"
-        f"👷 Asalariados restantes: **{datos['asalariados']}**\n"
-        f"🏯 Arcas restantes: **0 PO**"
+        "📜 **Fin de semana en la Casa de las Máscaras**\n\n"
+        "💰 Las arcas no alcanzaron para pagar a todo el personal.\n\n"
+        f"👷 Asalariados pagados: **{asalariados_pagados}/{asalariados}**\n"
+        f"🛡️ Defensores pagados: **{defensores_pagados}/{defensores}**\n\n"
+        f"🚶 Se marchan **{asalariados_que_se_van}** asalariados "
+        f"y **{defensores_que_se_van}** defensores.\n\n"
+        f"🏚️ El bastión queda con **{datos['asalariados']}** asalariados "
+        f"y **{datos['defensores']}** defensores.\n"
+        f"🏯 Arcas restantes: **{datos['arcas']} PO**"
+        f"{mensaje_barracon}"
+        f"\n\n{mensaje_evento}"
     )
 
 @bot.event
@@ -170,6 +412,8 @@ async def estado(ctx):
         f"🧪 Pociones de curación: **{datos['pociones_curacion']}**\n"
         f"☠️ Viales de veneno: **{datos['venenos']}**\n"
         f"👷 Asalariados: **{datos['asalariados']}**\n"
+        f"🛡️ Defensores: **{datos['defensores']}/{max_defensores(datos)}**\n"
+        
     )
 
     await ctx.send(mensaje)
@@ -316,6 +560,15 @@ async def quitaroro(ctx, cantidad: int):
 @bot.command()
 async def huerto(ctx):
     datos = cargar_bastion()
+    
+    if not datos["instalaciones"].get("huerto", False):
+        await ctx.send("⛔ El huerto está deshabilitado. Debe repararse antes de producir.")
+        return
+
+    if datos.get("evento_pendiente"):
+        await ctx.send("⛔ Hay un evento pendiente. Resuélvanlo primero con `!resolver entregar` o `!resolver sobornar`.")
+        return
+    
     usuario_id = str(ctx.author.id)
 
     if not puede_actuar(datos, usuario_id):
@@ -363,6 +616,14 @@ async def almacen(ctx):
     datos = cargar_bastion()
     usuario_id = str(ctx.author.id)
 
+    if not datos["instalaciones"].get("almacen", False):
+        await ctx.send("⛔ El almacén está deshabilitado. Debe repararse antes de comerciar.")
+        return
+
+    if datos.get("evento_pendiente"):
+        await ctx.send("⛔ Hay un evento pendiente. Resuélvanlo primero con `!resolver entregar` o `!resolver sobornar`.")
+        return
+
     if not puede_actuar(datos, usuario_id):
         await ctx.send(f"⛔ {ctx.author.display_name} ya realizó una acción hoy.")
         return
@@ -381,12 +642,16 @@ async def almacen(ctx):
         guardar_bastion(datos)
 
         mensaje = (
-            
-            "📦 **Asalariado intentó trabajar en el almacén.**\n\n"
-            f"Mercancía disponible: **{compra} PO**\n"
-            f"Arcas actuales: **{datos['arcas']} PO**\n\n"
-            "⛔ El asalariado no pudo realizar ningún comercio por falta de oro en las arcas."
-        )
+        "📦 **Asalariado intentó trabajar en el almacén.**\n\n"
+        f"Mercancía disponible: **{compra} PO**\n"
+        f"Arcas actuales: **{datos['arcas']} PO**\n\n"
+        "⛔ El asalariado no pudo realizar ningún comercio por falta de oro en las arcas."
+    )
+
+        if mensaje_semana:
+            mensaje += f"\n\n{mensaje_semana}"
+
+        await ctx.send(mensaje)
         return
 
     porcentaje = random.randint(5, 10)
@@ -416,5 +681,57 @@ async def almacen(ctx):
 
     await ctx.send(mensaje)
 
+@bot.command()
+async def resolver(ctx, opcion: str):
+    datos = cargar_bastion()
+    evento = datos.get("evento_pendiente")
+
+    if not evento:
+        await ctx.send("⛔ No hay ningún evento pendiente.")
+        return
+
+    if evento["tipo"] != "asalariado_criminal":
+        await ctx.send("⛔ Este evento pendiente todavía no tiene resolución programada.")
+        return
+
+    opcion = opcion.lower()
+
+    if opcion == "entregar":
+        if datos["asalariados"] > 0:
+            datos["asalariados"] -= 1
+
+        datos["evento_pendiente"] = None
+        guardar_bastion(datos)
+
+        await ctx.send(
+            "⚖️ **Evento resuelto: Asalariado criminal**\n\n"
+            "El asalariado fue entregado a las autoridades.\n"
+            "👷 Pierdes **1 asalariado**."
+        )
+        return
+
+    if opcion == "sobornar":
+        costo = random.randint(1, 6) * 100
+
+        if datos["arcas"] < costo:
+            await ctx.send(
+                "💰 **Soborno imposible**\n\n"
+                f"El soborno requerido es de **{costo} PO**, pero las arcas solo tienen **{datos['arcas']} PO**.\n"
+                "El evento sigue pendiente."
+            )
+            return
+
+        datos["arcas"] -= costo
+        datos["evento_pendiente"] = None
+        guardar_bastion(datos)
+
+        await ctx.send(
+            "🤝 **Evento resuelto: Asalariado criminal**\n\n"
+            f"Las autoridades aceptan mirar hacia otro lado por **{costo} PO**.\n"
+            f"🏯 Arcas restantes: **{datos['arcas']} PO**"
+        )
+        return
+
+    await ctx.send("⛔ Opción inválida. Usa `!resolver entregar` o `!resolver sobornar`.")
 
 bot.run(TOKEN)
