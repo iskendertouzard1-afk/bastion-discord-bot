@@ -1,0 +1,70 @@
+{
+    "arcas": 417,
+    "suministros": 200,
+    "acciones_semana": 0,
+    "defensores": 6,
+    "pociones_curacion": 1,
+    "venenos": 6,
+    "acciones_diarias": {
+        "158205540537729024": "2026-06-27",
+        "996840223977787462": "2026-06-27",
+        "233283755287117834": "2026-06-27",
+        "396516638415126528": "2026-06-28",
+        "506104769492811786": "2026-06-28"
+    },
+    "personajes": {
+        "506104769492811786": {
+            "nombre": "Gerendir",
+            "oro": 50
+        },
+        "158205540537729024": {
+            "nombre": "Rizel",
+            "oro": 0
+        },
+        "996840223977787462": {
+            "nombre": "ren",
+            "oro": 0
+        },
+        "233283755287117834": {
+            "nombre": "Hikari",
+            "oro": 0
+        },
+        "396516638415126528": {
+            "nombre": "Pimprik",
+            "oro": 0
+        }
+    },
+    "asalariados": 2,
+    "instalaciones": {
+        "huerto": true,
+        "almacen": true,
+        "armeria": false,
+        "biblioteca": false,
+        "barracon": false,
+        "estudio arcano": false,
+        "herreria": false,
+        "santuario": false,
+        "taller": false,
+        "circulo de transportación": false,
+        "establo": false,
+        "invernadero": false,
+        "laboratorio": false,
+        "sacristía": false,
+        "sala de juego": false,
+        "sala de trofeos": false,
+        "scriptorium": false,
+        "teatro": false,
+        "zona de entrenamiento": false,
+        "archivo": false,
+        "cámara de meditación": false,
+        "casa de fieras": false,
+        "observatorio": false,
+        "relicario": false,
+        "taberna": false,
+        "casa gremial": false,
+        "sala de operaciones": false,
+        "sanctasantórum": false,
+        "Semiplano": false
+    },
+    "evento_pendiente": null
+}

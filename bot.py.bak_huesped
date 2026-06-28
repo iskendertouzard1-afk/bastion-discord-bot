@@ -19,12 +19,6 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
-
-
-
-
-
-
 OBJETOS_MAGICOS_INFRECUENTES = [
     "Poción de la resistencia acida",
     "Poción trato con animales",
@@ -120,7 +114,6 @@ def cargar_bastion():
     datos.setdefault("acciones_semana", 0)
     datos.setdefault("acciones_diarias", {})
     datos.setdefault("defensores", 0)
-    datos.setdefault("refugiados", None)
     datos.setdefault("personajes", {})
     datos.setdefault("asalariados", 0)
     datos.setdefault("instalaciones", {
@@ -202,108 +195,10 @@ def costo_defensor(datos):
 def registrar_accion(datos, usuario_id):
     datos["acciones_diarias"][usuario_id] = str(date.today())
 
-def procesar_huesped(datos):
-    mensaje = ""
-
-    husped = datos.get("husped")
-    if not husped:
-        return mensaje
-
-    husped["semanas"] -= 1
-
-    if husped["semanas"] > 0:
-        datos["husped"] = husped
-        return mensaje
-
-    tipo = husped.get("tipo")
-
-    if tipo == "renombre":
-        datos.setdefault("inventario", [])
-        datos["inventario"].append("Carta de recomendación")
-
-        mensaje = (
-            "\n\n🎖️ **El huésped de renombre abandona el bastión.**\n"
-            "Antes de partir, entrega una **carta de recomendación**."
-        )
-
-    elif tipo == "refugiado":
-        recompensa = random.randint(1, 6) * 100
-        datos["oro"] += recompensa
-
-        mensaje = (
-            "\n\n❤️ **El huésped refugiado abandona el bastión.**\n"
-            f"Como agradecimiento, deja un obsequio de **{recompensa} PO**."
-        )
-
-    elif tipo == "mercenario":
-        if husped.get("ocupa") == "defensor":
-            datos["defensores"] = max(0, datos["defensores"] - 1)
-            mensaje = (
-                "\n\n🛡️ **El mercenario abandona el bastión.**\n"
-                "El número de defensores vuelve a la normalidad."
-            )
-        else:
-            datos["asalariados"] = max(0, datos["asalariados"] - 1)
-            mensaje = (
-                "\n\n🧳 **El mercenario abandona el bastión.**\n"
-                "El asalariado temporal deja sus labores."
-            )
-
-    elif tipo == "monstruo":
-        nombre = husped.get("nombre", "monstruo amistoso")
-        mensaje = (
-            f"\n\n🐉 **El {nombre} abandona el bastión.**\n"
-            "La criatura amistosa vuelve a los caminos salvajes."
-        )
-
-    datos.pop("husped", None)
-    return mensaje
-
-def cargar_tabla(nombre):
-    ruta = f"data/{nombre}.json"
-
-    with open(ruta, "r", encoding="utf-8") as archivo:
-        return json.load(archivo)
-
-def tirar_tesoro():
-    tesoros = cargar_tabla("tesoros")
-    tirada = random.randint(1, 100)
-
-    categoria = None
-    for entrada in tesoros["tabla_principal"]:
-        if entrada["min"] <= tirada <= entrada["max"]:
-            categoria = entrada["categoria"]
-            break
-
-    tesoro = random.choice(tesoros[categoria])
-
-    return tirada, categoria, tesoro
-
-def procesar_refugiados(datos):
-    refugiados = datos.get("refugiados")
-
-    if not refugiados:
-        return ""
-
-    cantidad = refugiados.get("cantidad", 0)
-
-    if cantidad <= 0:
-        datos["refugiados"] = None
-        return ""
-
-    ganancia = random.randint(1, 4) * 10
-    datos["arcas"] += ganancia
-
-    return (
-        "\n\n🏕️ **Los refugiados colaboran en el bastión.**\n"
-        f"Actualmente viven aquí **{cantidad}** refugiados.\n"
-        f"Esta semana ayudan en distintas labores y generan **{ganancia} PO**."
-    )
-
 def generar_evento_semanal(datos):
 
     tirada = random.randint(1, 100)
-    tirada = 82
+    tirada = 63
 
     if tirada <= 50:
         return (
@@ -346,30 +241,6 @@ def generar_evento_semanal(datos):
     )
 
     if 57 <= tirada <= 61:
-        husped = datos.get("husped")
-        if husped and husped.get("tipo") == "monstruo" and husped.get("protege"):
-            nombre = husped.get("nombre", "monstruo amistoso")
-
-            mensaje_refugiados = ""
-            if datos.get("refugiados"):
-                cantidad_refugiados = datos["refugiados"].get("cantidad", 0)
-                datos["refugiados"] = None
-
-                mensaje_refugiados = (
-                    f"\n\n🏃 **Los refugiados abandonan el bastión.**\n"
-                    f"Aunque el ataque fue repelido, los **{cantidad_refugiados}** refugiados deciden marcharse."
-                )
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "⚔️ **Ataque al bastión**\n\n"
-                f"🐉 El **{nombre}** sale a defender el bastión.\n"
-                "Los atacantes son repelidos antes de causar bajas.\n\n"
-                "🛡️ Defensores perdidos: **0**\n"
-                f"🛡️ Defensores restantes: **{datos['defensores']}**"
-                f"{mensaje_refugiados}"
-            )
         dados = [random.randint(1, 6) for _ in range(6)]
         bajas = dados.count(1)
 
@@ -394,16 +265,6 @@ def generar_evento_semanal(datos):
                     f"la instalación **{instalacion_dañada}** queda deshabilitada."
                 )
 
-        mensaje_refugiados = ""
-        if datos.get("refugiados"):
-            cantidad_refugiados = datos["refugiados"].get("cantidad", 0)
-            datos["refugiados"] = None
-
-            mensaje_refugiados = (
-                f"\n\n🏃 **Los refugiados abandonan el bastión.**\n"
-                f"Tras el ataque, los **{cantidad_refugiados}** refugiados deciden continuar su camino."
-            )
-
         return (
             "🎲 **Evento semanal**\n\n"
             f"Tirada: **{tirada}**\n"
@@ -413,9 +274,18 @@ def generar_evento_semanal(datos):
             f"🛡️ Defensores perdidos: **{bajas_reales}**\n"
             f"🛡️ Defensores restantes: **{datos['defensores']}**"
             f"{mensaje_instalacion}"
-            f"{mensaje_refugiados}"
         )
 
+        return (
+        "🎲 **Evento semanal**\n\n"
+        f"Tirada: **{tirada}**\n"
+        "⚔️ **Ataque al bastión**\n\n"
+        f"Dados de ataque: **{dados}**\n"
+        f"Resultados de 1: **{bajas}**\n"
+        f"🛡️ Defensores perdidos: **{bajas_reales}**\n"
+        f"🛡️ Defensores restantes: **{datos['defensores']}**"
+        f"{mensaje_instalacion}"
+    )
 
 
     if 62 <= tirada <= 65:
@@ -428,300 +298,6 @@ def generar_evento_semanal(datos):
         "Durante sus labores, los asalariados encuentran o comercian un objeto mágico menor.\n\n"
         f"🎁 Objeto obtenido: **{objeto}**"
     )
-
-    if 66 <= tirada <= 69:
-        resultado = random.randint(1, 4)
-
-        if resultado == 1:
-            datos["husped"] = {
-                "tipo": "renombre",
-                "semanas": 27
-            }
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "🏛️ **Huésped de renombre**\n\n"
-                "Una persona de gran reputación llega al bastión y solicita alojamiento.\n"
-                "Permanecerá durante **27 turnos de bastión**.\n\n"
-                "Cuando abandone el bastión, entregará una **carta de recomendación**."
-            )
-
-        if resultado == 2:
-            datos["husped"] = {
-                "tipo": "refugiado",
-                "semanas": 1
-            }
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "🕯️ **Huésped refugiado**\n\n"
-                "Una persona perseguida por sus creencias o deudas pide asilo en el bastión.\n"
-                "Permanecerá durante **1 turno de bastión**.\n\n"
-                "Cuando parta, dejará un obsequio de **1d6 × 100 PO**."
-            )
-
-        if resultado == 3:
-            if datos["defensores"] < max_defensores(datos):
-                datos["defensores"] += 1
-                ocupa = "defensor"
-                efecto = "Mientras permanezca en el bastión, proporciona **+1 defensor**."
-            else:
-                datos["asalariados"] += 1
-                ocupa = "asalariado"
-                efecto = (
-                    "El bastión ya tiene el máximo de defensores, así que el mercenario "
-                    "ayudará como **asalariado temporal**."
-                )
-
-            datos["husped"] = {
-                "tipo": "mercenario",
-                "semanas": 4,
-                "ocupa": ocupa
-            }
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "🛡️ **Huésped mercenario**\n\n"
-                "Un mercenario llega al bastión y ofrece sus servicios a cambio de alojamiento.\n"
-                "Permanecerá durante **4 turnos de bastión**.\n\n"
-                f"{efecto}"
-            )
-
-        if resultado == 4:
-            monstruo = random.choice(cargar_tabla("monstruos_amistosos"))
-
-            datos["husped"] = {
-                "tipo": "monstruo",
-                "nombre": monstruo,
-                "semanas": 4,
-                "protege": True
-            }
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "🐉 **Huésped monstruoso amistoso**\n\n"
-                f"Un **{monstruo}** llega al bastión con actitud pacífica.\n"
-                "Permanecerá durante **4 turnos de bastión**.\n\n"
-                "Mientras sea huésped, defenderá el bastión durante cualquier ataque. "
-                "Si ocurre un ataque, no se perderán defensores."
-            )
-
-    if 70 <= tirada <= 74:
-        costo = 50
-
-        if datos["arcas"] < costo:
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "🌟 **Oportunidad extraordinaria**\n\n"
-                "Se presenta una oportunidad importante para el bastión, "
-                "pero las arcas no tienen los **50 PO** necesarios para financiarla.\n\n"
-                "La oportunidad se pierde sin consecuencias."
-            )
-
-        datos["arcas"] -= costo
-        resultado = random.randint(1, 4)
-        prueba = random.randint(1, 20)
-
-        if resultado == 1:
-            if prueba > 10:
-                datos["arcas"] += 1000
-                return (
-                    "🎲 **Evento semanal**\n\n"
-                    f"Tirada: **{tirada}**\n"
-                    "🎪 **Festival en el bastión**\n\n"
-                    "El bastión financia una celebración local por **50 PO**.\n"
-                    f"Tirada de oportunidad: **{prueba}**\n\n"
-                    "El festival atrae comerciantes, viajeros y curiosos.\n"
-                    "Ganancia obtenida: **1000 PO**."
-                )
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "🎪 **Festival en el bastión**\n\n"
-                "El bastión financia una celebración local por **50 PO**.\n"
-                f"Tirada de oportunidad: **{prueba}**\n\n"
-                "La celebración anima la región, pero no genera ganancias."
-            )
-
-        if resultado == 2:
-            if prueba > 10:
-                hechizo = random.choice(cargar_tabla("hechizos_nivel_6"))
-                datos.setdefault("inventario", [])
-                datos["inventario"].append(f"Papiro con el hechizo {hechizo}")
-
-                return (
-                    "🎲 **Evento semanal**\n\n"
-                    f"Tirada: **{tirada}**\n"
-                    "📜 **Investigador arcano**\n\n"
-                    "El bastión financia el trabajo de un investigador por **50 PO**.\n"
-                    f"Tirada de oportunidad: **{prueba}**\n\n"
-                    "El investigador deja preparado un papiro mágico.\n"
-                    f"Objeto obtenido: **Papiro con el hechizo {hechizo}**."
-                )
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "📜 **Investigador arcano**\n\n"
-                "El bastión financia el trabajo de un investigador por **50 PO**.\n"
-                f"Tirada de oportunidad: **{prueba}**\n\n"
-                "La investigación no produce resultados útiles esta semana."
-            )
-
-        if resultado == 3:
-            if prueba > 10:
-                recompensa = random.randint(1, 10) * 100
-                datos["arcas"] += recompensa
-                datos.setdefault("inventario", [])
-                datos["inventario"].append("Carta de recomendación")
-
-                return (
-                    "🎲 **Evento semanal**\n\n"
-                    f"Tirada: **{tirada}**\n"
-                    "👑 **Noble complacido**\n\n"
-                    "El bastión invierte **50 PO** para atender a un noble influyente.\n"
-                    f"Tirada de oportunidad: **{prueba}**\n\n"
-                    f"El noble queda satisfecho y entrega **{recompensa} PO**.\n"
-                    "También deja una **carta de recomendación**."
-                )
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "👑 **Noble complacido**\n\n"
-                "El bastión invierte **50 PO** para atender a un noble influyente.\n"
-                f"Tirada de oportunidad: **{prueba}**\n\n"
-                "El noble acepta la hospitalidad, pero no ofrece recompensa."
-            )
-
-        if resultado == 4:
-            if prueba >= 10:
-                ganancia = random.randint(1, 10) * 100
-                datos["arcas"] += ganancia
-
-                return (
-                    "🎲 **Evento semanal**\n\n"
-                    f"Tirada: **{tirada}**\n"
-                    "💎 **Artículo de alto valor**\n\n"
-                    "Llega al bastión un objeto valioso. "
-                    "Los asalariados invierten **50 PO** para negociar su adquisición.\n"
-                    f"Tirada de oportunidad: **{prueba}**\n\n"
-                    f"La negociación tiene éxito y el objeto se revende con ganancia.\n"
-                    f"Ganancia obtenida: **{ganancia} PO**."
-                )
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "💎 **Artículo de alto valor**\n\n"
-                "Llega al bastión un objeto valioso. "
-                "Los asalariados invierten **50 PO** para negociar su adquisición.\n"
-                f"Tirada de oportunidad: **{prueba}**\n\n"
-                "La negociación fracasa y no se obtiene ganancia."
-            )
-
-    if 90 <= tirada <= 100:
-        tirada_tesoro, categoria, tesoro = tirar_tesoro()
-
-        nombre = tesoro.get("nombre", "Tesoro desconocido")
-        valor = tesoro.get("valor")
-        rareza = tesoro.get("rareza")
-
-        datos.setdefault("inventario", [])
-        datos["inventario"].append(nombre)
-
-        detalle = ""
-        if valor:
-            detalle = f"Valor estimado: **{valor} PO**."
-        elif rareza:
-            detalle = f"Rareza: **{rareza}**."
-
-        return (
-            "🎲 **Evento semanal**\n\n"
-            f"Tirada: **{tirada}**\n"
-            "💰 **Tesoro descubierto**\n\n"
-            "Los habitantes del bastión descubren un tesoro inesperado.\n\n"
-            f"Tirada de tesoro: **{tirada_tesoro}**\n"
-            f"Objeto obtenido: **{nombre}**\n"
-            f"{detalle}\n\n"
-            "El objeto ha sido agregado al inventario del bastión."
-        )
-
-    if 82 <= tirada <= 89:
-        cantidad = random.randint(2, 4) + random.randint(1, 4)
-
-        datos["refugiados"] = {
-            "cantidad": cantidad
-        }
-
-        return (
-            "🎲 **Evento semanal**\n\n"
-            f"Tirada: **{tirada}**\n"
-            "🏕️ **Refugiados**\n\n"
-            f"Un grupo de **{cantidad}** refugiados llega al bastión huyendo de una calamidad.\n"
-            "Buscan protección, alimento y un lugar seguro para recuperarse.\n\n"
-            "Mientras permanezcan en el bastión, colaborarán con pequeñas labores "
-            "y generarán **1d4 × 10 PO** cada semana.\n\n"
-            "Si el bastión es atacado, los refugiados abandonarán el lugar."
-        )
-
-    if 75 <= tirada <= 81:
-        defensores_totales = datos.get("defensores", 0)
-        mision = random.choice(cargar_tabla("misiones_ayuda"))
-
-        if defensores_totales <= 0:
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "🛡️ **Petición de ayuda**\n\n"
-                f"Un líder local solicita ayuda para **{mision}**.\n\n"
-                "El bastión no dispone de defensores para responder a la petición."
-            )
-
-        defensores_enviados = max(1, defensores_totales // 2)
-        dados = [random.randint(1, 6) for _ in range(defensores_enviados)]
-        total = sum(dados)
-        texto_dados = " + ".join(str(dado) for dado in dados)
-
-        if total >= 10:
-            recompensa = random.randint(1, 6) * 100
-            datos["arcas"] += recompensa
-
-            return (
-                "🎲 **Evento semanal**\n\n"
-                f"Tirada: **{tirada}**\n"
-                "🛡️ **Petición de ayuda**\n\n"
-                f"Un líder local solicita ayuda para **{mision}**.\n\n"
-                f"Se envían **{defensores_enviados}** defensores del bastión.\n"
-                f"Dados: **{texto_dados} = {total}**\n\n"
-                "La misión se resuelve con éxito.\n\n"
-                f"💰 Recompensa obtenida: **{recompensa} PO**.\n"
-                f"🏯 Arcas actuales: **{datos['arcas']} PO**."
-            )
-
-        recompensa = (random.randint(1, 6) * 100) // 2
-        datos["arcas"] += recompensa
-        datos["defensores"] = max(0, datos["defensores"] - 1)
-
-        return (
-            "🎲 **Evento semanal**\n\n"
-            f"Tirada: **{tirada}**\n"
-            "🛡️ **Petición de ayuda**\n\n"
-            f"Un líder local solicita ayuda para **{mision}**.\n\n"
-            f"Se envían **{defensores_enviados}** defensores del bastión.\n"
-            f"Dados: **{texto_dados} = {total}**\n\n"
-            "La misión se completa, aunque el resultado es costoso.\n"
-            "Uno de los defensores pierde la vida durante la expedición.\n\n"
-            f"💰 Recompensa reducida: **{recompensa} PO**.\n"
-            f"🛡️ Defensores restantes: **{datos['defensores']}**.\n"
-            f"🏯 Arcas actuales: **{datos['arcas']} PO**."
-        )
 
     return (
     "🎲 **Evento semanal**\n\n"
@@ -738,9 +314,6 @@ def avanzar_semana(datos):
     datos["acciones_semana"] = 0
 
     mensaje_evento = generar_evento_semanal(datos)
-    mensaje_huesped = procesar_huesped(datos)
-    mensaje_refugiados = procesar_refugiados(datos)
-
     asalariados = datos["asalariados"]
     defensores = datos.get("defensores", 0)
     tiene_barracon = datos["instalaciones"].get("barracon", False)
@@ -758,14 +331,9 @@ def avanzar_semana(datos):
             "por lo que cada uno cobra **2 PO** esta semana."
         )
 
-    mensaje_final = f"\n\n{mensaje_evento}{mensaje_huesped}{mensaje_refugiados}"
-
     if costo_total <= 0:
-        return (
-            "📜 **Fin de semana del bastión**\n\n"
-            "No hay personal que cobre salario."
-            f"{mensaje_final}"
-        )
+        return "📜 **Fin de semana del bastión**\n\nNo hay personal que cobre salario."
+    f"\n\n{mensaje_evento}"
 
     if datos["arcas"] >= costo_total:
         datos["arcas"] -= costo_total
@@ -777,7 +345,7 @@ def avanzar_semana(datos):
             f"💰 Salarios pagados: **{costo_total} PO**\n"
             f"🏯 Arcas restantes: **{datos['arcas']} PO**"
             f"{mensaje_barracon}"
-            f"{mensaje_final}"
+            f"\n\n{mensaje_evento}"
         )
 
     oro_disponible = datos["arcas"]
@@ -804,7 +372,7 @@ def avanzar_semana(datos):
             "🏚️ El bastión queda prácticamente deshabitado.\n"
             "🏯 Arcas restantes: **0 PO**"
             f"{mensaje_barracon}"
-            f"{mensaje_final}"
+            f"\n\n{mensaje_evento}"
         )
 
     return (
@@ -818,16 +386,15 @@ def avanzar_semana(datos):
         f"y **{datos['defensores']}** defensores.\n"
         f"🏯 Arcas restantes: **{datos['arcas']} PO**"
         f"{mensaje_barracon}"
-        f"{mensaje_final}"
+        f"\n\n{mensaje_evento}"
     )
-
 
 @bot.event
 async def on_ready():
     print(f"Bot conectado como {bot.user}")
 
 
-@bot.command(name="ayuda")
+@bot.command(name="help")
 async def ayuda(ctx):
     mensaje = (
         "🏯 **Casa de las Máscaras — Comandos**\n\n"
@@ -837,8 +404,7 @@ async def ayuda(ctx):
         "`!depositar cantidad` — Deposita oro en las arcas.\n"
         "`!retirar cantidad` — Retira oro de las arcas.\n"
         "`!huerto` — Trabaja el huerto. 1 vez al día.\n"
-        "`!almacen` — Trabaja el almacén. 1 vez al día.\n"
-        "`!inventario` — Muestra el inventario del bastión.\n"
+        "`!almacen` — Trabaja el almacén. 1 vez al día."
         "`!agregaroro cantidad` — Agrega oro a tu personaje.\n"
 "`!quitaroro cantidad` — Quita oro a tu personaje.\n"
     )
@@ -857,7 +423,6 @@ async def estado(ctx):
         f"☠️ Viales de veneno: **{datos['venenos']}**\n"
         f"👷 Asalariados: **{datos['asalariados']}**\n"
         f"🛡️ Defensores: **{datos['defensores']}/{max_defensores(datos)}**\n"
-        f"🏕️ Refugiados: **{datos.get('refugiados', {}).get('cantidad', 0) if datos.get('refugiados') else 0}**\n"
         
     )
 
@@ -977,35 +542,6 @@ async def agregaroro(ctx, cantidad: int):
 
 
 @bot.command()
-async def inventario(ctx):
-    datos = cargar_bastion()
-
-    inventario = datos.get("inventario", [])
-
-    if not inventario:
-        await ctx.send(
-            "🎒 **Inventario del bastión**\n\n"
-            "El bastión no tiene objetos especiales guardados."
-        )
-        return
-
-    conteo = {}
-    for objeto in inventario:
-        conteo[objeto] = conteo.get(objeto, 0) + 1
-
-    lineas = []
-    for objeto, cantidad in sorted(conteo.items()):
-        if cantidad == 1:
-            lineas.append(f"• {objeto}")
-        else:
-            lineas.append(f"• {objeto} ×{cantidad}")
-
-    await ctx.send(
-        "🎒 **Inventario del bastión**\n\n"
-        + "\n".join(lineas)
-    )
-
-@bot.command()
 async def quitaroro(ctx, cantidad: int):
     datos = cargar_bastion()
     usuario_id = str(ctx.author.id)
@@ -1030,8 +566,6 @@ async def quitaroro(ctx, cantidad: int):
         f"💰 Se retiran **{cantidad} PO** de **{personaje['nombre']}**.\n"
         f"Oro actual: **{personaje['oro']} PO**"
     )
-
-
 
 @bot.command()
 async def huerto(ctx):
