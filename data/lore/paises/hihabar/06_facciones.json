@@ -1,0 +1,118 @@
+{
+  "titulo": "Instituciones e Influencias del Sultanato de Hihabar",
+
+  "descripcion": "El Sultanato carece de facciones enfrentadas como ocurre en otros Grandes Reinos. La autoridad del Sultán es ampliamente reconocida y ninguna organización posee el poder suficiente para desafiarla abiertamente. Las rivalidades se desarrollan dentro del propio Palacio Imperial mediante la política, la influencia, el prestigio y el conocimiento.",
+
+  "facciones": [
+
+    {
+
+      "nombre": "El Diwan Imperial",
+
+      "tipo": "Institución de Gobierno",
+
+      "descripcion": "Principal órgano administrativo del Sultanato. Coordina la administración, el comercio, la diplomacia y la gestión de los emiratos bajo la autoridad del Sultán.",
+
+      "lider": "Gran Visir"
+
+    },
+
+    {
+
+      "nombre": "La Guardia del Creciente",
+
+      "tipo": "Institución Militar",
+
+      "descripcion": "Guardia de élite encargada de proteger al Sultán, el Palacio del Creciente, el Tesoro Imperial y las grandes embajadas. Sus miembros son considerados los soldados mejor entrenados del Sultanato.",
+
+      "lider": "Comandante de la Guardia"
+
+    },
+
+    {
+
+      "nombre": "La Gran Biblioteca Imperial",
+
+      "tipo": "Institución Académica",
+
+      "descripcion": "Centro de investigación más importante de Los Grandes Reinos. Reúne astrónomos, matemáticos, magos, médicos, filósofos, cartógrafos y traductores procedentes de todo el continente.",
+
+      "lider": "Alto Custodio"
+
+    },
+
+    {
+
+      "nombre": "Consejo de Ulemas",
+
+      "tipo": "Institución Consultiva",
+
+      "descripcion": "Colegio de juristas, sabios y filósofos que asesoran al Sultán en cuestiones legales, religiosas, científicas y éticas.",
+
+      "lider": "Gran Ulema"
+
+    },
+
+    {
+
+      "nombre": "Casa de la Moneda Imperial",
+
+      "tipo": "Institución Económica",
+
+      "descripcion": "Responsable de la acuñación de moneda, el control de pesos y medidas, la certificación de contratos comerciales y la estabilidad económica del Sultanato.",
+
+      "lider": "Gran Tesorero"
+
+    },
+
+    {
+
+      "nombre": "Las Grandes Caravanas",
+
+      "tipo": "Consorcio Comercial",
+
+      "descripcion": "Conjunto de las mayores compañías mercantiles del Sultanato. Aunque no gobiernan, financian expediciones, exploraciones, puertos y rutas comerciales que conectan Hihabar con el resto del continente.",
+
+      "lider": "Diversos Maestres de Caravana"
+
+    }
+
+  ],
+
+  "politica_palaciega": {
+
+    "descripcion": "La mayor parte de las intrigas del Sultanato tienen lugar dentro del Palacio del Creciente. Funcionarios, emires, eruditos y miembros de la corte compiten constantemente por obtener el favor del Sultán mediante alianzas, matrimonios, prestigio académico, riqueza o éxitos diplomáticos. Estas disputas rara vez desembocan en violencia abierta y suelen resolverse mediante la influencia política.",
+
+    "principios": [
+
+      "La lealtad al Sultán nunca se cuestiona.",
+
+      "Las disputas se resuelven mediante diplomacia e influencia.",
+
+      "El prestigio intelectual concede tanto poder como la riqueza.",
+
+      "La prosperidad del Sultanato prevalece sobre las ambiciones personales."
+
+    ]
+
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "No generar facciones rebeldes contra el Sultán.",
+
+      "Las rivalidades son políticas y cortesanas.",
+
+      "El conocimiento y el comercio generan prestigio.",
+
+      "La autoridad del Sultán permanece incuestionable.",
+
+      "Las conspiraciones buscan ganar influencia, no provocar guerras civiles."
+
+    ]
+
+  }
+
+}

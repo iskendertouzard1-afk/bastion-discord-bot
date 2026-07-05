@@ -1,0 +1,292 @@
+{
+  "titulo": "Economía del Reino de Varkeldov",
+
+  "descripcion": "La economía de Varkeldov se fundamenta en la explotación sostenible de sus recursos naturales, el comercio de largo plazo y una compleja red de juramentos comerciales entre nobles, gremios y ciudades libres. La estabilidad de los contratos constituye uno de los pilares del reino, permitiendo relaciones económicas que pueden mantenerse durante generaciones.",
+
+  "modelo_economico": {
+
+    "tipo": "Economía feudal con fuerte tradición gremial.",
+
+    "descripcion": "Los Boyardos administran la mayor parte de las tierras productivas mientras Burgomaestres y gremios controlan la actividad comercial de las villas y ciudades. Los Grandes Voivodas garantizan la seguridad de caminos y fronteras."
+
+  },
+
+  "economia_interna": {
+
+    "descripcion": "Cada región militar aprovecha los recursos de su entorno, desarrollando una economía basada en la madera, la minería, la ganadería y el comercio regional.",
+
+    "regiones": [
+
+      {
+
+        "nombre": "Bosques de Skovland",
+
+        "especializacion": [
+
+          "Madera.",
+
+          "Resinas.",
+
+          "Caza.",
+
+          "Pieles.",
+
+          "Carpintería."
+
+        ]
+
+      },
+
+      {
+
+        "nombre": "Montañas de Dragmir",
+
+        "especializacion": [
+
+          "Hierro.",
+
+          "Plata.",
+
+          "Cantería.",
+
+          "Forja.",
+
+          "Armas."
+
+        ]
+
+      },
+
+      {
+
+        "nombre": "Valles de Hrodan",
+
+        "especializacion": [
+
+          "Trigo.",
+
+          "Centeno.",
+
+          "Ganadería.",
+
+          "Lácteos.",
+
+          "Vino oscuro."
+
+        ]
+
+      },
+
+      {
+
+        "nombre": "Costa de los Mil Acantilados",
+
+        "especializacion": [
+
+          "Pesca.",
+
+          "Sal.",
+
+          "Construcción naval.",
+
+          "Ámbar.",
+
+          "Comercio marítimo."
+
+        ]
+
+      }
+
+    ]
+
+  },
+
+  "tributos": {
+
+    "descripcion": "Los Boyardos entregan tributos al Gran Domnitor mediante recursos, moneda, metales, madera y servicio militar cuando el reino lo requiere.",
+
+    "formas": [
+
+      "Moneda.",
+
+      "Hierro.",
+
+      "Plata.",
+
+      "Madera.",
+
+      "Caballos.",
+
+      "Grano.",
+
+      "Soldados."
+
+    ]
+
+  },
+
+  "comercio_exterior": {
+
+    "descripcion": "Varkeldov mantiene relaciones comerciales estables con todos los Grandes Reinos, privilegiando acuerdos duraderos sobre beneficios inmediatos.",
+
+    "principales_socios": [
+
+      {
+
+        "pais": "Imperio de Yugure",
+
+        "relacion": "Neutral",
+
+        "intercambio": [
+
+          "Seda.",
+
+          "Acero.",
+
+          "Papel.",
+
+          "Madera."
+
+        ]
+
+      },
+
+      {
+
+        "pais": "Reino Unido de Nosland",
+
+        "relacion": "Enemiga",
+
+        "intercambio": [
+
+          "Limitado.",
+
+          "Principalmente bienes estratégicos mediante intermediarios."
+
+        ]
+
+      },
+
+      {
+
+        "pais": "Sultanato de Hihabar",
+
+        "relacion": "Suspicaz",
+
+        "intercambio": [
+
+          "Vidrio.",
+
+          "Especias.",
+
+          "Libros.",
+
+          "Instrumentos científicos."
+
+        ]
+
+      }
+
+    ]
+
+  },
+
+  "contratos_comerciales": {
+
+    "descripcion": "Los contratos comerciales constituyen la base de la economía varkeldoviana. Es habitual encontrar acuerdos cuya duración supera varias décadas e incluso siglos cuando intervienen antiguas casas nobiliarias o linajes vampíricos.",
+
+    "caracteristicas": [
+
+      "Gran estabilidad jurídica.",
+
+      "Respaldados por juramentos nobiliarios.",
+
+      "Transmitidos como parte de las herencias familiares.",
+
+      "Su incumplimiento supone una grave pérdida de prestigio."
+
+    ]
+
+  },
+
+  "exportaciones": [
+
+    "Hierro.",
+
+    "Plata.",
+
+    "Acero.",
+
+    "Madera.",
+
+    "Pieles.",
+
+    "Resinas.",
+
+    "Vino oscuro.",
+
+    "Licores.",
+
+    "Caballos.",
+
+    "Ámbar.",
+
+    "Quesos curados.",
+
+    "Armas.",
+
+    "Armaduras.",
+
+    "Piedra labrada."
+
+  ],
+
+  "infraestructura": {
+
+    "descripcion": "Las rutas comerciales recorren fortalezas, monasterios y villas protegidas por la nobleza. Los caminos atraviesan bosques y montañas mediante puentes fortificados, torres de vigilancia y castillos que garantizan la seguridad de comerciantes y caravanas."
+
+  },
+
+  "filosofia_economica": {
+
+    "descripcion": "La riqueza verdadera nace de la confianza. Un contrato cumplido durante generaciones posee más valor que una fortuna obtenida rápidamente. La estabilidad de los juramentos permite que nobles, gremios y comerciantes construyan prosperidad incluso en tiempos difíciles."
+
+  },
+
+  "principios": [
+
+    "La palabra dada vale más que el oro.",
+
+    "Un contrato puede durar generaciones.",
+
+    "La reputación es el mayor patrimonio de un comerciante.",
+
+    "Las fortalezas protegen las rutas comerciales.",
+
+    "El trabajo constante supera a la riqueza fácil.",
+
+    "La estabilidad garantiza la prosperidad."
+
+  ],
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Relacionar la economía con recursos forestales, minería y metalurgia.",
+
+      "Dar importancia a contratos, juramentos y acuerdos de largo plazo.",
+
+      "Los Boyardos controlan buena parte de la producción.",
+
+      "Los gremios poseen influencia económica, pero escaso poder político.",
+
+      "El invierno modifica el comercio y la disponibilidad de mercancías.",
+
+      "Las fortalezas y caminos protegidos son fundamentales para la economía."
+
+    ]
+
+  }
+
+}

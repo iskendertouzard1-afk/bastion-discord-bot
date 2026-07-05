@@ -1,0 +1,268 @@
+{
+  "titulo": "Personajes Importantes del Sultanato de Hihabar",
+
+  "descripcion": "Este archivo reúne a las figuras relevantes del Sultanato. Solo se incluyen personajes cuya existencia influye de forma significativa en la política, economía, religión, academia o acontecimientos históricos del reino.",
+
+  "personajes": [
+
+    {
+      "id": "hihabar_001",
+      "nombre": "Jalil ibn Rashid",
+      "titulo": "Sultán de Hihabar",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Palacio del Creciente",
+      "afiliacion": "Corona Imperial",
+      "ocupacion": "Soberano del Sultanato",
+      "descripcion": "Actual Sultán de Hihabar. Gobernante respetado por su prudencia, capacidad diplomática y apoyo constante al conocimiento.",
+      "personalidad": "Paciente, racional, observador y difícil de sorprender.",
+      "objetivos": [
+        "Mantener la prosperidad del Sultanato.",
+        "Garantizar la estabilidad de los Emiratos.",
+        "Convertir a Hihabar en el mayor centro del conocimiento."
+      ],
+      "conocimientos": [
+        "Diplomacia continental.",
+        "Política de los Grandes Reinos.",
+        "Rutas comerciales."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_002",
+      "nombre": "Amir al-Karim",
+      "titulo": "Gran Visir",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Palacio del Creciente",
+      "afiliacion": "Diwan Imperial",
+      "ocupacion": "Administrador Supremo",
+      "descripcion": "Dirige la administración cotidiana del Sultanato y coordina a los Emiratos.",
+      "personalidad": "Metódico, sereno y extremadamente eficiente.",
+      "objetivos": [
+        "Mantener el equilibrio administrativo."
+      ],
+      "conocimientos": [
+        "Administración.",
+        "Economía.",
+        "Diplomacia."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_003",
+      "nombre": "Farid al-Hassan",
+      "titulo": "Emir de Tabratoria",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Tabratoria",
+      "afiliacion": "Emirato de Tabratoria",
+      "ocupacion": "Gobernador",
+      "descripcion": "Protege las rutas marítimas occidentales del Sultanato.",
+      "personalidad": "Honorable y pragmático.",
+      "objetivos": [
+        "Mantener seguros los puertos."
+      ],
+      "conocimientos": [
+        "Navegación.",
+        "Comercio marítimo."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_004",
+      "nombre": "Karim ibn Safwan",
+      "titulo": "Emir de Namunz",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Namunz",
+      "afiliacion": "Emirato de Namunz",
+      "ocupacion": "Gobernador",
+      "descripcion": "Gobierna las fértiles llanuras agrícolas del Sultanato.",
+      "personalidad": "Reservado y práctico.",
+      "objetivos": [
+        "Garantizar el abastecimiento del reino."
+      ],
+      "conocimientos": [
+        "Agricultura.",
+        "Canales."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_005",
+      "nombre": "Zahra al-Nasir",
+      "titulo": "Emira de Liyah",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Liyah",
+      "afiliacion": "Emirato de Liyah",
+      "ocupacion": "Gobernadora",
+      "descripcion": "Controla las rutas caravaneras hacia el este.",
+      "personalidad": "Elegante, inteligente y gran diplomática.",
+      "objetivos": [
+        "Mantener abiertas las rutas comerciales."
+      ],
+      "conocimientos": [
+        "Comercio.",
+        "Diplomacia."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_006",
+      "nombre": "Yusuf al-Qadir",
+      "titulo": "Emir de Bisqah",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Bisqah",
+      "afiliacion": "Emirato de Bisqah",
+      "ocupacion": "Gobernador",
+      "descripcion": "Patrocinador de universidades y observatorios.",
+      "personalidad": "Curioso, culto y generoso.",
+      "objetivos": [
+        "Expandir el conocimiento."
+      ],
+      "conocimientos": [
+        "Astronomía.",
+        "Magia.",
+        "Cartografía."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_007",
+      "nombre": "Hakim ibn Salim",
+      "titulo": "Alto Custodio de la Gran Biblioteca Imperial",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Gran Biblioteca Imperial",
+      "afiliacion": "Biblioteca Imperial",
+      "ocupacion": "Erudito Supremo",
+      "descripcion": "Dirige la mayor biblioteca del continente.",
+      "personalidad": "Paciente, brillante y extremadamente curioso.",
+      "objetivos": [
+        "Conservar todo el conocimiento conocido."
+      ],
+      "conocimientos": [
+        "Historia.",
+        "Magia.",
+        "Astronomía.",
+        "Lenguas antiguas."
+      ],
+      "secretos": [
+        "Custodia textos prohibidos que muy pocos conocen."
+      ],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_008",
+      "nombre": "Samir al-Faruq",
+      "titulo": "Gran Astrónomo",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Observatorio Imperial",
+      "afiliacion": "Gran Biblioteca Imperial",
+      "ocupacion": "Astrónomo",
+      "descripcion": "Máxima autoridad en astronomía del Sultanato.",
+      "personalidad": "Distraído, amable y obsesionado con las estrellas.",
+      "objetivos": [
+        "Comprender el movimiento de los cielos."
+      ],
+      "conocimientos": [
+        "Calendarios.",
+        "Navegación.",
+        "Astrología."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_009",
+      "nombre": "Borin Martillo de Bronce",
+      "titulo": "Gran Maestro de la Forja",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Ciudad Subterránea Desconocida",
+      "afiliacion": "Clanes Enanos",
+      "ocupacion": "Maestro Herrero",
+      "descripcion": "Representante no oficial de los antiguos reinos enanos. Muy pocos humanos saben dónde vive realmente.",
+      "personalidad": "Reservado, severo y honorable.",
+      "objetivos": [
+        "Preservar los conocimientos de Moradin."
+      ],
+      "conocimientos": [
+        "Metalurgia.",
+        "Runas.",
+        "Ingeniería."
+      ],
+      "secretos": [
+        "Conoce varias entradas hacia las ciudades enanas."
+      ],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "hihabar_010",
+      "nombre": "Leyla bint Azhar",
+      "titulo": "Primera Esposa del Sultán",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Palacio del Creciente",
+      "afiliacion": "Corte Imperial",
+      "ocupacion": "Consorte Imperial",
+      "descripcion": "Figura muy influyente dentro del palacio. Patrocina escuelas, artistas y hospitales.",
+      "personalidad": "Elegante, diplomática y extraordinariamente inteligente.",
+      "objetivos": [
+        "Aumentar el prestigio de la familia imperial."
+      ],
+      "conocimientos": [
+        "Política cortesana.",
+        "Protocolo."
+      ],
+      "secretos": [],
+      "relaciones": [
+        {
+          "personaje": "Jalil ibn Rashid",
+          "tipo": "Esposa",
+          "descripcion": "Consorte principal del Sultán."
+        }
+      ],
+      "ultima_actualizacion": "956 Segunda Era"
+    }
+
+  ],
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Consultar este archivo antes de generar personajes importantes.",
+      "Respetar el estado actual de cada personaje.",
+      "No revelar secretos salvo autorización del Director de Juego.",
+      "Los personajes fallecidos siguen influyendo en la historia.",
+      "No inventar nuevos gobernantes imperiales si ya existe uno definido."
+    ]
+  }
+}

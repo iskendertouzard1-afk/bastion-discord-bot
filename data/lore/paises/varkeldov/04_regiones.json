@@ -1,0 +1,164 @@
+{
+  "titulo": "Grandes Regiones del Reino de Varkeldov",
+
+  "descripcion": "Varkeldov se divide en Grandes Regiones Militares, gobernadas por Grandes Voivodas en nombre del Gran Domnitor. Cada región protege un entorno geográfico distinto y constituye la base defensiva del reino. Bajo ellas existen Voivodatos, dominios boyardos, fortalezas y villas libres.",
+
+  "estructura_administrativa": {
+
+    "provincia": "Gran Región Militar",
+
+    "subdivision": "Voivodato",
+
+    "gobernante": "Gran Voivoda",
+
+    "autoridad_suprema": "Gran Domnitor Vladislav III Drăculești",
+
+    "titulo": "Gran Domnitor de Varkeldov",
+
+    "descripcion": "Soberano absoluto del reino y señor de toda la nobleza. Desde la Fortaleza de Skonlandvieja gobierna mediante una compleja red de Grandes Voivodas, Voivodas y Boyardos que mantienen la seguridad de las fronteras y los antiguos juramentos del reino."
+
+  },
+
+  "regiones": [
+
+    {
+
+      "nombre": "Bosques de Skovland",
+
+      "capital": "Leitshamn",
+
+      "gobernante": {
+
+        "nombre": "Gran Voivoda Radu Volkov",
+
+        "titulo": "Gran Voivoda de Skovland",
+
+        "descripcion": "Veterano cazador y estratega. Domina los inmensos bosques occidentales y mantiene bajo vigilancia las rutas que cruzan la región."
+
+      },
+
+      "voivodatos": [
+
+        "Leitshamn",
+
+        "Mistedal",
+
+        "Hofheka",
+
+        "Flakstad"
+
+      ],
+
+      "identidad": "Grandes bosques, madera, caza, monasterios aislados y fortalezas ocultas."
+
+    },
+
+    {
+
+      "nombre": "Montañas de Dragmir",
+
+      "capital": "Straugard",
+
+      "gobernante": {
+
+        "nombre": "Gran Voivoda Alexandru Corvin",
+
+        "titulo": "Gran Voivoda de Dragmir",
+
+        "descripcion": "Protector de las cordilleras orientales. Sus fortalezas controlan los principales pasos hacia Nosland."
+
+      },
+
+      "voivodatos": [
+
+        "Straugard",
+
+        "Baltir",
+
+        "Eivpass",
+
+        "Rautevik"
+
+      ],
+
+      "identidad": "Montañas, minas, fortalezas, herrerías y pasos estratégicos."
+
+    },
+
+    {
+
+      "nombre": "Valles de Hrodan",
+
+      "capital": "Hålsvor",
+
+      "gobernante": {
+
+        "nombre": "Gran Voivoda Mikhail Dragomir",
+
+        "titulo": "Gran Voivoda de Hrodan",
+
+        "descripcion": "Gobierna las tierras agrícolas que alimentan al reino. Es uno de los nobles más respetados por los Boyardos."
+
+      },
+
+      "voivodatos": [
+
+        "Hålsvor",
+
+        "Mordal",
+
+        "Jarnsda",
+
+        "Botsdody"
+
+      ],
+
+      "identidad": "Agricultura, ganadería, monasterios y dominios boyardos."
+
+    },
+
+    {
+
+      "nombre": "Costa de los Mil Acantilados",
+
+      "capital": "Austerhavn",
+
+      "gobernante": {
+
+        "nombre": "Gran Voivoda Stefan Dragoș",
+
+        "titulo": "Gran Voivoda de la Costa Occidental",
+
+        "descripcion": "Antiguo almirante convertido en noble. Vigila las costas, los faros y las fortalezas marítimas."
+
+      },
+
+      "voivodatos": [
+
+        "Austerhavn",
+
+        "Logevik",
+
+        "Odtgrund",
+
+        "Helsogur"
+
+      ],
+
+      "identidad": "Acantilados, puertos fortificados, faros, pesca y comercio marítimo."
+
+    }
+
+  ],
+
+  "autoridad_real": {
+
+    "nombre": "Vladislav III Drăculești",
+
+    "titulo": "Gran Domnitor de Varkeldov",
+
+    "descripcion": "Actual soberano de Varkeldov. Su autoridad se mantiene gracias al respeto de la nobleza, la fortaleza de sus ejércitos y los antiguos juramentos que unen a los Grandes Voivodas con la Corona."
+
+  }
+
+}

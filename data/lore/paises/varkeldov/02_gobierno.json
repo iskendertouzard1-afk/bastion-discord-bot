@@ -1,0 +1,151 @@
+{
+  "titulo": "Gobierno del Reino de Varkeldov",
+
+  "forma_de_gobierno": {
+    "tipo": "Gran Principado Nobiliario",
+    "descripcion": "Varkeldov está gobernado por un Gran Domnitor cuya autoridad se sostiene sobre una antigua jerarquía nobiliaria, militar y territorial. El reino es frío, agreste y profundamente defensivo; sus instituciones nacieron para proteger fortalezas, valles, minas, bosques y pasos montañosos."
+  },
+
+  "gran_domnitor": {
+    "nombre": "Vladislav III Drăculești",
+    "titulo": "Gran Domnitor de Varkeldov",
+    "autoridad": [
+      "Jefe de Estado",
+      "Señor Supremo de los Voivodas",
+      "Comandante Supremo de las fortalezas del reino",
+      "Protector de los pasos montañosos",
+      "Árbitro de la nobleza varkeldoviana"
+    ],
+    "funcion": "Gobierna Varkeldov desde la capital y mantiene unidos a los grandes linajes mediante juramentos, temor, tradición y una autoridad personal casi legendaria.",
+    "secreto_dm": "El Gran Domnitor es un vampiro antiguo. Este secreto no debe revelarse salvo autorización del Director de Juego."
+  },
+
+  "consejo_de_los_grandes_voivodas": {
+    "nombre": "Consejo de los Grandes Voivodas",
+    "descripcion": "Órgano consultivo formado por los gobernadores militares más poderosos del reino. Sus miembros aconsejan al Gran Domnitor en asuntos de guerra, defensa, sucesión, tributos y amenazas extranjeras.",
+    "funciones": [
+      "Asesorar al Gran Domnitor en asuntos militares.",
+      "Coordinar la defensa de las grandes regiones.",
+      "Resolver disputas entre Voivodas y Boyardos.",
+      "Organizar levas en tiempos de guerra.",
+      "Supervisar pasos montañosos, fortalezas y fronteras."
+    ],
+    "miembros": [
+      "Gran Voivoda de las Montañas Negras",
+      "Gran Voivoda de los Bosques de Bruma",
+      "Gran Voivoda de las Tierras del Hierro",
+      "Gran Voivoda de los Valles del Sur"
+    ],
+    "autoridad": "El Consejo posee enorme influencia militar y nobiliaria, pero la decisión final corresponde al Gran Domnitor.",
+    "sede": "Fortaleza de Skonlandvieja"
+  },
+
+  "jerarquia_nobiliaria": {
+    "descripcion": "La nobleza de Varkeldov se organiza mediante títulos ligados a la defensa, la posesión de tierras y el control de fortalezas.",
+
+    "rangos": [
+      {
+        "titulo": "Gran Domnitor",
+        "funcion": "Soberano absoluto del reino."
+      },
+      {
+        "titulo": "Grandes Voivodas",
+        "funcion": "Gobernadores de las grandes regiones militares."
+      },
+      {
+        "titulo": "Voivodas",
+        "funcion": "Señores de provincias, ciudades fortificadas o pasos montañosos."
+      },
+      {
+        "titulo": "Boyardos",
+        "funcion": "Nobleza terrateniente que controla castillos, aldeas, minas, bosques y recursos."
+      },
+      {
+        "titulo": "Castellanos",
+        "funcion": "Comandantes de fortalezas fronterizas y castillos estratégicos."
+      },
+      {
+        "titulo": "Caballeros",
+        "funcion": "Nobleza militar juramentada al servicio de un señor o del Gran Domnitor."
+      },
+      {
+        "titulo": "Burgomaestres",
+        "funcion": "Gobernantes de villas, pueblos comerciales y ciudades menores."
+      }
+    ]
+  },
+
+  "estructura_del_reino": {
+    "descripcion": "El reino se organiza alrededor de fortalezas, valles, ciudades amuralladas, minas y pasos montañosos. La geografía determina el poder político.",
+
+    "territorios": [
+      {
+        "categoria": "Grandes Regiones Militares",
+        "descripcion": "Territorios extensos gobernados por Grandes Voivodas. Funcionan como zonas defensivas del reino."
+      },
+      {
+        "categoria": "Voivodatos",
+        "descripcion": "Provincias menores, ciudades fortificadas o pasos estratégicos gobernados por Voivodas."
+      },
+      {
+        "categoria": "Dominios Boyardos",
+        "descripcion": "Tierras nobiliarias compuestas por aldeas, castillos, bosques, minas y campos de cultivo."
+      },
+      {
+        "categoria": "Fortalezas Castellanas",
+        "descripcion": "Castillos estratégicos administrados por Castellanos bajo juramento militar."
+      },
+      {
+        "categoria": "Villas Libres",
+        "descripcion": "Pueblos comerciales y ciudades menores administradas por Burgomaestres."
+      }
+    ]
+  },
+
+  "gobierno_local": {
+    "descripcion": "Cada territorio es gobernado por una autoridad local responsable de administrar justicia, recaudar tributos y mantener la defensa.",
+    "autonomia": "Los nobles poseen amplia autonomía dentro de sus dominios, siempre que respeten los juramentos hechos al Gran Domnitor y respondan al llamado militar del reino."
+  },
+
+  "fuerzas_militares": {
+    "ejercito_del_domnitor": "Fuerza central que protege la capital, las rutas principales y las fortalezas reales.",
+    "huestes_voivodales": "Tropas levantadas por los Grandes Voivodas y Voivodas para defender sus regiones.",
+    "guardias_boyardas": "Soldados privados al servicio de los Boyardos.",
+    "castellanos": "Comandantes encargados de resistir asedios y custodiar pasos, murallas y torres.",
+    "caballeros": "Guerreros juramentados que sirven como élite militar del reino.",
+    "doctrina_militar": "La guerra varkeldoviana favorece la defensa, las emboscadas en bosque, la caballería pesada, las fortalezas, el invierno y el desgaste del enemigo."
+  },
+
+  "administracion": {
+    "impuestos": "Los territorios entregan tributos en moneda, grano, hierro, madera, pieles, caballos, vino oscuro y servicio militar.",
+    "justicia": "La justicia cotidiana corresponde a Voivodas, Boyardos, Castellanos o Burgomaestres según el territorio. Los asuntos graves pueden escalar hasta el Gran Domnitor.",
+    "juramentos": "Los juramentos de lealtad poseen enorme peso político. Romperlos puede destruir una casa noble entera."
+  },
+
+  "politica_exterior": {
+    "descripcion": "El Gran Domnitor dirige la política exterior. Varkeldov trata a sus vecinos con cautela y rara vez confía plenamente en potencias extranjeras."
+  },
+
+  "filosofia_del_gobierno": {
+    "principios": [
+      "Los muros protegen a los vivos.",
+      "La lealtad vale más que la riqueza.",
+      "El invierno revela la fortaleza de un pueblo.",
+      "La tierra se gobierna con juramento, Skonland y memoria.",
+      "Un noble existe para defender a quienes viven bajo su sombra.",
+      "La supervivencia del reino prevalece sobre las ambiciones individuales."
+    ]
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Describir Varkeldov como un reino frío, agreste, melancólico y fortificado.",
+      "Usar el título Gran Domnitor para el soberano.",
+      "Recordar que Grandes Voivodas y Voivodas tienen funciones militares y territoriales.",
+      "Presentar a los Boyardos como nobleza terrateniente poderosa.",
+      "Relacionar la política con juramentos, fortalezas, linajes y defensa.",
+      "No revelar que el Gran Domnitor es vampiro salvo autorización del Director de Juego.",
+      "Evitar que Varkeldov parezca una copia de Nosland."
+    ]
+  }
+}

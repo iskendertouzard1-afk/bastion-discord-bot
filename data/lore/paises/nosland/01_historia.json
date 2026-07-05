@@ -1,0 +1,134 @@
+{
+  "titulo": "Historia del Reino Unido de Nosland",
+
+  "descripcion": "La historia oficial de Nosland considera al Reino como el legítimo heredero del antiguo Reino de Ox. Mientras otras naciones nacieron tras la Gran Diáspora, Nosland afirma conservar la continuidad política y dinástica de las Cinco Casas de Ox, cuyos descendientes reconstruyeron el Reino sobre nuevas tierras durante la Segunda Era.",
+
+  "eras": [
+
+    {
+      "nombre": "Primera Era",
+      "periodo": "0 - 999",
+      "descripcion": "Conocida como la Era de Ox. Durante este periodo surgieron las Cinco Grandes Casas, que protagonizaron siglos de alianzas y guerras hasta provocar la caída definitiva del antiguo Reino."
+    },
+
+    {
+      "nombre": "Segunda Era",
+      "periodo": "0 - Actualidad",
+      "descripcion": "Comienza con la reconstrucción del continente y la fundación del Reino Unido de Nosland."
+    }
+
+  ],
+
+  "cronologia": [
+
+    {
+      "fecha": "500 Primera Era",
+      "titulo": "El Reino de Ox",
+      "descripcion": "Todo el occidente del continente permanecía unido bajo el gobierno del Regente Ox. Durante décadas mantuvo la paz entre numerosos feudos y consolidó una de las civilizaciones humanas más poderosas de la Primera Era."
+    },
+
+    {
+      "fecha": "600 Primera Era",
+      "titulo": "El Legado de las Cinco Casas",
+      "descripcion": "Tras la muerte del Regente Ox, sus dominios fueron repartidos entre sus cinco hijos, dando origen a las Casas Waritz, Lorenz, Garritz, Oquitz y Qartz. Poco después comenzaron las primeras disputas sucesorias cuando Lorenz y Garritz intentaron arrebatar territorios a la Casa Oquitz."
+    },
+
+    {
+      "fecha": "700 Primera Era",
+      "titulo": "La Alianza de Qartz y Oquitz",
+      "descripcion": "El príncipe de la Casa Qartz contrajo matrimonio con una heredera de la Casa Oquitz, unificando temporalmente ambas dinastías. Temerosas del crecimiento de esta alianza, las demás Casas iniciaron una guerra que terminó con una contundente derrota para Lorenz, Garritz y Waritz."
+    },
+
+    {
+      "fecha": "800 Primera Era",
+      "titulo": "El Equilibrio Inestable",
+      "descripcion": "Mientras la alianza entre Qartz y Oquitz alcanzaba su máximo poder, la Casa Garritz prosperó gracias a la expansión comercial hacia las tierras orientales. Waritz y Lorenz recuperaron lentamente su fuerza e intentaron nuevamente romper el dominio de sus antiguos rivales."
+    },
+
+    {
+      "fecha": "999 Primera Era",
+      "titulo": "La Caída del Reino de Ox",
+      "descripcion": "Siglos de guerras civiles agotaron por completo a las Cinco Casas. Las ciudades quedaron arrasadas y la autoridad central desapareció. Los supervivientes abandonaron sus hogares y comenzó la Gran Diáspora, acontecimiento que marcó el final de la Primera Era."
+    },
+
+    {
+      "fecha": "100 Segunda Era",
+      "titulo": "La Reconstrucción",
+      "descripcion": "Los descendientes de las antiguas Casas comenzaron a establecer nuevos asentamientos. Magos, ingenieros y artesanos colaboraron en la reconstrucción de aldeas y fortalezas sobre las ruinas del viejo Reino."
+    },
+
+    {
+      "fecha": "200 Segunda Era",
+      "titulo": "La Era de los Caminos",
+      "descripcion": "Se restauraron los grandes caminos comerciales y se construyeron nuevas rutas terrestres. La cooperación entre magos y constructores permitió unir nuevamente los principales asentamientos del occidente."
+    },
+
+    {
+      "fecha": "300 Segunda Era",
+      "titulo": "El Segundo Consejo de Ox",
+      "descripcion": "Los descendientes de las Cinco Casas se reunieron para poner fin a generaciones de rivalidad. El Consejo de Ox sentó las bases para la creación de un nuevo reino capaz de garantizar la paz entre los antiguos linajes."
+    },
+
+    {
+      "fecha": "400 Segunda Era",
+      "titulo": "Fundación de Nosland",
+      "descripcion": "Sobre las fértiles llanuras occidentales se fundó la ciudad de Durheim. Allí nació oficialmente el Reino Unido de Nosland como sucesor político del antiguo Reino de Ox."
+    },
+
+    {
+      "fecha": "500 Segunda Era",
+      "titulo": "La Era de los Galeones",
+      "descripcion": "Nosland abrió grandes rutas comerciales tanto terrestres como marítimas. Los astilleros occidentales desarrollaron enormes galeones que pronto navegaron hacia todos los Grandes Reinos."
+    },
+
+    {
+      "fecha": "600 Segunda Era",
+      "titulo": "Nacimiento de la Monarquía Consular",
+      "descripcion": "El antiguo Consejo evolucionó hacia una Monarquía Consular. Aurelian Qartz, descendiente de la Primera Casa de Ox, fue proclamado el primer Basileus de Nosland, mientras el Senado y los Cónsules asumieron funciones permanentes dentro del nuevo Estado."
+    },
+
+    {
+      "fecha": "700 Segunda Era",
+      "titulo": "La Apertura Diplomática",
+      "descripcion": "Nosland estableció embajadas permanentes con las demás potencias del continente. La diplomacia, el comercio y el intercambio cultural consolidaron la posición internacional del Reino."
+    },
+
+    {
+      "fecha": "800 Segunda Era",
+      "titulo": "El Gran Terremoto",
+      "descripcion": "El cataclismo que sacudió el continente destruyó numerosas fortalezas, ciudades y caminos. Aunque Nosland sufrió importantes pérdidas, la organización de sus feudos permitió una rápida recuperación."
+    },
+
+    {
+      "fecha": "900 Segunda Era",
+      "titulo": "La Era del Servicio",
+      "descripcion": "El pensamiento cívico adquirió una enorme importancia dentro del Reino. Surgieron órdenes permanentes de caballería, patrullas de soldados ciudadanos y numerosos paladines errantes dedicados a proteger caminos, aldeas y peregrinos."
+    },
+
+    {
+      "fecha": "956 Segunda Era",
+      "titulo": "Actualidad",
+      "descripcion": "Bajo el gobierno del Basileus William IV Waritz, Nosland continúa siendo una de las mayores potencias de Los Grandes Reinos. La estabilidad política depende del delicado equilibrio entre la Corona, las Cinco Casas de Ox, el Senado Real y los Altos Lores que administran los grandes feudos del Reino."
+    }
+
+  ],
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Considerar esta cronología como la historia oficial enseñada en Nosland.",
+
+      "Las Cinco Casas de Ox constituyen el origen histórico de la nobleza del Reino.",
+
+      "Los acontecimientos de la Primera Era mezclan hechos documentados con tradiciones conservadas por las Grandes Casas.",
+
+      "La Segunda Era representa el periodo mejor documentado de la historia de Nosland.",
+
+      "Los acontecimientos posteriores al año 950 continúan desarrollándose durante la campaña."
+
+    ]
+
+  }
+
+}

@@ -1,0 +1,120 @@
+{
+  "titulo": "Historia del Imperio de Yugure",
+
+  "descripcion": "La historia oficial del Imperio de Yugure se divide en dos grandes eras. La Primera Era concluyó con la caída del antiguo Reino de Ox tras siglos de guerras. La Segunda Era comenzó con la reconstrucción del continente y el nacimiento del Imperio de Yugure, proceso que dio origen a la organización política, cultural y económica que existe en la actualidad.",
+
+  "eras": [
+
+    {
+      "nombre": "Primera Era",
+      "periodo": "0 - 999",
+      "descripcion": "Conocida como la Era Antigua o la Época Oscura. Fue un periodo marcado por guerras constantes entre antiguos reinos, migraciones masivas y la desaparición de numerosas civilizaciones."
+    },
+
+    {
+      "nombre": "Segunda Era",
+      "periodo": "0 - Actualidad",
+      "descripcion": "Comienza con la reconstrucción del continente y el nacimiento del Imperio de Yugure."
+    }
+
+  ],
+
+  "cronologia": [
+
+    {
+      "fecha": "999 Primera Era",
+      "titulo": "La Caída del Reino de Ox",
+      "descripcion": "Tras generaciones de guerras interminables, el Reino de Ox desapareció. Millones de supervivientes abandonaron sus hogares y se dispersaron por todo el continente. Mientras muchas regiones luchaban por sobrevivir, los antiguos reinos élficos del centro del continente abandonaron siglos de aislamiento para auxiliar a los pueblos humanos. Este acontecimiento marcó el final de la Primera Era."
+    },
+
+    {
+      "fecha": "0 Segunda Era",
+      "titulo": "Fundación de Yugure",
+      "descripcion": "Los clanes élficos guiaron a los refugiados hacia los fértiles valles del centro del continente. Allí nació la primera alianza entre humanos y elfos que con el tiempo sería conocida como Yugure."
+    },
+
+    {
+      "fecha": "100 Segunda Era",
+      "titulo": "Nacimiento de las Primeras Ciudades",
+      "descripcion": "Las aldeas temporales dieron paso a los primeros asentamientos permanentes. Surgieron las ciudades que más tarde se convertirían en el núcleo político y económico del futuro Imperio."
+    },
+
+    {
+      "fecha": "200 Segunda Era",
+      "titulo": "La Era de los Caminos",
+      "descripcion": "Se construyeron los primeros caminos imperiales, permitiendo el intercambio de alimentos, conocimientos y personas entre las distintas comunidades. Por primera vez, el territorio comenzó a funcionar como una sola nación."
+    },
+
+    {
+      "fecha": "300 Segunda Era",
+      "titulo": "Fundación del Gran Consejo",
+      "descripcion": "Los principales clanes y ciudades establecieron un consejo permanente para resolver disputas y coordinar la reconstrucción. Aunque todavía no existía un gobernante único, este organismo sentó las bases del futuro gobierno imperial."
+    },
+
+    {
+      "fecha": "400 Segunda Era",
+      "titulo": "Nacimiento del Consejo Imperial",
+      "descripcion": "Los miembros del Gran Consejo eligieron a Hidetora I como Gran Shōgun, otorgándole autoridad para coordinar la defensa y administración del territorio. Este hecho marcó el nacimiento formal del Imperio de Yugure. Durante esta época también comenzaron las primeras rutas comerciales marítimas."
+    },
+
+    {
+      "fecha": "500 Segunda Era",
+      "titulo": "La Expansión Oriental",
+      "descripcion": "El Imperio extendió su influencia hacia las costas orientales. El crecimiento territorial provocó los primeros conflictos diplomáticos y militares con los pueblos que posteriormente formarían el Sultanato de Hihabar."
+    },
+
+    {
+      "fecha": "600 Segunda Era",
+      "titulo": "La Reforma Imperial",
+      "descripcion": "Durante el gobierno de Shōgun Mikado Kiyomori, el título de Gran Shōgun evolucionó hasta convertirse oficialmente en Shōgun Mikado, unificando la autoridad militar, política y ceremonial en una sola figura. Paralelamente, el Imperio se reorganizó en Grandes Provincias y Prefecturas, otorgando una amplia autonomía administrativa a las regiones."
+    },
+
+    {
+      "fecha": "700 Segunda Era",
+      "titulo": "La Gran Prosperidad",
+      "descripcion": "Las relaciones diplomáticas con el Sultanato de Hihabar mejoraron considerablemente gracias a la política de apertura impulsada por Shōgun Mikado Yoshinori. El comercio marítimo alcanzó un nivel sin precedentes y Yugure se convirtió en el principal centro comercial del continente."
+    },
+
+    {
+      "fecha": "800 Segunda Era",
+      "titulo": "El Gran Terremoto",
+      "descripcion": "Un cataclismo de dimensiones desconocidas sacudió gran parte del continente. Numerosas ciudades fueron destruidas, antiguas rutas desaparecieron y muchos registros históricos se perdieron para siempre. La reconstrucción se prolongó durante generaciones y transformó la geografía de Los Grandes Reinos."
+    },
+
+    {
+      "fecha": "900 Segunda Era",
+      "titulo": "La Era del Conocimiento",
+      "descripcion": "El estudio sistemático de la magia dejó de ser privilegio exclusivo de unos pocos eruditos. Se fundaron las grandes universidades y bibliotecas de Yake y Yamatsu, que con el tiempo se convertirían en los principales centros de investigación de todo el continente."
+    },
+
+    {
+      "fecha": "950 Segunda Era",
+      "titulo": "Las Tensiones de las Grandes Provincias",
+      "descripcion": "Las diferencias políticas entre los grandes clanes comenzaron a hacerse cada vez más evidentes. El crecimiento económico, las disputas por la influencia en la Corte Imperial y viejas rivalidades familiares incrementaron la desconfianza entre las provincias."
+    },
+
+    {
+      "fecha": "956 Segunda Era",
+      "titulo": "Actualidad",
+      "descripcion": "El Imperio continúa siendo la mayor potencia de Los Grandes Reinos. Sin embargo, la avanzada edad y el delicado estado de salud del Shōgun Mikado Akihito mantienen a la nobleza en constante incertidumbre. Muchos temen que su muerte rompa el frágil equilibrio político alcanzado durante siglos."
+    }
+
+  ],
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Considerar esta cronología como la historia oficial enseñada dentro del Imperio.",
+
+      "Las fechas anteriores a la Segunda Era poseen menos registros y pueden contener interpretaciones diferentes.",
+
+      "La Segunda Era constituye el periodo histórico mejor documentado.",
+
+      "Los acontecimientos posteriores al año 950 siguen desarrollándose durante la campaña."
+
+    ]
+
+  }
+
+}

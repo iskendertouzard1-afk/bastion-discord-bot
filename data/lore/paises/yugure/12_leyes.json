@@ -1,0 +1,92 @@
+{
+  "titulo": "Leyes y Justicia del Imperio de Yugure",
+
+  "descripcion": "El sistema jurídico de Yugure busca preservar el orden, el honor y la estabilidad del Imperio. La interpretación de la ley corresponde a magistrados imperiales y autoridades provinciales, quienes consideran tanto las pruebas como el contexto y la reputación de los involucrados.",
+
+  "principios_fundamentales": [
+
+    "La autoridad del Shōgun Mikado constituye la máxima fuente de legitimidad.",
+
+    "Nadie está por encima de la ley imperial.",
+
+    "El honor y la palabra dada poseen valor jurídico.",
+
+    "El bienestar de la comunidad prevalece sobre el beneficio individual.",
+
+    "La justicia debe restaurar el equilibrio antes que buscar la venganza.",
+
+    "Las costumbres regionales son respetadas siempre que no contradigan la ley imperial."
+
+  ],
+
+  "delitos_graves": [
+
+    "Traición al Imperio.",
+
+    "Espionaje para potencias extranjeras.",
+
+    "Asesinato premeditado.",
+
+    "Corrupción de funcionarios.",
+
+    "Bandolerismo organizado.",
+
+    "Esclavitud ilegal.",
+
+    "Profanación de templos.",
+
+    "Invocación de entidades demoníacas.",
+
+    "Uso deliberado de magia prohibida que amenace a la población."
+
+  ],
+
+  "castigos": [
+
+    "Multas.",
+
+    "Confiscación de bienes.",
+
+    "Trabajos para la comunidad.",
+
+    "Exilio.",
+
+    "Prisión.",
+
+    "Pérdida del rango o títulos.",
+
+    "Ejecución en casos excepcionales."
+
+  ],
+
+  "autoridades": {
+
+    "locales": "Magistrados, gobernadores y jueces provinciales.",
+
+    "provinciales": "Daimyō y sus cortes.",
+
+    "imperiales": "La Corte Imperial y el Shōgun Mikado."
+  },
+
+  "duelos": {
+    "descripcion": "Los duelos rituales pueden ser reconocidos legalmente cuando son autorizados por las autoridades competentes y siguen las normas tradicionales."
+  },
+
+  "magia": {
+    "descripcion": "La magia no está prohibida. Su uso es regulado cuando pone en riesgo la seguridad pública, altera el orden imperial o provoca daños deliberados."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+
+      "La justicia busca preservar el equilibrio social.",
+
+      "Las penas deben ser proporcionales al delito.",
+
+      "Las autoridades locales resuelven la mayoría de los conflictos.",
+
+      "Los grandes crímenes pueden llegar hasta la Corte Imperial."
+
+    ]
+  }
+}

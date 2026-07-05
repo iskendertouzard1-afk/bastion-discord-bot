@@ -1,0 +1,67 @@
+{
+  "titulo": "Leyes y Justicia del Sultanato de Hihabar",
+
+  "descripcion": "El sistema jurídico de Hihabar busca preservar la prosperidad, la estabilidad de las rutas comerciales y la confianza pública en los contratos. La justicia corresponde a magistrados civiles, emires y autoridades del Sultanato, quienes pueden solicitar la asesoría de ulemas, eruditos o expertos técnicos cuando el caso lo requiere.",
+
+  "principios_fundamentales": [
+    "La autoridad del Sultán constituye la máxima fuente de legitimidad.",
+    "La ley protege la estabilidad del Sultanato.",
+    "La palabra dada y los contratos poseen valor jurídico.",
+    "La prosperidad pública depende de la confianza entre comerciantes, artesanos, sabios y gobernantes.",
+    "El conocimiento técnico puede ser usado como prueba ante la justicia.",
+    "Las costumbres locales son respetadas mientras no contradigan la ley del Sultán.",
+    "La justicia debe reparar el daño y preservar la continuidad de la comunidad."
+  ],
+
+  "delitos_graves": [
+    "Traición al Sultanato.",
+    "Espionaje para potencias extranjeras.",
+    "Sabotaje de rutas comerciales.",
+    "Falsificación de moneda, pesos o medidas.",
+    "Ruptura fraudulenta de contratos.",
+    "Robo de conocimiento protegido por la Gran Biblioteca Imperial.",
+    "Asesinato premeditado.",
+    "Corrupción de funcionarios.",
+    "Bandolerismo organizado.",
+    "Esclavitud ilegal.",
+    "Profanación de templos.",
+    "Invocación de entidades demoníacas.",
+    "Uso deliberado de magia que amenace a la población."
+  ],
+
+  "castigos": [
+    "Multas.",
+    "Restitución del daño.",
+    "Confiscación de bienes.",
+    "Trabajos para la comunidad.",
+    "Prohibición temporal de comerciar.",
+    "Exilio.",
+    "Prisión.",
+    "Pérdida de cargo, licencia o privilegios comerciales.",
+    "Ejecución en casos excepcionales."
+  ],
+
+  "autoridades": {
+    "locales": "Magistrados civiles, jueces de mercado y autoridades urbanas.",
+    "regionales": "Emires y sus cortes administrativas.",
+    "imperiales": "Gran Visir, Diwan Imperial y Sultán."
+  },
+
+  "contratos": {
+    "descripcion": "Los contratos comerciales poseen enorme valor legal. La Casa de la Moneda puede certificar documentos, pesos, medidas, sellos y garantías para evitar fraudes."
+  },
+
+  "magia": {
+    "descripcion": "La magia es legal y ampliamente estudiada. Su uso se regula cuando afecta contratos, rutas comerciales, seguridad pública, investigación protegida o bienes del Sultanato."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "La justicia busca preservar la confianza, la prosperidad y la estabilidad del Sultanato.",
+      "Los conflictos comerciales suelen resolverse mediante restitución, multas o arbitraje.",
+      "Los grandes crímenes pueden llegar al Diwan Imperial o al Sultán.",
+      "Los ulemas asesoran en casos éticos, religiosos o filosóficos, pero no sustituyen a los magistrados civiles.",
+      "La Casa de la Moneda debe aparecer en asuntos de fraude, contratos, pesos, medidas o documentos comerciales."
+    ]
+  }
+}

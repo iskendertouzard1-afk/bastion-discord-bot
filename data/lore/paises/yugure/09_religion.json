@@ -1,0 +1,93 @@
+{
+  "titulo": "Religión del Imperio de Yugure",
+
+  "descripcion": "La religión en Yugure se organiza alrededor del culto mayoritario a Pelor, venerado como deidad de la luz, la vida, la cosecha, la salud y la protección del orden natural. Aunque su culto domina la vida pública, el Imperio reconoce la existencia de otras deidades oficiales de Dungeons & Dragons, muchas de las cuales poseen pequeños templos, capillas, altares familiares o santuarios locales.",
+
+  "religion_predominante": {
+    "deidad": "Pelor",
+    "titulos_comunes": [
+      "Señor del Sol",
+      "Luz Dorada",
+      "Protector de las Cosechas",
+      "Padre del Amanecer"
+    ],
+    "influencia": "Muy Alta",
+    "descripcion": "Pelor es la deidad más venerada en Yugure. Sus templos se encuentran en ciudades, aldeas agrícolas, monasterios, hospitales y caminos principales. Su culto está asociado con la sanación, la fertilidad de la tierra, la protección contra la oscuridad y el bienestar de las comunidades."
+  },
+
+  "cultos_menores": {
+    "descripcion": "Las demás deidades oficiales de Dungeons & Dragons son reconocidas dentro del Imperio, aunque su presencia suele ser local, especializada o privada. Algunas tienen capillas dentro de grandes templos de Pelor; otras cuentan con pequeños santuarios mantenidos por familias, gremios, viajeros, soldados o eruditos.",
+    "estatus": "Permitidos mientras no amenacen la estabilidad del Imperio."
+  },
+
+  "templos": {
+    "templos_mayores": "Los templos mayores suelen estar dedicados a Pelor y funcionan también como centros de ayuda, curación, educación básica y refugio durante crisis.",
+    "templos_menores": "Los templos menores pueden estar dedicados a otras deidades oficiales. Su tamaño varía desde una pequeña capilla urbana hasta un santuario rural atendido por un solo sacerdote.",
+    "altares_domesticos": "Muchas familias conservan pequeños altares domésticos dedicados a Pelor, a sus ancestros o a una deidad protectora vinculada a su oficio."
+  },
+
+  "practicas_religiosas": [
+    "Oraciones al amanecer.",
+    "Bendición de cosechas.",
+    "Ceremonias funerarias con luz y fuego sagrado.",
+    "Festivales solares.",
+    "Peregrinaciones a templos mayores.",
+    "Ofrendas a los ancestros.",
+    "Purificación antes de viajes importantes.",
+    "Ritos de sanación comunitaria."
+  ],
+
+  "relacion_con_el_estado": {
+    "descripcion": "La Corte Imperial reconoce la importancia del culto a Pelor como fuerza de cohesión social. Los templos mayores colaboran con autoridades locales durante hambrunas, enfermedades, desastres naturales y periodos de guerra.",
+    "limite": "Los sacerdotes poseen influencia moral, pero no gobiernan formalmente las provincias."
+  },
+
+  "deidades_oficiales": {
+    "descripcion": "Las deidades oficiales de Dungeons & Dragons existen dentro del canon del escenario. Su culto puede variar según región, oficio, linaje o tradición local.",
+    "regla": "Cuando una deidad distinta a Pelor aparezca en Yugure, su culto debe presentarse como minoritario, especializado o regional."
+  },
+
+  "variaciones_regionales": [
+    {
+      "region": "Midori no Chiiki",
+      "tendencia": "Cultos agrícolas, santuarios forestales y veneración fuerte a Pelor como protector de la vida y las cosechas."
+    },
+    {
+      "region": "Aka no Chiiki",
+      "tendencia": "Templos oficiales, ceremonias públicas y fuerte relación entre religión, legitimidad imperial y orden social."
+    },
+    {
+      "region": "Ao no Chiiki",
+      "tendencia": "Capillas de marineros, santuarios de viajeros, templos de conocimiento y cultos menores vinculados a navegación, estudio y protección."
+    },
+    {
+      "region": "Kiiro no Chiiki",
+      "tendencia": "Bendiciones de caravanas, festivales de cosecha, ritos ecuestres y altares para comerciantes."
+    },
+    {
+      "region": "Ithlondhil",
+      "tendencia": "Prácticas religiosas más reservadas, con una fuerte mezcla entre culto solar, veneración ancestral y tradiciones élficas antiguas."
+    }
+  ],
+
+  "conflictos_religiosos": {
+    "descripcion": "Yugure no suele perseguir cultos menores reconocidos, pero mira con sospecha las prácticas secretas, necromancia, adoración demoníaca, cultos destructivos o religiones extranjeras usadas como herramienta política.",
+    "prohibiciones": [
+      "Cultos demoníacos.",
+      "Ritos que impliquen sacrificios inteligentes.",
+      "Sectas que amenacen la autoridad imperial.",
+      "Prácticas religiosas usadas para espionaje o sabotaje."
+    ]
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Presentar a Pelor como la deidad dominante en Yugure.",
+      "Permitir templos pequeños de otras deidades oficiales de Dungeons & Dragons.",
+      "Relacionar los templos de Pelor con sanación, cosechas, luz y protección comunitaria.",
+      "Evitar que las deidades menores dominen la vida pública salvo en casos regionales justificados.",
+      "No inventar panteones nuevos sin autorización del Codex.",
+      "Usar la religión como elemento cultural, social y ceremonial, no únicamente como fuente de clérigos."
+    ]
+  }
+}

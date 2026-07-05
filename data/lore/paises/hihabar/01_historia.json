@@ -1,0 +1,122 @@
+{
+  "titulo": "Historia del Sultanato de Hihabar",
+
+  "descripcion": "La historia oficial del Sultanato de Hihabar relata el surgimiento de una civilización que encontró su fortaleza en el comercio, la ingeniería y el conocimiento. Mientras otros pueblos luchaban por expandir sus fronteras, Hihabar prosperó conectando culturas mediante rutas terrestres y marítimas. La convivencia con los antiguos reinos enanos marcó profundamente el desarrollo científico y tecnológico del Sultanato.",
+
+  "eras": [
+
+    {
+      "nombre": "Primera Era",
+      "periodo": "0 - 999",
+      "descripcion": "Conocida como la Era Antigua o la Época Oscura. Durante este periodo surgieron las primeras ciudades caravaneras y comenzaron los intercambios con los antiguos reinos enanos de las montañas del sur."
+    },
+
+    {
+      "nombre": "Segunda Era",
+      "periodo": "0 - Actualidad",
+      "descripcion": "Comienza con la reorganización del Sultanato y el establecimiento de las instituciones que gobiernan Hihabar hasta nuestros días."
+    }
+
+  ],
+
+  "cronologia": [
+
+    {
+      "fecha": "999 Primera Era",
+      "titulo": "El Fin de la Época Oscura",
+      "descripcion": "Las guerras que destruyeron el Reino de Ox también alcanzaron las tierras del sur. Muchas rutas comerciales desaparecieron y numerosas ciudades quedaron aisladas. Los antiguos reinos enanos ofrecieron refugio y conocimientos para preservar la artesanía y la ingeniería durante los años más difíciles."
+    },
+
+    {
+      "fecha": "0 Segunda Era",
+      "titulo": "Nacimiento del Sultanato",
+      "descripcion": "Diversas ciudades libres y comunidades caravaneras decidieron unificar sus esfuerzos bajo un único gobernante para garantizar la seguridad de las rutas comerciales. El sabio gobernante Malik ibn Harun fue reconocido como el primer Sultán de Hihabar."
+    },
+
+    {
+      "fecha": "100 Segunda Era",
+      "titulo": "Las Grandes Rutas",
+      "descripcion": "Se restauraron los antiguos caminos y se construyeron caravasares, puentes y puertos que permitieron conectar nuevamente el sur del continente con los demás Grandes Reinos."
+    },
+
+    {
+      "fecha": "200 Segunda Era",
+      "titulo": "El Pacto de las Montañas",
+      "descripcion": "Los primeros acuerdos permanentes entre el Sultanato y los clanes enanos consolidaron el intercambio de metales, piedra, ingeniería y conocimientos artesanales. Muchas técnicas de construcción utilizadas en Hihabar nacieron durante esta época."
+    },
+
+    {
+      "fecha": "300 Segunda Era",
+      "titulo": "Fundación del Diwan Imperial",
+      "descripcion": "El Sultán Nadir al-Rashid reorganizó el gobierno creando el Diwan Imperial, órgano encargado de coordinar los emiratos y administrar el creciente comercio del Sultanato."
+    },
+
+    {
+      "fecha": "400 Segunda Era",
+      "titulo": "La Gran Biblioteca",
+      "descripcion": "Bajo el patrocinio de la sultana Amira bint Suleiman se fundó la Gran Biblioteca Imperial, destinada a conservar manuscritos procedentes de todas las culturas conocidas. Con el tiempo se convertiría en el mayor centro académico del continente."
+    },
+
+    {
+      "fecha": "500 Segunda Era",
+      "titulo": "La Era de los Navegantes",
+      "descripcion": "Los puertos de Hihabar comenzaron a dominar las rutas marítimas del sur. Mercaderes, exploradores y cartógrafos ampliaron el conocimiento del continente y establecieron relaciones comerciales con las demás potencias."
+    },
+
+    {
+      "fecha": "600 Segunda Era",
+      "titulo": "La Reforma del Aleph",
+      "descripcion": "El calígrafo Idris al-Khatib perfeccionó la escritura Aleph, que pronto fue adoptada por la administración imperial, las universidades y las casas comerciales como la forma oficial de escribir la Lengua Franca en Hihabar."
+    },
+
+    {
+      "fecha": "700 Segunda Era",
+      "titulo": "El Siglo de los Sabios",
+      "descripcion": "Astrónomos, alquimistas, ingenieros y magos transformaron Hihabar en el principal referente científico de Los Grandes Reinos. Los observatorios y academias comenzaron a atraer estudiantes extranjeros de todo el continente."
+    },
+
+    {
+      "fecha": "800 Segunda Era",
+      "titulo": "El Gran Terremoto",
+      "descripcion": "El cataclismo afectó ciudades, puertos y fortalezas del Sultanato. Gracias a la ingeniería desarrollada durante siglos, la reconstrucción avanzó con rapidez y permitió mejorar muchas de las infraestructuras existentes."
+    },
+
+    {
+      "fecha": "900 Segunda Era",
+      "titulo": "La Era de la Innovación",
+      "descripcion": "La colaboración entre artesanos, magos y estudiosos impulsó una etapa de grandes avances en astronomía, metalurgia, navegación y arquitectura. Las universidades imperiales adquirieron prestigio internacional."
+    },
+
+    {
+      "fecha": "950 Segunda Era",
+      "titulo": "El Equilibrio del Creciente",
+      "descripcion": "Las relaciones con Yugure alcanzaron uno de sus mejores momentos gracias al intercambio académico y comercial. Al mismo tiempo, el crecimiento económico despertó la atención de otras potencias, obligando al Sultanato a fortalecer su diplomacia y la protección de sus rutas."
+    },
+
+    {
+      "fecha": "956 Segunda Era",
+      "titulo": "Actualidad",
+      "descripcion": "Bajo el gobierno del Sultán Jalil ibn Rashid, Hihabar disfruta de una etapa de prosperidad sin precedentes. La Gran Biblioteca Imperial, el Diwan Imperial y la Casa de la Moneda continúan fortaleciendo la influencia del Sultanato. Detrás de la estabilidad aparente, la corte vive una constante competencia por el prestigio, donde la política se libra mediante alianzas, conocimiento e influencia más que por la espada."
+    }
+
+  ],
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Considerar esta cronología como la historia oficial enseñada en Hihabar.",
+
+      "Relacionar el desarrollo del Sultanato con el comercio, la ingeniería y el conocimiento.",
+
+      "Recordar la influencia histórica de los antiguos reinos enanos.",
+
+      "La Gran Biblioteca Imperial constituye uno de los pilares históricos del Sultanato.",
+
+      "Los acontecimientos posteriores al año 950 continúan desarrollándose durante la campaña."
+
+    ]
+
+  }
+
+}

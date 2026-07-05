@@ -1,0 +1,37 @@
+{
+  "nombre_bastion": "La Casa de las Máscaras",
+  "campaña": "Tatay",
+  "tono": "fantasía feudal japonesa, intriga política, caminos peligrosos y amenazas sobrenaturales",
+  "region": "territorios centrales del imperio",
+  "facciones": [
+    "Cigarra Roja",
+    "Pacto de Jade",
+    "Oku",
+    "Yamatsu",
+    "Yake"
+  ],
+  "lugares": [
+    "Hashitawa",
+    "Nisho",
+    "Tofu",
+    "Tobu",
+    "Casa de Té Luna Ahogada"
+  ],
+  "situacion_actual": [
+    "el príncipe heredero murió en Nisho",
+    "las facciones políticas se observan con desconfianza",
+    "los caminos comerciales siguen inseguros",
+    "algunos espías rojos operan cerca de la capital",
+    "el bastión sirve como punto de apoyo para los aventureros"
+  ],
+  "estilo": {
+    "longitud": "2 a 4 frases",
+    "formato": "rumor, noticia, carta breve o mensaje traído por viajeros",
+    "restricciones": [
+      "no revelar secretos de campaña",
+      "no resolver tramas principales",
+      "no contradecir el lore establecido",
+      "mantener tono breve y evocador"
+    ]
+  }
+}

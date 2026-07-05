@@ -1,0 +1,94 @@
+{
+  "titulo": "Relaciones Exteriores del Reino de Varkeldov",
+
+  "descripcion": "El Reino de Varkeldov mantiene una política exterior basada en la defensa de sus fronteras, el cumplimiento de antiguos tratados y la preservación de su soberanía. La diplomacia existe, pero la confianza se concede lentamente y únicamente tras generaciones de relaciones estables. La Corona considera que una alianza duradera vale más que una victoria efímera.",
+
+  "politica_exterior": {
+    "principios": [
+      "Preservar la independencia del Reino.",
+      "Proteger las fronteras y fortalezas.",
+      "Respetar los tratados legítimos.",
+      "Favorecer el comercio seguro sobre la expansión territorial.",
+      "Evitar guerras innecesarias que debiliten a la nobleza."
+    ]
+  },
+
+  "relaciones": [
+
+    {
+      "pais": "Imperio de Yugure",
+
+      "estado": "Neutral",
+
+      "descripcion": "Las relaciones con Yugure son respetuosas y estables. Ambos reinos mantienen intercambios comerciales limitados y una política de no intervención. Aunque sus culturas son muy diferentes, comparten el respeto por la tradición y las antiguas instituciones.",
+
+      "comercio": "Medio",
+
+      "riesgo_militar": "Bajo"
+    },
+
+    {
+      "pais": "Reino Unido de Nosland",
+
+      "estado": "Enemiga",
+
+      "descripcion": "Las relaciones con Nosland permanecen marcadas por antiguas disputas fronterizas, diferencias políticas y rivalidades entre casas nobles. Aunque existen intercambios comerciales mediante intermediarios, la desconfianza mutua continúa siendo elevada.",
+
+      "comercio": "Bajo",
+
+      "riesgo_militar": "Alto"
+    },
+
+    {
+      "pais": "Sultanato de Hihabar",
+
+      "estado": "Suspicaz",
+
+      "descripcion": "Varkeldov reconoce el valor económico y académico de Hihabar, pero observa con cautela su creciente influencia comercial. Ambos Estados mantienen relaciones diplomáticas correctas y acuerdos comerciales cuidadosamente regulados.",
+
+      "comercio": "Medio",
+
+      "riesgo_militar": "Bajo"
+    }
+
+  ],
+
+  "doctrina_diplomatica": {
+
+    "descripcion": "La Corona considera que la mejor guerra es aquella que nunca llega a librarse. Las fortalezas, los juramentos y la estabilidad interna constituyen la primera línea de defensa del Reino. La diplomacia se ejerce con prudencia y la confianza solo se concede tras largos años de cooperación."
+
+  },
+
+  "representacion": {
+
+    "descripcion": "Las relaciones exteriores son dirigidas por el Gran Domnitor con el asesoramiento del Consejo de los Grandes Voivodas. Los Grandes Voivodas pueden recibir delegaciones extranjeras dentro de sus territorios, pero únicamente la Corona posee autoridad para firmar tratados internacionales en nombre del Reino."
+
+  },
+
+  "politica_comercial": {
+
+    "descripcion": "Varkeldov favorece contratos comerciales de larga duración respaldados por juramentos y garantías nobiliarias. La estabilidad de un acuerdo tiene mayor valor que un beneficio inmediato, por lo que muchos tratados permanecen vigentes durante generaciones."
+
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Generar visitantes extranjeros conforme a las relaciones diplomáticas vigentes.",
+
+      "Presentar a Yugure como un vecino respetado y políticamente distante.",
+
+      "Mostrar a Nosland como el principal rival estratégico del Reino.",
+
+      "Describir las relaciones con Hihabar como prudentes pero comerciales.",
+
+      "Recordar que Varkeldov prioriza la defensa antes que la expansión.",
+
+      "Las relaciones diplomáticas pueden modificarse mediante acontecimientos futuros del Codex."
+
+    ]
+
+  }
+
+}

@@ -1,0 +1,110 @@
+{
+  "titulo": "Emiratos del Sultanato de Hihabar",
+
+  "descripcion": "El Sultanato de Hihabar se divide en grandes Emiratos. Cada uno administra sus ciudades, fortalezas, puertos y rutas comerciales en nombre del Sultán. Aunque gozan de una considerable autonomía administrativa, todos responden ante el Diwan Imperial y reconocen la autoridad absoluta del Sultán.",
+
+  "estructura_administrativa": {
+
+    "provincia": "Gran Emirato",
+
+    "subdivision": "Ciudad y distrito",
+
+    "gobernante": "Emir",
+
+    "autoridad_suprema": "Sultán de Hihabar",
+
+    "titulo": "Sultán Jalil ibn Rashid",
+
+    "descripcion": "Actual soberano del Sultanato de Hihabar. Conocido como el Guardián de las Rutas del Sur y Protector del Creciente. Bajo su mandato el Sultanato vive una época de prosperidad comercial, estabilidad política y gran desarrollo académico."
+  },
+
+  "emiratos": [
+
+    {
+
+      "nombre": "Tabratoria",
+
+      "capital": "Tabratoria",
+
+      "gobernante": {
+
+        "nombre": "Emir Farid al-Hassan",
+
+        "titulo": "Emir de Tabratoria",
+
+        "descripcion": "Veterano navegante y estratega naval. Gobierna las costas occidentales del Sultanato y protege las principales rutas marítimas que conectan Hihabar con Nosland y Varkeldov."
+      },
+
+      "identidad": "Puertos comerciales, astilleros, olivares y tradición marítima."
+
+    },
+
+    {
+
+      "nombre": "Namunz",
+
+      "capital": "Namunz",
+
+      "gobernante": {
+
+        "nombre": "Emir Karim ibn Safwan",
+
+        "titulo": "Emir de Namunz",
+
+        "descripcion": "Administrador pragmático y hábil negociador. Su emirato constituye el corazón agrícola y económico del Sultanato gracias a sus fértiles llanuras y mercados interiores."
+      },
+
+      "identidad": "Agricultura, comercio interior, caravanas y grandes mercados."
+
+    },
+
+    {
+
+      "nombre": "Liyah",
+
+      "capital": "Liyah",
+
+      "gobernante": {
+
+        "nombre": "Emira Zahra al-Nasir",
+
+        "titulo": "Emira de Liyah",
+
+        "descripcion": "Reconocida diplomática y protectora de las rutas orientales. Supervisa la frontera con Yugure y mantiene la seguridad de las caravanas que cruzan el norte del Sultanato."
+      },
+
+      "identidad": "Centro diplomático, rutas comerciales, oasis y fortificaciones fronterizas."
+
+    },
+
+    {
+
+      "nombre": "Bisqah",
+
+      "capital": "Bisqah",
+
+      "gobernante": {
+
+        "nombre": "Emir Yusuf al-Qadir",
+
+        "titulo": "Emir de Bisqah",
+
+        "descripcion": "Patrocinador de filósofos, astrónomos y cartógrafos. Su emirato alberga algunos de los observatorios y escuelas más prestigiosos del Sultanato."
+      },
+
+      "identidad": "Conocimiento, navegación, astronomía y puertos septentrionales."
+
+    }
+
+  ],
+
+  "autoridad_imperial": {
+
+    "nombre": "Sultán Jalil ibn Rashid",
+
+    "titulo": "Soberano Supremo del Sultanato de Hihabar",
+
+    "descripcion": "Máxima autoridad política, militar y diplomática del Sultanato. Preside el Diwan Imperial y ejerce la autoridad sobre todos los emires. Su gobierno se fundamenta en el equilibrio entre el comercio, el conocimiento y la estabilidad de las rutas que atraviesan el continente."
+  }
+
+}

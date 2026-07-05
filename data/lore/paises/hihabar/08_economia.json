@@ -1,0 +1,216 @@
+{
+  "titulo": "Economía del Sultanato de Hihabar",
+
+  "descripcion": "La economía de Hihabar se fundamenta en el comercio, el conocimiento y la innovación. Gracias a su posición estratégica entre los mares del sur, las rutas continentales y los antiguos caminos del desierto, el Sultanato se convirtió en el mayor centro financiero, científico y mercantil de Los Grandes Reinos. La riqueza no proviene únicamente de la producción, sino de la capacidad para conectar pueblos, conocimientos y mercancías.",
+
+  "modelo_economico": {
+    "tipo": "Economía comercial centralizada.",
+
+    "descripcion": "Los Emiratos administran su producción local mientras el Sultanato regula las grandes rutas comerciales, la acuñación de moneda, los tratados internacionales y la seguridad de caravanas y puertos."
+  },
+
+  "economia_interna": {
+
+    "descripcion": "Cada Emirato desarrolla actividades económicas acordes con su geografía, permitiendo que el comercio interior complemente la producción del resto del Sultanato.",
+
+    "emiratos": [
+
+      {
+        "nombre": "Bisqah",
+
+        "especializacion": [
+          "Observatorios.",
+          "Universidades.",
+          "Bibliotecas.",
+          "Cartografía.",
+          "Astronomía.",
+          "Magia.",
+          "Investigación."
+        ]
+      },
+
+      {
+        "nombre": "Tabratoria",
+
+        "especializacion": [
+          "Puertos.",
+          "Construcción naval.",
+          "Pesca.",
+          "Aceite de oliva.",
+          "Vid.",
+          "Comercio marítimo."
+        ]
+      },
+
+      {
+        "nombre": "Namunz",
+
+        "especializacion": [
+          "Agricultura.",
+          "Ganadería.",
+          "Mercados interiores.",
+          "Caballos.",
+          "Canales de irrigación.",
+          "Cereales."
+        ]
+      },
+
+      {
+        "nombre": "Liyah",
+
+        "especializacion": [
+          "Caravanas.",
+          "Especias.",
+          "Vidrio.",
+          "Perfumería.",
+          "Textiles.",
+          "Comercio internacional."
+        ]
+      }
+
+    ]
+  },
+
+  "tributos": {
+
+    "descripcion": "Los Emiratos entregan tributos al Sultanato como reconocimiento de la autoridad del Sultán y para sostener las instituciones imperiales.",
+
+    "formas": [
+      "Moneda.",
+      "Especias.",
+      "Cristal.",
+      "Metales.",
+      "Libros.",
+      "Caballos.",
+      "Productos agrícolas.",
+      "Impuestos comerciales."
+    ]
+  },
+
+  "comercio_exterior": {
+
+    "descripcion": "Hihabar mantiene una extensa red comercial con todas las grandes potencias del continente. Sus mercaderes son considerados los mejores negociadores de Los Grandes Reinos.",
+
+    "principales_socios": [
+
+      {
+        "pais": "Imperio de Yugure",
+
+        "relacion": "Amistosa",
+
+        "intercambio": [
+          "Libros.",
+          "Instrumentos astronómicos.",
+          "Cristal.",
+          "Especias.",
+          "Seda.",
+          "Té."
+        ]
+      },
+
+      {
+        "pais": "Reino Unido de Nosland",
+
+        "relacion": "Suspicaz",
+
+        "intercambio": [
+          "Vino.",
+          "Aceite.",
+          "Perfumes.",
+          "Herramientas.",
+          "Metales.",
+          "Manuscritos."
+        ]
+      },
+
+      {
+        "pais": "Reino de Varkeldov",
+
+        "relacion": "Suspicaz",
+
+        "intercambio": [
+          "Maderas nobles.",
+          "Piedra.",
+          "Pieles.",
+          "Metales."
+        ]
+      }
+
+    ]
+  },
+
+  "exportaciones_del_sultanato": [
+
+    "Especias.",
+
+    "Perfumes.",
+
+    "Vidrio.",
+
+    "Cristal.",
+
+    "Libros.",
+
+    "Mapas.",
+
+    "Instrumentos astronómicos.",
+
+    "Artefactos alquímicos.",
+
+    "Aceite de oliva.",
+
+    "Vino.",
+
+    "Tapices.",
+
+    "Tejidos finos."
+  ],
+
+  "infraestructura": {
+
+    "descripcion": "El Sultanato mantiene una extensa red de puertos, carreteras, caravasares, canales y rutas protegidas que permiten el movimiento continuo de personas, mercancías y conocimiento. La Casa de la Moneda certifica la autenticidad de la moneda, mientras la Guardia del Creciente garantiza la seguridad de las principales rutas."
+  },
+
+  "filosofia_economica": {
+
+    "descripcion": "La riqueza florece allí donde circulan libremente las ideas, las mercancías y las personas. El conocimiento impulsa la innovación, el comercio genera prosperidad y la prosperidad fortalece la paz. Para Hihabar, un tratado comercial exitoso vale tanto como una victoria militar."
+  },
+
+  "principios": [
+
+    "La prosperidad nace del conocimiento.",
+
+    "Las rutas comerciales pertenecen a todo el Sultanato.",
+
+    "Una moneda confiable vale más que un ejército numeroso.",
+
+    "Los contratos son la base de la confianza.",
+
+    "El intercambio cultural fortalece la estabilidad.",
+
+    "El comercio une pueblos donde la guerra solo levanta fronteras."
+
+  ],
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Relacionar siempre la economía con el comercio internacional.",
+
+      "La ciencia y la magia impulsan la producción y la navegación.",
+
+      "Las rutas comerciales son el principal recurso estratégico del Sultanato.",
+
+      "Los puertos y caravanas generan noticias frecuentes.",
+
+      "La Casa de la Moneda influye en la estabilidad económica.",
+
+      "Los Emiratos producen bienes acordes con su especialización.",
+
+      "Las estaciones del año modifican cosechas, navegación y comercio."
+
+    ]
+  }
+
+}

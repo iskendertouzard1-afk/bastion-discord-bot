@@ -1,0 +1,107 @@
+{
+  "titulo": "Leyes y Justicia del Reino Unido de Nosland",
+
+  "descripcion": "El sistema jurídico de Nosland se fundamenta en la autoridad de la Corona, el respeto por la ley y la responsabilidad cívica. La justicia busca preservar la estabilidad del Reino mediante procedimientos claros, magistrados imparciales y el cumplimiento de los juramentos. Los Lores administran justicia dentro de sus feudos, mientras que los asuntos de mayor relevancia pueden ser revisados por magistrados reales o por el propio Basileus.",
+
+  "principios_fundamentales": [
+
+    "La autoridad del Basileus constituye la máxima fuente de legitimidad.",
+
+    "Toda persona está sujeta a la ley del Reino.",
+
+    "La palabra jurada posee valor legal.",
+
+    "El servicio al Reino constituye un deber de todo ciudadano.",
+
+    "La justicia protege la estabilidad del Reino y a sus habitantes.",
+
+    "Los Lores administran sus feudos respetando las leyes de la Corona.",
+
+    "La ley prevalece sobre los intereses particulares."
+
+  ],
+
+  "delitos_graves": [
+
+    "Traición al Reino.",
+
+    "Rebelión contra la Corona.",
+
+    "Espionaje para potencias extranjeras.",
+
+    "Asesinato premeditado.",
+
+    "Corrupción de funcionarios.",
+
+    "Bandolerismo organizado.",
+
+    "Esclavitud ilegal.",
+
+    "Profanación de templos.",
+
+    "Invocación de entidades demoníacas.",
+
+    "Uso deliberado de magia que amenace la seguridad pública."
+
+  ],
+
+  "castigos": [
+
+    "Multas.",
+
+    "Confiscación de bienes.",
+
+    "Trabajos para la Corona.",
+
+    "Prisión.",
+
+    "Pérdida de títulos y privilegios.",
+
+    "Destierro.",
+
+    "Ejecución para los crímenes más graves."
+
+  ],
+
+  "autoridades": {
+
+    "locales": "Lores feudales y magistrados locales.",
+
+    "regionales": "Altos Lores y magistrados reales.",
+
+    "reales": "Cónsules, Senado Real y Basileus."
+  },
+
+  "duelos": {
+
+    "descripcion": "Los duelos de honor son legales únicamente cuando cuentan con autorización de un magistrado o de la autoridad feudal competente. Su resultado no sustituye automáticamente un proceso judicial."
+  },
+
+  "magia": {
+
+    "descripcion": "La magia es legal y ampliamente aceptada dentro del Reino. Su uso queda sujeto a las mismas leyes que cualquier otra actividad cuando pone en peligro a la población, altera el orden público o constituye un delito."
+  },
+
+  "filosofia_juridica": {
+
+    "descripcion": "La justicia de Nosland entiende que un Reino fuerte depende de ciudadanos responsables, gobernantes íntegros y leyes respetadas. El castigo existe para preservar el orden, proteger a los inocentes y garantizar la continuidad de las instituciones."
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "La ley protege la estabilidad del Reino.",
+
+      "Los Lores resuelven la mayoría de los conflictos dentro de sus feudos.",
+
+      "Los casos excepcionales pueden llegar al Senado Real o al Basileus.",
+
+      "El honor fortalece la reputación de una persona, pero la sentencia depende de las pruebas y de la ley.",
+
+      "Los juramentos poseen un importante valor jurídico."
+
+    ]
+  }
+
+}

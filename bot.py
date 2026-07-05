@@ -1,8 +1,14 @@
 import os
 import json
+from openai import OpenAI
 import random
 from pathlib import Path
 from datetime import date
+from noticias_rumores_ia import generar_noticia_ia
+from datetime import time
+from discord.ext import tasks
+from noticias_rumores_ia import generar_noticia_ia
+
 
 import discord
 from discord.ext import commands
@@ -12,6 +18,8 @@ load_dotenv()
 print("TOKEN CARGADO:", os.getenv("DISCORD_TOKEN") is not None)
 
 TOKEN = os.getenv("DISCORD_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+openai_client = OpenAI(api_key=OPENAI_API_KEY)
 ARCHIVO = Path("bastion.json")
 
 intents = discord.Intents.default()
@@ -19,8 +27,16 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
-
-
+CAUSAS_REFUGIADOS = [
+    "un ataque de monstruos",
+    "una catástrofe natural",
+    "una calamidad desconocida",
+    "el saqueo de su aldea",
+    "una plaga repentina",
+    "un incendio que arrasó sus hogares",
+    "la violencia de una facción local",
+    "la desaparición de varios líderes comunitarios"
+]
 
 
 
@@ -117,6 +133,15 @@ def cargar_bastion():
     datos.setdefault("suministros", 0)
     datos.setdefault("pociones_curacion", 0)
     datos.setdefault("venenos", 0)
+    datos.setdefault("asalariados_detalle", [])
+    datos.setdefault("asalariados_detalle", [])
+    datos.setdefault("contador_asalariados", 0)
+    datos.setdefault("defensores_detalle", [])
+    datos.setdefault("contador_defensores", 0)
+    datos.setdefault("husped_detalle", None)
+    datos.setdefault("contador_huespedes", 0)
+    datos.setdefault("refugiados_detalle", None)
+    datos.setdefault("contador_refugiados", 0)
     datos.setdefault("acciones_semana", 0)
     datos.setdefault("acciones_diarias", {})
     datos.setdefault("defensores", 0)
@@ -194,6 +219,7 @@ def max_defensores(datos):
     return 6
 
 
+
 def costo_defensor(datos):
     if tiene_barracon(datos):
         return 1
@@ -256,6 +282,11 @@ def procesar_huesped(datos):
             "La criatura amistosa vuelve a los caminos salvajes."
         )
 
+    if datos.get("husped_detalle"):
+        datos["husped_detalle"]["estado"] = "partió"
+        datos["husped_detalle"]["fecha_salida"] = str(date.today())
+        datos["husped_detalle"]["motivo_salida"] = "Terminó su estancia en el bastión."
+
     datos.pop("husped", None)
     return mensaje
 
@@ -264,6 +295,342 @@ def cargar_tabla(nombre):
 
     with open(ruta, "r", encoding="utf-8") as archivo:
         return json.load(archivo)
+
+def generar_huesped_ia(datos, tipo):
+    lore = cargar_tabla("lore")
+
+    prompt = f"""
+Crea un huésped para el bastión de una campaña de D&D.
+
+Tipo de huésped:
+{tipo}
+
+Lore:
+{json.dumps(lore, ensure_ascii=False, indent=2)}
+
+Estado del bastión:
+{json.dumps(datos, ensure_ascii=False, indent=2)}
+
+Reglas:
+- Responde solo JSON válido.
+- No uses markdown.
+- Fantasía feudal japonesa.
+- El huésped debe encajar con el tipo indicado.
+- Historia máxima de 2 frases.
+- Si el tipo es monstruo, puede ser criatura amistosa.
+- Si el tipo es renombre, debe ser una persona influyente.
+- Si el tipo es refugiado, debe ser alguien vulnerable o perseguido.
+- Si el tipo es mercenario, debe ser combatiente profesional.
+
+Formato:
+{{
+  "nombre": "Nombre",
+  "tipo": "{tipo}",
+  "edad": "Edad o descripción",
+  "procedencia": "Lugar",
+  "historia": "Historia breve"
+}}
+"""
+
+    respuesta = openai_client.responses.create(
+        model="gpt-5.5",
+        input=prompt
+    )
+
+    return json.loads(respuesta.output_text.strip())
+
+def crear_grupo_refugiados(datos, cantidad):
+    causa = random.choice(CAUSAS_REFUGIADOS)
+
+    datos["contador_refugiados"] = datos.get("contador_refugiados", 0) + 1
+
+    grupo = {
+        "id": datos["contador_refugiados"],
+        "categoria": "refugiados",
+        "tipo": "grupo",
+        "estado": "presente",
+        "cantidad": cantidad,
+        "causa": causa,
+        "procedencia": "Desconocida",
+        "historia": f"Un grupo de {cantidad} refugiados llegó al bastión huyendo de {causa}.",
+        "fecha_llegada": str(date.today())
+    }
+
+    datos["refugiados_detalle"] = grupo
+    datos["refugiados"] = {
+        "cantidad": cantidad,
+        "id": grupo["id"]
+    }
+
+    return grupo
+
+def crear_huesped(datos, tipo, semanas, extra=None):
+    try:
+        huesped = generar_huesped_ia(datos, tipo)
+    except Exception:
+        huesped = {
+            "nombre": "Huésped sin nombre",
+            "tipo": tipo,
+            "edad": "Desconocida",
+            "procedencia": "Desconocida",
+            "historia": "Llegó al bastión buscando refugio temporal."
+        }
+
+    datos["contador_huespedes"] = datos.get("contador_huespedes", 0) + 1
+
+    huesped["id"] = datos["contador_huespedes"]
+    huesped["categoria"] = "huesped"
+    huesped["estado"] = "presente"
+    huesped["semanas"] = semanas
+    huesped["fecha_llegada"] = str(date.today())
+
+    if extra:
+        huesped.update(extra)
+
+    datos["husped_detalle"] = huesped
+
+    return huesped
+
+def generar_rumor_ia(datos):
+    lore = cargar_tabla("lore")
+
+    prompt = f"""
+Eres un cronista de caminos para una campaña de D&D.
+
+Genera un rumor, noticia o mensaje breve que llegue exclusivamente al bastión.
+
+Lore del mundo:
+{json.dumps(lore, ensure_ascii=False, indent=2)}
+
+Estado actual del bastión:
+{json.dumps(datos, ensure_ascii=False, indent=2)}
+
+Reglas:
+- Escribe en español.
+- Máximo 4 frases.
+- Tono evocador, de fantasía feudal japonesa.
+- No reveles secretos importantes.
+- No resuelvas tramas principales.
+- El texto debe sentirse útil para ambientar la campaña.
+- No uses listas.
+"""
+
+    respuesta = openai_client.responses.create(
+        model="gpt-5.5",
+        input=prompt
+    )
+
+    return respuesta.output_text.strip()
+
+def generar_defensor_ia(datos):
+    lore = cargar_tabla("lore")
+
+    prompt = f"""
+Crea un defensor para el bastión de una campaña de D&D.
+
+Lore:
+{json.dumps(lore, ensure_ascii=False, indent=2)}
+
+Estado del bastión:
+{json.dumps(datos, ensure_ascii=False, indent=2)}
+
+Reglas:
+- Responde solo JSON válido.
+- No uses markdown.
+- Fantasía feudal japonesa.
+- Persona común entrenada para defender el bastión.
+- No debe ser un héroe poderoso.
+- Historia máxima de 2 frases.
+
+Formato:
+{{
+  "nombre": "Nombre",
+  "rol": "Guardia, arquero, lancero, explorador o veterano",
+  "edad": 30,
+  "procedencia": "Lugar",
+  "historia": "Historia breve"
+}}
+"""
+
+    respuesta = openai_client.responses.create(
+        model="gpt-5.5",
+        input=prompt
+    )
+
+    return json.loads(respuesta.output_text.strip())
+
+
+def crear_defensor(datos, origen="regularizado"):
+    try:
+        defensor = generar_defensor_ia(datos)
+    except Exception:
+        defensor = {
+            "nombre": "Defensor sin nombre",
+            "rol": "Guardia del bastión",
+            "edad": 30,
+            "procedencia": "Desconocida",
+            "historia": "Se unió a la defensa del bastión buscando paga, techo y propósito."
+        }
+
+    datos["contador_defensores"] = datos.get("contador_defensores", 0) + 1
+
+    defensor["id"] = datos["contador_defensores"]
+    defensor["tipo"] = "defensor"
+    defensor["estado"] = "activo"
+    defensor["origen"] = origen
+    defensor["fecha_registro"] = str(date.today())
+
+    return defensor
+
+
+def perder_defensores(datos, cantidad, motivo):
+    caidos = []
+
+    cantidad = min(cantidad, datos.get("defensores", 0))
+    datos["defensores"] = max(0, datos.get("defensores", 0) - cantidad)
+
+    for defensor in datos.get("defensores_detalle", []):
+        if len(caidos) >= cantidad:
+            break
+
+        if defensor.get("estado") == "activo":
+            defensor["estado"] = "fallecido"
+            defensor["motivo_salida"] = motivo
+            defensor["fecha_salida"] = str(date.today())
+            caidos.append(defensor)
+
+    return caidos
+
+def retirar_defensores(datos, cantidad, motivo, estado="abandono"):
+    retirados = []
+
+    cantidad = min(cantidad, datos.get("defensores", 0))
+    datos["defensores"] = max(0, datos.get("defensores", 0) - cantidad)
+
+    for defensor in datos.get("defensores_detalle", []):
+        if len(retirados) >= cantidad:
+            break
+
+        if defensor.get("estado") == "activo":
+            defensor["estado"] = estado
+            defensor["motivo_salida"] = motivo
+            defensor["fecha_salida"] = str(date.today())
+            retirados.append(defensor)
+
+    return retirados
+
+def generar_asalariado_ia(datos):
+    lore = cargar_tabla("lore")
+
+    prompt = f"""
+Eres un cronista de una campaña de D&D.
+
+Crea un asalariado nuevo para el bastión.
+
+Lore:
+{json.dumps(lore, ensure_ascii=False, indent=2)}
+
+Estado del bastión:
+{json.dumps(datos, ensure_ascii=False, indent=2)}
+
+Reglas:
+- Responde solo en JSON válido.
+- No uses markdown.
+- El personaje debe encajar con fantasía feudal japonesa.
+- No debe ser héroe poderoso.
+- Debe ser alguien útil para labores comunes del bastión.
+- El nombre debe sonar adecuado al mundo de Tatay.
+- La historia debe tener máximo 2 frases.
+
+Formato exacto:
+{
+  "nombre": "Nombre del asalariado",
+  "oficio": "Oficio breve",
+  "historia": "Historia breve"
+}
+"""
+
+    respuesta = openai_client.responses.create(
+        model="gpt-5.5",
+        input=prompt
+    )
+
+    texto = respuesta.output_text.strip()
+    return json.loads(texto)
+
+def generar_asalariado_ia(datos):
+    lore = cargar_tabla("lore")
+
+    prompt = f"""
+Crea un asalariado para el bastión de una campaña de D&D.
+
+Lore:
+{json.dumps(lore, ensure_ascii=False, indent=2)}
+
+Estado del bastión:
+{json.dumps(datos, ensure_ascii=False, indent=2)}
+
+Reglas:
+- Responde solo JSON válido.
+- No uses markdown.
+- Fantasía feudal japonesa.
+- Persona común, no héroe poderoso.
+- Historia máxima de 2 frases.
+
+Formato:
+{{
+  "nombre": "Nombre",
+  "oficio": "Oficio breve",
+  "edad": 30,
+  "procedencia": "Lugar",
+  "historia": "Historia breve"
+}}
+"""
+
+    respuesta = openai_client.responses.create(
+        model="gpt-5.5",
+        input=prompt
+    )
+
+    return json.loads(respuesta.output_text.strip())
+
+def perder_asalariados(datos, cantidad, motivo):
+    perdidos = []
+
+    cantidad = min(cantidad, datos.get("asalariados", 0))
+    datos["asalariados"] = max(0, datos.get("asalariados", 0) - cantidad)
+
+    for asalariado in datos.get("asalariados_detalle", []):
+        if len(perdidos) >= cantidad:
+            break
+
+        if asalariado.get("estado") == "activo":
+            asalariado["estado"] = "abandono"
+            asalariado["motivo_salida"] = motivo
+            asalariado["fecha_salida"] = str(date.today())
+            perdidos.append(asalariado)
+
+    return perdidos
+
+def crear_asalariado(datos):
+    try:
+        asalariado = generar_asalariado_ia(datos)
+    except Exception:
+        asalariado = {
+            "nombre": "Asalariado sin nombre",
+            "oficio": "Trabajador común",
+            "edad": 30,
+            "procedencia": "Desconocida",
+            "historia": "Llegó al bastión buscando empleo estable y techo seguro."
+        }
+
+    datos["contador_asalariados"] = datos.get("contador_asalariados", 0) + 1
+
+    asalariado["id"] = datos["contador_asalariados"]
+    asalariado["estado"] = "activo"
+    asalariado["contratado_semana"] = datos.get("acciones_semana", 0)
+
+    return asalariado
 
 def tirar_tesoro():
     tesoros = cargar_tabla("tesoros")
@@ -288,7 +655,10 @@ def procesar_refugiados(datos):
     cantidad = refugiados.get("cantidad", 0)
 
     if cantidad <= 0:
-        datos["refugiados"] = None
+        if datos.get("refugiados_detalle"):
+            datos["refugiados_detalle"]["estado"] = "partieron"
+            datos["refugiados_detalle"]["fecha_salida"] = str(date.today())
+            datos["refugiados_detalle"]["motivo_salida"] = "Abandonaron el bastión tras un ataque."
         return ""
 
     ganancia = random.randint(1, 4) * 10
@@ -300,10 +670,26 @@ def procesar_refugiados(datos):
         f"Esta semana ayudan en distintas labores y generan **{ganancia} PO**."
     )
 
+
+HORA_NOTICIAS = time(hour=7, minute=0)
+
+@tasks.loop(time=HORA_NOTICIAS)
+async def noticia_diaria():
+    canal = discord.utils.get(bot.get_all_channels(), name="bastion")
+
+    if canal is None:
+        return
+
+    texto = generar_noticia_ia(tipo="noticia")
+
+    await canal.send(
+        f"📰 **Diario de los Grandes Reinos**\n\n{texto}"
+    )
+
 def generar_evento_semanal(datos):
 
     tirada = random.randint(1, 100)
-    tirada = 82
+    tirada = 83
 
     if tirada <= 50:
         return (
@@ -333,17 +719,31 @@ def generar_evento_semanal(datos):
 
     if 54 <= tirada <= 56:
         perdidos = random.randint(1, 4)
-
         perdidos = min(perdidos, datos["asalariados"])
-        datos["asalariados"] -= perdidos
+
+        abandonaron = perder_asalariados(
+            datos,
+            perdidos,
+            "Abandonó el bastión buscando mejores oportunidades."
+        )
+
+        mensaje_abandono = ""
+
+        if abandonaron:
+            nombres = ", ".join(a.get("nombre", "Asalariado sin nombre") for a in abandonaron)
+            mensaje_abandono = (
+                f"\n\n🚶 Abandonan el bastión:\n"
+                f"**{nombres}**"
+            )
 
         return (
-        "🎲 **Evento semanal**\n\n"
-        f"Tirada: **{tirada}**\n"
-        "🚶 **Asalariados perdidos**\n\n"
-        f"**{perdidos}** asalariado(s) abandonan el bastión en busca de mejores oportunidades.\n\n"
-        f"👷 Asalariados restantes: **{datos['asalariados']}**"
-    )
+            "🎲 **Evento semanal**\n\n"
+            f"Tirada: **{tirada}**\n"
+            "🚶 **Asalariados perdidos**\n\n"
+            f"**{perdidos}** asalariado(s) abandonan el bastión en busca de mejores oportunidades.\n\n"
+            f"👷 Asalariados restantes: **{datos['asalariados']}**"
+            f"{mensaje_abandono}"
+        )
 
     if 57 <= tirada <= 61:
         husped = datos.get("husped")
@@ -353,7 +753,10 @@ def generar_evento_semanal(datos):
             mensaje_refugiados = ""
             if datos.get("refugiados"):
                 cantidad_refugiados = datos["refugiados"].get("cantidad", 0)
-                datos["refugiados"] = None
+            if datos.get("refugiados_detalle"):
+                datos["refugiados_detalle"]["estado"] = "partieron"
+                datos["refugiados_detalle"]["fecha_salida"] = str(date.today())
+                datos["refugiados_detalle"]["motivo_salida"] = "Abandonaron el bastión tras un ataque."
 
                 mensaje_refugiados = (
                     f"\n\n🏃 **Los refugiados abandonan el bastión.**\n"
@@ -375,7 +778,20 @@ def generar_evento_semanal(datos):
 
         defensores_antes = datos["defensores"]
         bajas_reales = min(bajas, defensores_antes)
-        datos["defensores"] -= bajas_reales
+
+        caidos = perder_defensores(
+            datos,
+            bajas_reales,
+            "Murió defendiendo el bastión."
+        )
+
+        mensaje_caidos = ""
+        if caidos:
+            nombres = ", ".join(d["nombre"] for d in caidos)
+            mensaje_caidos = (
+                f"\n\n☠️ Defensores caídos:\n"
+                f"**{nombres}**"
+            )
 
         mensaje_instalacion = ""
 
@@ -397,7 +813,10 @@ def generar_evento_semanal(datos):
         mensaje_refugiados = ""
         if datos.get("refugiados"):
             cantidad_refugiados = datos["refugiados"].get("cantidad", 0)
-            datos["refugiados"] = None
+        if datos.get("refugiados_detalle"):
+            datos["refugiados_detalle"]["estado"] = "partieron"
+            datos["refugiados_detalle"]["fecha_salida"] = str(date.today())
+            datos["refugiados_detalle"]["motivo_salida"] = "Abandonaron el bastión tras un ataque."
 
             mensaje_refugiados = (
                 f"\n\n🏃 **Los refugiados abandonan el bastión.**\n"
@@ -414,6 +833,7 @@ def generar_evento_semanal(datos):
             f"🛡️ Defensores restantes: **{datos['defensores']}**"
             f"{mensaje_instalacion}"
             f"{mensaje_refugiados}"
+            f"{mensaje_caidos}"
         )
 
 
@@ -433,32 +853,52 @@ def generar_evento_semanal(datos):
         resultado = random.randint(1, 4)
 
         if resultado == 1:
+            huesped = crear_huesped(
+                datos,
+                tipo="renombre",
+                semanas=27
+            )
+
             datos["husped"] = {
                 "tipo": "renombre",
-                "semanas": 27
+                "nombre": huesped.get("nombre"),
+                "semanas": 27,
+                "id": huesped.get("id")
             }
 
             return (
                 "🎲 **Evento semanal**\n\n"
                 f"Tirada: **{tirada}**\n"
                 "🏛️ **Huésped de renombre**\n\n"
-                "Una persona de gran reputación llega al bastión y solicita alojamiento.\n"
-                "Permanecerá durante **27 turnos de bastión**.\n\n"
+                f"**{huesped.get('nombre')}** llega al bastión y solicita alojamiento.\n"
+                f"Procedencia: **{huesped.get('procedencia', 'Desconocida')}**\n\n"
+                f"_{huesped.get('historia', 'Sin historia registrada.')}_\n\n"
+                "Permanecerá durante **27 turnos de bastión**.\n"
                 "Cuando abandone el bastión, entregará una **carta de recomendación**."
             )
 
         if resultado == 2:
+            huesped = crear_huesped(
+                datos,
+                tipo="refugiado",
+                semanas=1
+            )
+
             datos["husped"] = {
                 "tipo": "refugiado",
-                "semanas": 1
+                "nombre": huesped.get("nombre"),
+                "semanas": 1,
+                "id": huesped.get("id")
             }
 
             return (
                 "🎲 **Evento semanal**\n\n"
                 f"Tirada: **{tirada}**\n"
                 "🕯️ **Huésped refugiado**\n\n"
-                "Una persona perseguida por sus creencias o deudas pide asilo en el bastión.\n"
-                "Permanecerá durante **1 turno de bastión**.\n\n"
+                f"**{huesped.get('nombre')}** pide asilo en el bastión.\n"
+                f"Procedencia: **{huesped.get('procedencia', 'Desconocida')}**\n\n"
+                f"_{huesped.get('historia', 'Sin historia registrada.')}_\n\n"
+                "Permanecerá durante **1 turno de bastión**.\n"
                 "Cuando parta, dejará un obsequio de **1d6 × 100 PO**."
             )
 
@@ -475,39 +915,63 @@ def generar_evento_semanal(datos):
                     "ayudará como **asalariado temporal**."
                 )
 
+            huesped = crear_huesped(
+                datos,
+                tipo="mercenario",
+                semanas=4,
+                extra={"ocupa": ocupa}
+            )
+
             datos["husped"] = {
                 "tipo": "mercenario",
+                "nombre": huesped.get("nombre"),
                 "semanas": 4,
-                "ocupa": ocupa
+                "ocupa": ocupa,
+                "id": huesped.get("id")
             }
 
             return (
                 "🎲 **Evento semanal**\n\n"
                 f"Tirada: **{tirada}**\n"
                 "🛡️ **Huésped mercenario**\n\n"
-                "Un mercenario llega al bastión y ofrece sus servicios a cambio de alojamiento.\n"
-                "Permanecerá durante **4 turnos de bastión**.\n\n"
+                f"**{huesped.get('nombre')}** ofrece sus servicios al bastión.\n"
+                f"Procedencia: **{huesped.get('procedencia', 'Desconocida')}**\n\n"
+                f"_{huesped.get('historia', 'Sin historia registrada.')}_\n\n"
+                "Permanecerá durante **4 turnos de bastión**.\n"
                 f"{efecto}"
             )
 
         if resultado == 4:
             monstruo = random.choice(cargar_tabla("monstruos_amistosos"))
 
+            huesped = crear_huesped(
+                datos,
+                tipo="monstruo",
+                semanas=4,
+                extra={
+                    "especie": monstruo,
+                    "protege": True
+                }
+            )
+
             datos["husped"] = {
                 "tipo": "monstruo",
-                "nombre": monstruo,
+                "nombre": huesped.get("nombre"),
+                "especie": monstruo,
                 "semanas": 4,
-                "protege": True
+                "protege": True,
+                "id": huesped.get("id")
             }
 
             return (
                 "🎲 **Evento semanal**\n\n"
                 f"Tirada: **{tirada}**\n"
                 "🐉 **Huésped monstruoso amistoso**\n\n"
-                f"Un **{monstruo}** llega al bastión con actitud pacífica.\n"
-                "Permanecerá durante **4 turnos de bastión**.\n\n"
-                "Mientras sea huésped, defenderá el bastión durante cualquier ataque. "
-                "Si ocurre un ataque, no se perderán defensores."
+                f"Un **{monstruo}** llamado **{huesped.get('nombre')}** llega al bastión con actitud pacífica.\n"
+                f"Procedencia: **{huesped.get('procedencia', 'Desconocida')}**\n\n"
+                f"_{huesped.get('historia', 'Sin historia registrada.')}_\n\n"
+                "Permanecerá durante **4 turnos de bastión**.\n"
+                "Mientras sea huésped, defenderá el bastión durante cualquier ataque."
             )
 
     if 70 <= tirada <= 74:
@@ -655,16 +1119,13 @@ def generar_evento_semanal(datos):
 
     if 82 <= tirada <= 89:
         cantidad = random.randint(2, 4) + random.randint(1, 4)
-
-        datos["refugiados"] = {
-            "cantidad": cantidad
-        }
+        grupo = crear_grupo_refugiados(datos, cantidad)
 
         return (
             "🎲 **Evento semanal**\n\n"
             f"Tirada: **{tirada}**\n"
             "🏕️ **Refugiados**\n\n"
-            f"Un grupo de **{cantidad}** refugiados llega al bastión huyendo de una calamidad.\n"
+            f"Un grupo de **{cantidad}** refugiados llega al bastión huyendo de **{grupo['causa']}**.\n"
             "Buscan protección, alimento y un lugar seguro para recuperarse.\n\n"
             "Mientras permanezcan en el bastión, colaborarán con pequeñas labores "
             "y generarán **1d4 × 10 PO** cada semana.\n\n"
@@ -706,8 +1167,21 @@ def generar_evento_semanal(datos):
             )
 
         recompensa = (random.randint(1, 6) * 100) // 2
+
         datos["arcas"] += recompensa
-        datos["defensores"] = max(0, datos["defensores"] - 1)
+
+        caidos = perder_defensores(
+            datos,
+            1,
+            "Murió durante una misión de ayuda."
+        )
+
+        mensaje_caidos = ""
+
+        if caidos:
+            mensaje_caidos = (
+                f"\n\n☠️ Ha caído **{caidos[0]['nombre']}**."
+            )
 
         return (
             "🎲 **Evento semanal**\n\n"
@@ -721,6 +1195,7 @@ def generar_evento_semanal(datos):
             f"💰 Recompensa reducida: **{recompensa} PO**.\n"
             f"🛡️ Defensores restantes: **{datos['defensores']}**.\n"
             f"🏯 Arcas actuales: **{datos['arcas']} PO**."
+            f"{mensaje_caidos}"
         )
 
     return (
@@ -730,7 +1205,8 @@ def generar_evento_semanal(datos):
     )
 
 def avanzar_semana(datos):
-    datos["acciones_semana"] += 1
+    
+    
 
     if datos["acciones_semana"] < 28:
         return None
@@ -792,8 +1268,19 @@ def avanzar_semana(datos):
     defensores_que_se_van = defensores - defensores_pagados
 
     datos["arcas"] = oro_disponible
-    datos["asalariados"] = asalariados_pagados
-    datos["defensores"] = defensores_pagados
+
+    asalariados_retirados = perder_asalariados(
+        datos,
+        asalariados_que_se_van,
+        "Abandonó el bastión por falta de pago."
+    )
+
+    defensores_retirados = retirar_defensores(
+        datos,
+        defensores_que_se_van,
+        "Abandonó la defensa del bastión por falta de pago.",
+        estado="abandono"
+    )
 
     if datos["asalariados"] == 0 and datos["defensores"] == 0:
         return (
@@ -825,43 +1312,131 @@ def avanzar_semana(datos):
 @bot.event
 async def on_ready():
     print(f"Bot conectado como {bot.user}")
+    if not noticia_diaria.is_running():
+        noticia_diaria.start()
 
 
-@bot.command(name="ayuda")
+@bot.command()
 async def ayuda(ctx):
-    mensaje = (
-        "🏯 **Casa de las Máscaras — Comandos**\n\n"
-        "`!estado` — Muestra recursos del bastión.\n"
-        "`!registrar Nombre` — Vincula tu Discord con tu personaje.\n"
-        "`!oro` — Muestra tu oro personal.\n"
-        "`!depositar cantidad` — Deposita oro en las arcas.\n"
-        "`!retirar cantidad` — Retira oro de las arcas.\n"
-        "`!huerto` — Trabaja el huerto. 1 vez al día.\n"
-        "`!almacen` — Trabaja el almacén. 1 vez al día.\n"
-        "`!inventario` — Muestra el inventario del bastión.\n"
-        "`!agregaroro cantidad` — Agrega oro a tu personaje.\n"
-"`!quitaroro cantidad` — Quita oro a tu personaje.\n"
+    await ctx.send(
+        "🏯 **Casa de las Máscaras - Centro de Ayuda**\n\n"
+
+        "═══════════════════════\n"
+        "📊 **Información del Bastión**\n"
+        "═══════════════════════\n"
+        "`!estado` → Estado general del bastión.\n"
+        "`!inventario` → Inventario completo.\n"
+        "`!registro` → Registro de habitantes.\n"
+        "`!ficha <id o nombre>` → Información detallada de un habitante.\n\n"
+
+        "═══════════════════════\n"
+        "👷 **Asalariados**\n"
+        "═══════════════════════\n"
+        "`!contratar` → Contrata un asalariado (100 PO).\n"
+        "`!despedirasalariado <id o nombre>` → Despide un asalariado.\n"
+        "`!asalariados` → Lista los asalariados activos.\n"
+        #"`!actualizarasalariados` → Genera fichas para asalariados antiguos.\n\n"
+
+        "═══════════════════════\n"
+        "🛡️ **Defensores**\n"
+        "═══════════════════════\n"
+        #"`!contratardefensor` → Contrata un defensor (100 PO).\n"
+        #"`!despedirdefensor <id o nombre>` → Despide un defensor.\n"
+        "`!defensores` → Lista los defensores activos.\n"
+        #"`!actualizardefensores` → Genera fichas para defensores antiguos.\n\n"
+
+        "═══════════════════════\n"
+        "🎭 **Huéspedes**\n"
+        "═══════════════════════\n"
+        #"`!retirarhuesped` → Finaliza manualmente la estancia del huésped actual.\n\n"
+
+        "═══════════════════════\n"
+        "💰 **Economía**\n"
+        "═══════════════════════\n"
+        "`!almacen` → Un asalariado trabaja en el almacén.\n"
+        "`!huerto` → Un asalariado trabaja en el huerto.\n\n"
+
+        "═══════════════════════\n"
+        "👤 **Administración**\n"
+        "═══════════════════════\n"
+        "`!registrar` → Vincula tu usuario con un personaje.\n"
+        "`!ayuda` → Muestra este panel.\n"
     )
-    await ctx.send(mensaje)
 
 
 @bot.command()
 async def estado(ctx):
     datos = cargar_bastion()
 
+    huesped = datos.get("husped")
+    refugiados = datos.get("refugiados")
+    instalaciones = datos.get("instalaciones", {})
+    inventario = datos.get("inventario", [])
+
+    instalaciones_activas = [
+        nombre for nombre, activa in instalaciones.items()
+        if activa
+    ]
+
+    instalaciones_inactivas = [
+        nombre for nombre, activa in instalaciones.items()
+        if not activa
+    ]
+
+    if huesped:
+        texto_huesped = (
+            f"🎭 **Huésped:** {huesped.get('nombre', 'Sin nombre')}\n"
+            f"Tipo: **{huesped.get('tipo', 'Desconocido')}**\n"
+            f"Turnos restantes: **{huesped.get('semanas', '?')}**"
+        )
+    else:
+        texto_huesped = "🎭 **Huésped:** Ninguno"
+
+    if refugiados:
+        texto_refugiados = (
+            f"🏕️ **Refugiados:** {refugiados.get('cantidad', 0)} personas"
+        )
+    else:
+        texto_refugiados = "🏕️ **Refugiados:** Ninguno"
+
+    texto_instalaciones = "Ninguna"
+    if instalaciones_activas:
+        texto_instalaciones = ", ".join(instalaciones_activas)
+
+    texto_danadas = "Ninguna"
+    if instalaciones_inactivas:
+        texto_danadas = ", ".join(instalaciones_inactivas)
+
+    texto_inventario = "Vacío"
+    if inventario:
+        texto_inventario = f"{len(inventario)} objeto(s). Usa `!inventario` para ver detalle."
+
     mensaje = (
-        "🏯 **Casa de las Máscaras**\n\n"
-        f"💰 Arcas: **{datos['arcas']} PO**\n"
-        f"🌾 Suministros: **{datos['suministros']}**\n"
-        f"🧪 Pociones de curación: **{datos['pociones_curacion']}**\n"
-        f"☠️ Viales de veneno: **{datos['venenos']}**\n"
-        f"👷 Asalariados: **{datos['asalariados']}**\n"
-        f"🛡️ Defensores: **{datos['defensores']}/{max_defensores(datos)}**\n"
-        f"🏕️ Refugiados: **{datos.get('refugiados', {}).get('cantidad', 0) if datos.get('refugiados') else 0}**\n"
-        
+        "🏯 **Estado de la Casa de las Máscaras**\n\n"
+
+        "💰 **Recursos**\n"
+        f"Arcas: **{datos['arcas']} PO**\n"
+        f"Suministros: **{datos['suministros']}**\n"
+        f"Pociones de curación: **{datos['pociones_curacion']}**\n"
+        f"Viales de veneno: **{datos['venenos']}**\n\n"
+
+        "👥 **Habitantes**\n"
+        f"Asalariados: **{datos['asalariados']}**\n"
+        f"Defensores: **{datos['defensores']}/{max_defensores(datos)}**\n"
+        f"{texto_refugiados}\n"
+        f"{texto_huesped}\n\n"
+
+        "🏠 **Instalaciones activas**\n"
+        f"{texto_instalaciones}\n\n"
+
+        "🏚️ **Instalaciones inactivas**\n"
+        f"{texto_danadas}\n\n"
+
+        "🎒 **Inventario**\n"
+        f"{texto_inventario}"
     )
 
-    await ctx.send(mensaje)
+    await ctx.send(mensaje[:1900])
 
 
 @bot.command()
@@ -954,6 +1529,341 @@ async def retirar(ctx, cantidad: int):
     )
 
 @bot.command()
+async def actualizardefensores(ctx):
+    datos = cargar_bastion()
+
+    datos.setdefault("defensores_detalle", [])
+
+    total = datos.get("defensores", 0)
+    registrados_activos = sum(
+        1 for d in datos["defensores_detalle"]
+        if d.get("estado") == "activo"
+    )
+
+    faltan = total - registrados_activos
+
+    if faltan <= 0:
+        await ctx.send(
+            "🛡️ **Defensores actualizados**\n\n"
+            "Todos los defensores activos ya tienen ficha."
+        )
+        return
+
+    nuevos = []
+
+    for _ in range(faltan):
+        defensor = crear_defensor(datos)
+        datos["defensores_detalle"].append(defensor)
+        nuevos.append(defensor)
+
+    guardar_bastion(datos)
+
+    lineas = []
+    for d in nuevos:
+        lineas.append(
+            f"• **{d['nombre']}** — {d['rol']}\n"
+            f"  _{d['historia']}_"
+        )
+
+    await ctx.send(
+        "🛡️ **Defensores regularizados**\n\n"
+        f"Se generaron **{faltan}** fichas para defensores existentes.\n\n"
+        + "\n\n".join(lineas)
+    )
+
+@bot.command()
+async def defensores(ctx):
+    datos = cargar_bastion()
+
+    lista = [
+        d for d in datos.get("defensores_detalle", [])
+        if d.get("estado") == "activo"
+    ]
+
+    if not lista:
+        await ctx.send(
+            "🛡️ **Defensores del bastión**\n\n"
+            "No hay defensores activos registrados."
+        )
+        return
+
+    mensajes = []
+    mensaje = (
+        "🛡️ **Defensores de la Casa de las Máscaras**\n\n"
+        f"Total activo: **{len(lista)}**\n\n"
+    )
+
+    for d in lista:
+        bloque = (
+            f"**{d.get('id', '?')}. {d.get('nombre', 'Defensor sin nombre')}**\n"
+            f"Rol: **{d.get('rol', 'Guardia del bastión')}**\n"
+            f"Procedencia: **{d.get('procedencia', 'Desconocida')}**\n"
+            f"Edad: **{d.get('edad', 'Desconocida')}**\n"
+            f"_{d.get('historia', 'Sin historia registrada.')}_\n\n"
+        )
+
+        if len(mensaje) + len(bloque) > 1800:
+            mensajes.append(mensaje)
+            mensaje = ""
+
+        mensaje += bloque
+
+    if mensaje:
+        mensajes.append(mensaje)
+
+    for parte in mensajes:
+        await ctx.send(parte)
+
+@bot.command()
+async def registro(ctx):
+    datos = cargar_bastion()
+
+    asalariados = datos.get("asalariados_detalle", [])
+    defensores = datos.get("defensores_detalle", [])
+    refugiados = datos.get("refugiados")
+    husped = datos.get("husped")
+
+    mensaje = "📖 **Registro de la Casa de las Máscaras**\n\n"
+
+    if asalariados:
+        mensaje += "👷 **Asalariados**\n"
+        for a in asalariados:
+            mensaje += (
+                f"• **{a.get('id', '?')}. {a.get('nombre', 'Sin nombre')}** "
+                f"— {a.get('estado', 'desconocido')}\n"
+            )
+        mensaje += "\n"
+
+    if defensores:
+        mensaje += "🛡️ **Defensores**\n"
+        for d in defensores:
+            mensaje += (
+                f"• **D{d.get('id', '?')}. {d.get('nombre', 'Sin nombre')}** "
+                f"— {d.get('estado', 'desconocido')}\n"
+            )
+        mensaje += "\n"
+
+    if refugiados:
+        mensaje += (
+            "🏕️ **Refugiados**\n"
+            f"• Grupo de **{refugiados.get('cantidad', 0)}** refugiados — presentes\n\n"
+        )
+
+    if husped:
+        mensaje += (
+            "🎭 **Huésped actual**\n"
+            f"• **{husped.get('nombre', husped.get('tipo', 'Huésped sin nombre'))}** "
+            f"— {husped.get('tipo', 'desconocido')}\n\n"
+        )
+
+    if mensaje == "📖 **Registro de la Casa de las Máscaras**\n\n":
+        mensaje += "No hay habitantes registrados todavía."
+
+    await ctx.send(mensaje[:1900])
+
+@bot.command()
+async def ficha(ctx, identificador: str):
+    datos = cargar_bastion()
+
+    registros = []
+
+    for a in datos.get("asalariados_detalle", []):
+        item = a.copy()
+        item["categoria"] = "asalariado"
+        registros.append(item)
+
+    for d in datos.get("defensores_detalle", []):
+        item = d.copy()
+        item["categoria"] = "defensor"
+        registros.append(item)
+
+    if datos.get("husped_detalle"):
+        item = datos["husped_detalle"].copy()
+        item["categoria"] = "huesped"
+        registros.append(item)
+
+    if datos.get("refugiados_detalle"):
+        item = datos["refugiados_detalle"].copy()
+        item["categoria"] = "refugiados"
+        registros.append(item)
+
+    buscado = identificador.lower()
+
+    encontrado = None
+
+    for r in registros:
+        nombre = str(r.get("nombre", "")).lower()
+        rid = str(r.get("id", ""))
+
+        if buscado == rid or buscado in nombre:
+            encontrado = r
+            break
+
+    if not encontrado:
+        await ctx.send(
+            "⛔ **Ficha no encontrada**\n\n"
+            "Usa `!registro` para ver los nombres e IDs disponibles."
+        )
+        return
+
+    categoria = encontrado.get("categoria", "habitante")
+    icono = (
+        "👷" if categoria == "asalariado"
+        else "🛡️" if categoria == "defensor"
+        else "🎭" if categoria == "huesped"
+        else "🏕️"
+)
+
+    oficio_o_rol = encontrado.get("oficio") or encontrado.get("rol") or "Sin función registrada"
+
+    await ctx.send(
+        f"{icono} **Ficha de {encontrado.get('nombre', 'Sin nombre')}**\n\n"
+        f"**ID:** {encontrado.get('id', '?')}\n"
+        f"**Tipo:** {categoria}\n"
+        f"**Estado:** {encontrado.get('estado', 'desconocido')}\n"
+        f"**Función:** {oficio_o_rol}\n"
+        f"**Edad:** {encontrado.get('edad', 'Desconocida')}\n"
+        f"**Procedencia:** {encontrado.get('procedencia', 'Desconocida')}\n\n"
+        f"**Historia:**\n_{encontrado.get('historia', 'Sin historia registrada.')}_\n\n"
+        f"**Motivo de salida:** {encontrado.get('motivo_salida', 'Ninguno')}\n"
+        f"**Fecha de salida:** {encontrado.get('fecha_salida', 'Ninguna')}"
+    )
+
+@bot.command()
+async def despedirasalariado(ctx, identificador: str):
+    datos = cargar_bastion()
+    buscado = identificador.lower()
+
+    for a in datos.get("asalariados_detalle", []):
+        if a.get("estado") != "activo":
+            continue
+
+        if buscado == str(a.get("id")) or buscado in a.get("nombre", "").lower():
+            a["estado"] = "despedido"
+            a["motivo_salida"] = "Despedido del bastión."
+            a["fecha_salida"] = str(date.today())
+            datos["asalariados"] = max(0, datos.get("asalariados", 0) - 1)
+
+            guardar_bastion(datos)
+
+            await ctx.send(
+                "👷 **Asalariado despedido**\n\n"
+                f"**{a.get('nombre', 'Sin nombre')}** deja la Casa de las Máscaras.\n"
+                f"👷 Asalariados restantes: **{datos['asalariados']}**"
+            )
+            return
+
+    await ctx.send("⛔ No encontré un asalariado activo con ese ID o nombre.")
+
+@bot.command()
+async def despedirdefensor(ctx, identificador: str):
+    datos = cargar_bastion()
+    buscado = identificador.lower()
+
+    for d in datos.get("defensores_detalle", []):
+        if d.get("estado") != "activo":
+            continue
+
+        if buscado == str(d.get("id")) or buscado in d.get("nombre", "").lower():
+            d["estado"] = "despedido"
+            d["motivo_salida"] = "Despedido de la defensa del bastión."
+            d["fecha_salida"] = str(date.today())
+            datos["defensores"] = max(0, datos.get("defensores", 0) - 1)
+
+            guardar_bastion(datos)
+
+            await ctx.send(
+                "🛡️ **Defensor despedido**\n\n"
+                f"**{d.get('nombre', 'Sin nombre')}** deja la defensa de la Casa de las Máscaras.\n"
+                f"🛡️ Defensores restantes: **{datos['defensores']}/{max_defensores(datos)}**"
+            )
+            return
+
+    await ctx.send("⛔ No encontré un defensor activo con ese ID o nombre.")
+
+@bot.command()
+async def retirarhuesped(ctx):
+    datos = cargar_bastion()
+
+    if not datos.get("husped"):
+        await ctx.send(
+            "🎭 **No hay huésped**\n\n"
+            "Actualmente el bastión no hospeda a ningún visitante."
+        )
+        return
+
+    nombre = datos["husped"].get("nombre", "Huésped sin nombre")
+
+    if datos.get("husped_detalle"):
+        datos["husped_detalle"]["estado"] = "retirado"
+        datos["husped_detalle"]["fecha_salida"] = str(date.today())
+        datos["husped_detalle"]["motivo_salida"] = (
+            "Retirado manualmente por el administrador."
+        )
+
+    tipo = datos["husped"].get("tipo")
+
+    # Si el huésped ocupaba un puesto temporal, liberarlo.
+    if tipo == "mercenario":
+        ocupa = datos["husped"].get("ocupa")
+
+        if ocupa == "defensor":
+            datos["defensores"] = max(0, datos["defensores"] - 1)
+
+        elif ocupa == "asalariado":
+            datos["asalariados"] = max(0, datos["asalariados"] - 1)
+
+    datos.pop("husped", None)
+
+    guardar_bastion(datos)
+
+    await ctx.send(
+        "🎭 **Huésped retirado**\n\n"
+        f"**{nombre}** ha abandonado la Casa de las Máscaras."
+    )
+
+@bot.command()
+async def contratardefensor(ctx):
+    datos = cargar_bastion()
+    costo = 100
+
+    if datos["defensores"] >= max_defensores(datos):
+        await ctx.send(
+            "⛔ **Contrato imposible**\n\n"
+            f"El bastión ya tiene el máximo de defensores: **{max_defensores(datos)}**."
+        )
+        return
+
+    if datos["arcas"] < costo:
+        await ctx.send(
+            "⛔ **Contrato imposible**\n\n"
+            f"Contratar un defensor cuesta **{costo} PO**, "
+            f"pero las arcas solo tienen **{datos['arcas']} PO**."
+        )
+        return
+
+    nuevo = crear_defensor(datos, origen="contratado")
+
+    datos["arcas"] -= costo
+    datos["defensores"] += 1
+    datos.setdefault("defensores_detalle", [])
+    datos["defensores_detalle"].append(nuevo)
+
+    guardar_bastion(datos)
+
+    await ctx.send(
+        "🛡️ **Nuevo defensor contratado**\n\n"
+        f"💰 Costo: **{costo} PO**\n"
+        f"🏯 Arcas restantes: **{datos['arcas']} PO**\n\n"
+        f"**{nuevo['nombre']}**\n"
+        f"Rol: **{nuevo['rol']}**\n"
+        f"Edad: **{nuevo['edad']}**\n"
+        f"Procedencia: **{nuevo['procedencia']}**\n\n"
+        f"_{nuevo['historia']}_\n\n"
+        f"🛡️ Defensores totales: **{datos['defensores']}/{max_defensores(datos)}**"
+    )
+
+@bot.command()
 async def agregaroro(ctx, cantidad: int):
     datos = cargar_bastion()
     usuario_id = str(ctx.author.id)
@@ -975,6 +1885,37 @@ async def agregaroro(ctx, cantidad: int):
         f"Oro actual: **{personaje['oro']} PO**"
     )
 
+@bot.command()
+async def asalariados(ctx):
+    datos = cargar_bastion()
+
+    lista = datos.get("asalariados_detalle", [])
+
+    if not lista:
+        await ctx.send(
+            "👷 **Asalariados**\n\n"
+            "No hay asalariados registrados."
+        )
+        return
+
+    mensaje = (
+        "👷 **Asalariados de la Casa de las Máscaras**\n\n"
+        f"Total: **{len(lista)}**\n\n"
+    )
+
+    for a in lista:
+        estado = "🟢 Activo" if a["estado"] == "activo" else "🔴 Inactivo"
+
+        mensaje += (
+            f"**{a['id']}. {a['nombre']}**\n"
+            f"🔨 {a['oficio']}\n"
+            f"📍 {a['procedencia']}\n"
+            f"🎂 {a['edad']} años\n"
+            f"{estado}\n"
+            f"_{a['historia']}_\n\n"
+        )
+
+    await ctx.send(mensaje)
 
 @bot.command()
 async def inventario(ctx):
@@ -1158,6 +2099,107 @@ async def almacen(ctx):
     await ctx.send(mensaje)
 
 @bot.command()
+async def rumor(ctx):
+    datos = cargar_bastion()
+
+    try:
+        texto = generar_rumor_ia(datos)
+    except Exception as error:
+        await ctx.send(
+            "📜 **Rumor del bastión**\n\n"
+            "Un mensajero llegó cubierto de polvo, pero sus palabras se perdieron entre el ruido del camino.\n\n"
+            f"`Error: {error}`"
+        )
+        return
+
+    await ctx.send(
+        "📜 **Rumor del bastión**\n\n"
+        f"{texto}"
+    )
+
+@bot.command()
+async def actualizarasalariados(ctx):
+    datos = cargar_bastion()
+
+    datos.setdefault("asalariados_detalle", [])
+    total = datos.get("asalariados", 0)
+    registrados = len(datos["asalariados_detalle"])
+    faltan = total - registrados
+
+    if faltan <= 0:
+        await ctx.send(
+            "👷 **Asalariados actualizados**\n\n"
+            "Todos los asalariados activos ya tienen ficha."
+        )
+        return
+
+    nuevos = []
+
+    for _ in range(faltan):
+        asalariado = crear_asalariado(datos)
+        datos["asalariados_detalle"].append(asalariado)
+        nuevos.append(asalariado)
+
+    guardar_bastion(datos)
+
+    lineas = []
+    for a in nuevos:
+        lineas.append(
+            f"• **{a['nombre']}** — {a['oficio']}\n"
+            f"  _{a['historia']}_"
+        )
+
+    await ctx.send(
+        "👷 **Asalariados regularizados**\n\n"
+        f"Se generaron **{faltan}** fichas para asalariados existentes.\n\n"
+        + "\n\n".join(lineas)
+    )
+
+@bot.command()
+async def contratar(ctx):
+    datos = cargar_bastion()
+    costo = 100
+
+    if datos["arcas"] < costo:
+        await ctx.send(
+            "⛔ **Contrato imposible**\n\n"
+            f"Contratar un asalariado cuesta **{costo} PO**, "
+            f"pero las arcas solo tienen **{datos['arcas']} PO**."
+        )
+        return
+
+    nuevo = crear_asalariado(datos)
+
+    datos["arcas"] -= costo
+    datos["asalariados"] += 1
+    datos.setdefault("asalariados_detalle", [])
+    datos["asalariados_detalle"].append(nuevo)
+
+    guardar_bastion(datos)
+
+    await ctx.send(
+        "👷 **Nuevo asalariado contratado**\n\n"
+        f"💰 Costo: **{costo} PO**\n"
+        f"🏯 Arcas restantes: **{datos['arcas']} PO**\n\n"
+        f"**{nuevo['nombre']}**\n"
+        f"Oficio: **{nuevo['oficio']}**\n"
+        f"Edad: **{nuevo['edad']}**\n"
+        f"Procedencia: **{nuevo['procedencia']}**\n\n"
+        f"_{nuevo['historia']}_\n\n"
+        f"👷 Asalariados totales: **{datos['asalariados']}**"
+    )
+
+
+@bot.command(name="noticia")
+async def noticia(ctx):
+    await ctx.send("🕯️ Consultando rumores de los Grandes Reinos...")
+    try:
+        texto = generar_noticia_ia()
+        await ctx.send(f"📰 **Diario de los Grandes Reinos**\n\n{texto}")
+    except Exception as e:
+        await ctx.send(f"⚠️ No pude generar la noticia: {e}")
+
+@bot.command()
 async def resolver(ctx, opcion: str):
     datos = cargar_bastion()
     evento = datos.get("evento_pendiente")
@@ -1173,8 +2215,11 @@ async def resolver(ctx, opcion: str):
     opcion = opcion.lower()
 
     if opcion == "entregar":
-        if datos["asalariados"] > 0:
-            datos["asalariados"] -= 1
+        entregados = perder_asalariados(
+            datos,
+            1,
+            "Entregado a las autoridades por orden de captura."
+        )
 
         datos["evento_pendiente"] = None
         guardar_bastion(datos)

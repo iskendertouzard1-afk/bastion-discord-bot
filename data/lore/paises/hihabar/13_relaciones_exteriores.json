@@ -1,0 +1,75 @@
+{
+  "titulo": "Relaciones Exteriores del Sultanato de Hihabar",
+
+  "descripcion": "El Sultanato de Hihabar mantiene una política exterior basada en la diplomacia, el comercio y el intercambio del conocimiento. Gracias a su posición estratégica entre las rutas marítimas y continentales, Hihabar considera que la prosperidad compartida constituye la mejor garantía para preservar la paz entre Los Grandes Reinos.",
+
+  "politica_exterior": {
+    "principios": [
+      "Favorecer el comercio internacional.",
+      "Proteger las rutas marítimas y caravaneras.",
+      "Promover el intercambio académico entre naciones.",
+      "Resolver disputas mediante la negociación antes que por la guerra.",
+      "Garantizar la estabilidad económica del Sultanato."
+    ]
+  },
+
+  "relaciones": [
+
+    {
+      "pais": "Imperio de Yugure",
+
+      "estado": "Amistosa",
+
+      "descripcion": "Yugure representa el principal aliado comercial y académico de Hihabar. Ambos Estados mantienen intensos intercambios marítimos, científicos y diplomáticos, fortalecidos por siglos de cooperación.",
+
+      "comercio": "Muy Alto",
+
+      "riesgo_militar": "Muy Bajo"
+    },
+
+    {
+      "pais": "Reino Unido de Nosland",
+
+      "estado": "Suspicaz",
+
+      "descripcion": "Las relaciones con Nosland permanecen estables, aunque ambas potencias compiten por la influencia económica y el control de diversas rutas comerciales. La diplomacia prevalece sobre la confrontación.",
+
+      "comercio": "Alto",
+
+      "riesgo_militar": "Medio"
+    },
+
+    {
+      "pais": "Reino de Varkeldov",
+
+      "estado": "Suspicaz",
+
+      "descripcion": "El Sultanato mantiene una relación prudente con Varkeldov. Existen intercambios comerciales limitados, pero ambas naciones observan con cautela el crecimiento militar y económico de la otra.",
+
+      "comercio": "Medio",
+
+      "riesgo_militar": "Medio"
+    }
+
+  ],
+
+  "doctrina_diplomatica": {
+    "descripcion": "La diplomacia constituye la primera herramienta del Sultanato para proteger sus intereses. El comercio, el conocimiento y la estabilidad regional generan mayores beneficios que cualquier conquista militar. La guerra solo se contempla cuando las rutas comerciales, la soberanía o la seguridad de los ciudadanos resultan gravemente amenazadas."
+  },
+
+  "representacion": {
+    "descripcion": "Las relaciones exteriores son dirigidas por el Sultán con el apoyo del Gran Visir y del Diwan Imperial. Los emires pueden recibir delegaciones extranjeras dentro de sus territorios, aunque únicamente el Sultán posee autoridad para firmar tratados internacionales en nombre del Sultanato."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Generar visitantes extranjeros de acuerdo con las relaciones diplomáticas vigentes.",
+      "Favorecer el intercambio comercial y académico con Yugure.",
+      "Presentar a Nosland como un socio importante con intereses frecuentemente distintos.",
+      "Describir las relaciones con Varkeldov como respetuosas pero cautelosas.",
+      "Evitar conflictos militares abiertos salvo indicación del Director de Juego.",
+      "Las relaciones diplomáticas pueden modificarse mediante acontecimientos futuros del Codex."
+    ]
+  }
+
+}

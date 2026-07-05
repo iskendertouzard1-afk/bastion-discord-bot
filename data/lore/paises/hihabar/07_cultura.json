@@ -1,0 +1,101 @@
+{
+  "titulo": "Cultura del Sultanato de Hihabar",
+
+  "descripcion": "La cultura de Hihabar surgió del encuentro entre antiguos pueblos comerciantes, ciudades portuarias y asentamientos enanos establecidos bajo las montañas del sur. Durante siglos, el intercambio de conocimientos convirtió al Sultanato en el principal centro académico y comercial de Los Grandes Reinos. Sus habitantes valoran la razón, el aprendizaje y la prosperidad por encima de la conquista militar.",
+
+  "valores": [
+    "Sabiduría.",
+    "Hospitalidad.",
+    "Conocimiento.",
+    "Disciplina intelectual.",
+    "Pragmatismo.",
+    "Respeto por la palabra dada.",
+    "Prosperidad compartida."
+  ],
+
+  "sociedad": {
+    "descripcion": "La posición social depende principalmente del prestigio adquirido mediante el estudio, el comercio, el servicio al Estado o la administración. Los títulos nobiliarios existen, pero el conocimiento abre tantas puertas como el nacimiento."
+  },
+
+  "familia": {
+    "descripcion": "La familia constituye el núcleo de la vida cotidiana. Varias generaciones suelen convivir bajo un mismo techo y el respeto hacia padres, abuelos y maestros forma parte de la educación desde la infancia."
+  },
+
+  "hospitalidad": {
+    "descripcion": "Recibir correctamente a un viajero es considerado una obligación moral. Es habitual ofrecer agua, té, café, pan, frutas o refugio antes de iniciar cualquier negociación."
+  },
+
+  "tradiciones": [
+    "Ceremonias del café y del té.",
+    "Observación anual de las estrellas.",
+    "Festivales de las caravanas.",
+    "Mercados de las Cuatro Lunas.",
+    "Competencias de poesía y retórica.",
+    "Narraciones orales en plazas y caravasares.",
+    "Ferias de inventores y alquimistas.",
+    "Celebraciones de la cosecha."
+  ],
+
+  "arquitectura": {
+    "descripcion": "Predominan edificaciones de piedra caliza, mármol y arenisca con amplios patios interiores, jardines irrigados, fuentes, cúpulas, arcos y minaretes. Las ciudades importantes combinan palacios, observatorios, bibliotecas y grandes bazares cubiertos."
+  },
+
+  "vestimenta": {
+    "descripcion": "Las túnicas largas, capas ligeras, turbantes, velos y caftanes predominan en la mayor parte del Sultanato. Los colores vivos suelen indicar riqueza o posición social, mientras que los estudiosos prefieren prendas sencillas adornadas únicamente con bordados académicos."
+  },
+
+  "educacion": {
+    "descripcion": "La educación ocupa un lugar central dentro de la sociedad. Las grandes bibliotecas imperiales reciben estudiantes procedentes de todo el continente para estudiar astronomía, magia, medicina, matemáticas, filosofía, ingeniería y cartografía."
+  },
+
+  "idioma": {
+
+"aleph": {
+  "descripcion": "Aleph es la caligrafía característica de Hihabar. No constituye un idioma distinto, sino una forma elegante, curva y ornamental de escribir la Lengua Franca. Es utilizada por escribas, comerciantes, astrónomos, magos y funcionarios del Sultanato.",
+  "uso": [
+    "Tratados comerciales.",
+    "Textos académicos.",
+    "Cartas diplomáticas.",
+    "Mapas celestes.",
+    "Inscripciones palaciegas.",
+    "Manuscritos mágicos."
+  ]
+},
+
+    "nombre": "Lengua Franca",
+
+    "descripcion": "El idioma oficial del Sultanato es la Lengua Franca, utilizada por comerciantes, diplomáticos y estudiosos en casi todos los Grandes Reinos. En Hihabar alcanzó su forma más refinada y es considerada la lengua del conocimiento y de la diplomacia internacional.",
+
+    "escritura": "Aleph.",
+
+    "particularidades": [
+      "La mayoría de tratados comerciales del continente se redactan en Lengua Franca.",
+      "Las universidades enseñan todas sus disciplinas utilizando este idioma.",
+      "Muchos términos científicos y mágicos proceden directamente del vocabulario desarrollado en Hihabar."
+    ]
+  },
+
+  "religion_predominante": {
+    "deidad": "Moradin",
+    "descripcion": "La mayor parte de la población rinde culto a Moradin, venerado como patrón de los artesanos, constructores, herreros y creadores. La antigua convivencia con comunidades enanas influyó profundamente en la identidad espiritual del Sultanato. Pequeños templos dedicados a otras deidades de Faerûn pueden encontrarse en las principales ciudades, reflejo de la diversidad cultural y comercial de Hihabar."
+  },
+
+  "influencia_enana": {
+    "descripcion": "Desde tiempos antiguos existen ciudades y fortalezas enanas bajo las montañas del Sultanato. Aunque pocas de sus entradas son conocidas y los enanos mantienen un fuerte aislamiento, el intercambio de minerales, ingeniería, arquitectura y metalurgia ha marcado profundamente el desarrollo de Hihabar."
+  },
+
+  "vision_del_mundo": {
+    "descripcion": "Los habitantes de Hihabar consideran que el conocimiento constituye la mayor riqueza de una civilización. El comercio permite compartir recursos, la ciencia explica el mundo y la magia amplía aquello que la razón aún no comprende."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Inspirar la cultura en el Medio Oriente medieval, Anatolia y Persia.",
+      "Recordar que Hihabar es el mayor centro académico del continente.",
+      "Priorizar el conocimiento antes que la guerra.",
+      "Relacionar a Moradin con la artesanía, la ingeniería y las antiguas ciudades enanas.",
+      "Describir ciudades con bazares, jardines, observatorios y bibliotecas.",
+      "Evitar presentar al Sultanato como una sociedad fanática o exclusivamente desértica."
+    ]
+  }
+}

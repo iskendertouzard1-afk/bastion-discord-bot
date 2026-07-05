@@ -1,0 +1,91 @@
+{
+  "nombre": "Los Grandes Reinos",
+
+  "tipo": "Escenario de campaña para Dungeons & Dragons 5.5",
+
+  "descripcion": "Los Grandes Reinos es el nombre con el que se conoce al conjunto de cinco grandes potencias que dominan el continente oriental del Plano Material. Aunque comparten siglos de historia, comercio y conflictos, cada nación desarrolló una identidad propia, con tradiciones, sistemas políticos y valores profundamente diferentes.",
+
+  "proposito": "Este documento constituye el canon principal del escenario. Toda la información generada por inteligencia artificial deberá respetar el contenido de este Codex y evitar contradicciones con los acontecimientos, personajes, lugares y culturas aquí descritos.",
+
+  "cosmologia": {
+    "plano_material": "El escenario se desarrolla en un Plano Material distinto al de los Reinos Olvidados.",
+    "compatibilidad_dnd": "La cosmología clásica de Dungeons & Dragons permanece intacta. Existen el Feywild, Shadowfell, el Plano Astral, los Planos Exteriores y los demás planos oficiales.",
+    "criaturas": "Las razas, monstruos y criaturas oficiales de Dungeons & Dragons pueden existir en este mundo siempre que su presencia resulte coherente con el contexto cultural y geográfico."
+  },
+
+  "tono": {
+    "genero": "Fantasía heroica",
+    "inspiracion": [
+      "Japón feudal",
+      "Intriga política",
+      "Exploración",
+      "Mitología oriental",
+      "Grandes viajes",
+      "Conflictos entre reinos"
+    ],
+    "estilo": "Las historias combinan aventura, diplomacia, honor, exploración y amenazas sobrenaturales. Los conflictos suelen surgir tanto de criaturas fantásticas como de decisiones políticas y rivalidades entre facciones."
+  },
+
+  "magia": {
+    "nivel": "Moderadamente común",
+    "descripcion": "La magia existe en todos los Grandes Reinos, aunque la mayoría de la población jamás llegará a dominarla. Los aventureros, eruditos y miembros de ciertas órdenes representan la mayor concentración de usuarios de magia."
+  },
+
+  "religion": {
+    "descripcion": "Las deidades oficiales de Dungeons & Dragons existen en este escenario. Cada nación interpreta y venera a los dioses de manera distinta según su historia y cultura."
+  },
+
+  "idiomas": {
+    "comun": "Existe un idioma común utilizado para el comercio y la diplomacia.",
+    "regionales": "Cada reino conserva además sus propias lenguas, dialectos y expresiones culturales."
+  },
+
+  "los_grandes_reinos": [
+    {
+      "nombre": "Imperio de Yugure",
+      "descripcion": "La mayor potencia del continente. Un imperio inspirado en el Japón feudal cuya estabilidad depende de un delicado equilibrio entre clanes, facciones y autoridades imperiales."
+    },
+    {
+      "nombre": "Sultanato de Hihabar",
+      "descripcion": "Una nación de inspiración árabe y persa, célebre por sus caravanas, ciudades oasis, eruditos y extensas rutas comerciales."
+    },
+    {
+      "nombre": "Región Libre de Kobe",
+      "descripcion": "Una confederación de ciudades mercantes donde el comercio, la navegación y la libertad política prevalecen sobre la autoridad de una corona única."
+    },
+    {
+      "nombre": "Reino Unido de Nosland",
+      "descripcion": "Un reino septentrional de inspiración europea caracterizado por sus fortalezas, caballería, clima frío y antiguas tradiciones nobiliarias."
+    },
+    {
+      "nombre": "Reino de Varkeldov",
+      "descripcion": "Una monarquía oriental marcada por montañas, bosques ancestrales y una larga tradición militar que ha moldeado el carácter de sus habitantes."
+    }
+  ],
+
+  "principios_del_escenario": [
+    "Cada reino posee una identidad cultural claramente diferenciada.",
+    "La geografía influye directamente en la política, la economía y las costumbres.",
+    "Las fronteras son lugares dinámicos donde confluyen culturas, comerciantes, diplomáticos y aventureros.",
+    "Los personajes procedentes de otro reino suelen llamar la atención y despertar curiosidad o desconfianza.",
+    "Los acontecimientos importantes tienen consecuencias duraderas sobre el mundo.",
+    "Las acciones de los jugadores pueden modificar el equilibrio político de los Grandes Reinos."
+  ],
+
+  "regla_para_la_ia": {
+    "objetivo": "Toda respuesta deberá respetar el canon establecido por este Codex.",
+    "prohibiciones": [
+      "No inventar países adicionales sin autorización.",
+      "No contradecir la historia establecida.",
+      "No modificar acontecimientos históricos ya registrados.",
+      "No cambiar la personalidad de personajes importantes.",
+      "No generar culturas incompatibles con el reino correspondiente."
+    ],
+    "prioridad": [
+      "Canon oficial",
+      "Estado actual del mundo",
+      "Historia de la campaña",
+      "Creatividad narrativa"
+    ]
+  }
+}

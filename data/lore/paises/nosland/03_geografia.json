@@ -1,0 +1,96 @@
+{
+  "titulo": "Geografía del Reino Unido de Nosland",
+
+  "descripcion": "El Reino Unido de Nosland ocupa la región occidental de Los Grandes Reinos. Su territorio está compuesto por extensas llanuras, bosques templados, colinas y costas que favorecieron el desarrollo de numerosos feudos independientes unidos bajo una sola Corona. Aunque el reino carece de divisiones administrativas mayores, tradicionalmente sus habitantes distinguen varias regiones geográficas con identidad propia.",
+
+  "ubicacion": {
+    "continente": "Los Grandes Reinos",
+    "posicion": "Occidente del continente.",
+    "extension": "Segundo reino más extenso de Los Grandes Reinos."
+  },
+
+  "fronteras": {
+    "norte": "Mar Septentrional.",
+    "occidente": "Océano Occidental.",
+    "sur": "Reino de Varkeldov.",
+    "oriente": "Imperio de Yugure."
+  },
+
+  "relieve": {
+    "descripcion": "Predominan las grandes llanuras fértiles, suaves colinas, bosques templados y numerosos ríos que favorecen la agricultura y el establecimiento de castillos y ciudades fortificadas.",
+
+    "elementos": [
+      "Grandes llanuras agrícolas.",
+      "Bosques templados.",
+      "Colinas bajas.",
+      "Ríos navegables.",
+      "Costas occidentales.",
+      "Praderas aptas para la caballería."
+    ]
+  },
+
+  "hidrografia": {
+    "descripcion": "Los ríos unen la mayor parte de los feudos y constituyen importantes rutas comerciales interiores. Muchas ciudades crecieron alrededor de puentes y puertos fluviales."
+  },
+
+  "clima": {
+    "descripcion": "El clima es templado oceánico. Los inviernos son fríos sin llegar a ser extremos y las lluvias son frecuentes durante gran parte del año.",
+
+    "variaciones": [
+      "El norte presenta temperaturas más bajas.",
+      "Las costas reciben mayor humedad.",
+      "Las llanuras centrales poseen las mejores tierras agrícolas.",
+      "Las colinas del sur ofrecen excelentes pastizales para la cría de caballos."
+    ]
+  },
+
+  "regiones_geograficas": [
+
+    {
+      "nombre": "Neuchsia",
+      "descripcion": "Región septentrional caracterizada por bosques densos, colinas suaves y pequeños asentamientos dedicados a la explotación forestal y la ganadería."
+    },
+
+    {
+      "nombre": "Aiburg",
+      "descripcion": "Occidente agrícola del reino. Sus fértiles campos abastecen de cereales y ganado a buena parte de Nosland."
+    },
+
+    {
+      "nombre": "Osinbach",
+      "descripcion": "Región meridional de extensas praderas y castillos fronterizos. Es famosa por sus caballeros y criadores de caballos."
+    },
+
+    {
+      "nombre": "Seim",
+      "descripcion": "Corazón del reino. Alberga las principales rutas comerciales y conecta la mayoría de los grandes feudos."
+    },
+
+    {
+      "nombre": "Durheim",
+      "descripcion": "Región oriental donde se encuentra la capital del reino. Concentra el poder político, el Senado Real y las principales instituciones de la Corona."
+    }
+
+  ],
+
+  "capital": {
+    "nombre": "Durheim",
+    "descripcion": "Capital del Reino Unido de Nosland. Es el centro político del reino y sede del Basileus, del Senado Real y de los Cónsules. Su arquitectura y organización conservan una marcada influencia de antiguas tradiciones imperiales."
+  },
+
+  "importancia_estrategica": {
+    "descripcion": "Nosland controla las principales rutas terrestres entre el occidente y el centro del continente. Sus fértiles tierras sostienen una poderosa economía agrícola, mientras que sus castillos garantizan la defensa de los caminos comerciales."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "No describir estas regiones como divisiones políticas.",
+      "Cada ciudad importante constituye un feudo independiente.",
+      "Relacionar Neuchsia con bosques y explotación forestal.",
+      "Relacionar Aiburg con agricultura.",
+      "Relacionar Osinbach con caballería y fortalezas.",
+      "Relacionar Seim con comercio y comunicaciones.",
+      "Relacionar Durheim con la administración del reino."
+    ]
+  }
+}

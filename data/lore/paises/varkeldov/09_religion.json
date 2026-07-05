@@ -1,0 +1,144 @@
+{
+  "titulo": "Religión del Reino de Varkeldov",
+
+  "descripcion": "La religión de Varkeldov refleja el carácter sobrio y disciplinado de su pueblo. La mayoría de sus habitantes veneran a Selûne como señora de la noche y los ciclos naturales, mientras que Mystra inspira a eruditos y nobles interesados en la magia. En el norte del reino, Tyr ocupa un lugar destacado como protector de la justicia y de los antiguos juramentos. Aunque existen pequeños cultos dedicados a Tiamat, estos permanecen marginados y son observados con recelo por la Corona.",
+
+  "religiones_predominantes": [
+
+    {
+      "deidad": "Selûne",
+
+      "titulos_comunes": [
+        "Dama de la Luna",
+        "Madre de la Noche",
+        "Guardiana de los Ciclos",
+        "La Luna Plateada"
+      ],
+
+      "influencia": "Muy Alta",
+
+      "descripcion": "Selûne es la deidad más venerada de Varkeldov. Su culto simboliza el equilibrio entre luz y oscuridad, la protección durante la noche y el dominio de los ciclos naturales. Licántropos, viajeros nocturnos y muchas familias nobles mantienen una profunda devoción hacia ella."
+    },
+
+    {
+      "deidad": "Mystra",
+
+      "titulos_comunes": [
+        "Dama de la Trama",
+        "Guardiana del Conocimiento",
+        "Señora del Arcano"
+      ],
+
+      "influencia": "Alta",
+
+      "descripcion": "Los nobles, magos y eruditos consideran que el dominio responsable de la magia representa una forma superior de disciplina. Muchos castillos conservan pequeñas bibliotecas y capillas dedicadas a Mystra."
+    },
+
+    {
+      "deidad": "Tyr",
+
+      "titulos_comunes": [
+        "Señor de la Justicia",
+        "Guardián del Juramento",
+        "El Justiciero"
+      ],
+
+      "influencia": "Media",
+
+      "descripcion": "Especialmente venerado en las regiones septentrionales y entre caballeros, jueces y monasterios. Tyr representa la justicia, el honor militar y el cumplimiento de la palabra dada."
+    }
+
+  ],
+
+  "cultos_menores": {
+
+    "descripcion": "Las demás deidades oficiales de Dungeons & Dragons pueden encontrarse mediante pequeños templos, capillas familiares y altares particulares distribuidos por el reino.",
+
+    "estatus": "Permitidos siempre que respeten las leyes del Gran Domnitor."
+  },
+
+  "templos": {
+
+    "templos_mayores": "Los grandes templos suelen estar dedicados a Selûne y funcionan también como refugios, monasterios y lugares de estudio.",
+
+    "templos_menores": "Mystra y Tyr poseen templos importantes en ciudades fortificadas, academias y monasterios.",
+
+    "altares_domesticos": "Muchas familias conservan pequeños altares dedicados a la deidad protectora de su linaje."
+  },
+
+  "practicas_religiosas": [
+
+    "Vigilias durante la luna llena.",
+
+    "Juramentos pronunciados bajo la luz de la luna.",
+
+    "Procesiones con velas.",
+
+    "Bendición de espadas y armaduras.",
+
+    "Consagración de fortalezas.",
+
+    "Ritos funerarios familiares.",
+
+    "Copiado de manuscritos sagrados.",
+
+    "Peregrinaciones a antiguos monasterios."
+
+  ],
+
+  "relacion_con_el_estado": {
+
+    "descripcion": "La Corona reconoce oficialmente los cultos de Selûne, Mystra y Tyr como pilares espirituales del reino. Los monasterios colaboran con la nobleza en tareas de educación, asistencia y preservación histórica.",
+
+    "limite": "Las autoridades religiosas poseen enorme prestigio moral, pero no participan directamente en el gobierno del reino."
+  },
+
+  "deidades_oficiales": {
+
+    "descripcion": "Todas las deidades oficiales de Dungeons & Dragons forman parte del canon religioso de Varkeldov.",
+
+    "regla": "Selûne, Mystra y Tyr constituyen las principales deidades del reino; las demás mantienen una presencia secundaria o local."
+  },
+
+  "cultos_prohibidos": {
+
+    "descripcion": "Los cultos dedicados a Tiamat existen de forma clandestina y rara vez reciben apoyo de la nobleza. La mayoría de los habitantes los consideran organizaciones peligrosas cuya ambición amenaza el equilibrio del reino.",
+
+    "prohibiciones": [
+
+      "Sacrificios inteligentes.",
+
+      "Cultos demoníacos.",
+
+      "Organizaciones religiosas violentas.",
+
+      "Sectas que busquen derrocar la autoridad del Gran Domnitor."
+
+    ]
+  },
+
+  "vision_religiosa_vampirica": {
+
+    "descripcion": "Las antiguas casas vampíricas consideran que la inmortalidad exige disciplina, paciencia y control absoluto sobre los propios instintos. Para ellas, la fe no representa una debilidad, sino un compromiso con la estabilidad del reino y la continuidad de sus linajes."
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Presentar a Selûne como la deidad predominante del reino.",
+
+      "Relacionar a Mystra con la nobleza y las academias mágicas.",
+
+      "Asociar a Tyr con caballeros, jueces y monasterios.",
+
+      "Mantener los cultos de Tiamat como clandestinos y minoritarios.",
+
+      "Evitar representar a los vampiros como adoradores naturales de dioses malignos.",
+
+      "Relacionar la religión con linajes, fortalezas, juramentos y la luna."
+
+    ]
+  }
+
+}

@@ -1,0 +1,158 @@
+{
+  "titulo": "Gobierno del Sultanato de Hihabar",
+
+  "forma_de_gobierno": {
+    "tipo": "Sultanato Imperial",
+    "descripcion": "El Sultanato de Hihabar está gobernado por un Sultán que concentra la autoridad política, militar y diplomática. Su gobierno se sostiene mediante una compleja red de emiratos, consejos administrativos, sabios, tesoreros y grandes rutas comerciales."
+  },
+
+  "sultan": {
+    "titulo": "Sultán de Hihabar",
+    "autoridad": [
+      "Jefe de Estado.",
+      "Comandante Supremo de los Ejércitos del Sultanato.",
+      "Máxima autoridad diplomática.",
+      "Protector de las Rutas del Desierto.",
+      "Custodio de la Gran Biblioteca Imperial.",
+      "Garantía última de los tratados comerciales."
+    ],
+    "funcion": "Garantiza la unidad del Sultanato, protege las rutas comerciales y mantiene el equilibrio entre los emiratos, los sabios, las caravanas y las instituciones imperiales."
+  },
+
+  "gran_visir": {
+    "titulo": "Gran Visir",
+    "descripcion": "Principal administrador del Sultanato. Ejecuta las decisiones del Sultán y coordina la administración cotidiana del gobierno.",
+    "funciones": [
+      "Supervisar la recaudación de impuestos.",
+      "Coordinar embajadas y misiones diplomáticas.",
+      "Administrar obras públicas.",
+      "Regular el comercio interior.",
+      "Presentar informes al Sultán."
+    ]
+  },
+
+  "diwan_imperial": {
+    "nombre": "Diwan Imperial",
+    "descripcion": "Consejo administrativo de mayor jerarquía dentro del Sultanato. Reúne a los principales funcionarios, sabios, emires y representantes económicos de Hihabar.",
+    "funciones": [
+      "Asesorar al Sultán en asuntos de Estado.",
+      "Coordinar la administración de los emiratos.",
+      "Proteger las rutas comerciales.",
+      "Debatir reformas fiscales y comerciales.",
+      "Supervisar asuntos de guerra, diplomacia y conocimiento."
+    ],
+    "miembros": [
+      "Gran Visir.",
+      "Emires principales.",
+      "Gran Tesorero.",
+      "Maestro de la Casa de la Moneda.",
+      "Gran Astrónomo.",
+      "Alto Custodio de la Gran Biblioteca Imperial.",
+      "Comandante de la Guardia del Creciente."
+    ],
+    "autoridad": "El Diwan posee carácter consultivo y administrativo. La decisión final corresponde siempre al Sultán.",
+    "sede": "Palacio del Creciente"
+  },
+
+  "consejo_de_emires": {
+    "descripcion": "Órgano integrado por los gobernantes de los emiratos del Sultanato. Sus miembros administran territorios en nombre del Sultán.",
+    "funciones": [
+      "Administrar los emiratos.",
+      "Garantizar la seguridad local.",
+      "Recaudar tributos.",
+      "Mantener rutas y pozos.",
+      "Aportar tropas cuando el Sultán lo ordene."
+    ],
+    "autoridad": "Los emires poseen amplia autoridad local, pero su cargo depende del reconocimiento del Sultán."
+  },
+
+  "consejo_de_ulemas": {
+    "descripcion": "Institución consultiva formada por juristas, sacerdotes, filósofos, médicos, astrónomos y eruditos. No gobierna directamente, pero su opinión posee gran peso moral e intelectual.",
+    "funciones": [
+      "Asesorar en asuntos legales y éticos.",
+      "Interpretar tradiciones religiosas y filosóficas.",
+      "Supervisar debates académicos.",
+      "Proteger el prestigio intelectual del Sultanato."
+    ],
+    "autoridad": "El Consejo de Ulemas asesora, pero no sustituye al gobierno civil del Sultán."
+  },
+
+  "casa_de_la_moneda": {
+    "descripcion": "Institución estatal encargada de acuñar moneda, certificar pesos y medidas, regular certificados comerciales y proteger la confianza económica del Sultanato.",
+    "funciones": [
+      "Acuñar moneda oficial.",
+      "Regular pesos y medidas.",
+      "Certificar contratos comerciales.",
+      "Supervisar la pureza de metales preciosos.",
+      "Emitir documentos de crédito para caravanas autorizadas."
+    ]
+  },
+
+  "gran_biblioteca_imperial": {
+    "descripcion": "Institución estatal dedicada a la preservación del conocimiento. Reúne astrónomos, cartógrafos, médicos, matemáticos, traductores, cronistas y magos.",
+    "funcion": "El Sultanato considera el conocimiento una herramienta de gobierno, comercio y diplomacia."
+  },
+
+  "estructura_del_sultanato": {
+    "descripcion": "El Sultanato está dividido en emiratos administrados por emires nombrados o confirmados por el Sultán.",
+    "territorios": [
+      {
+        "categoria": "Emiratos",
+        "descripcion": "Territorios administrativos gobernados por emires con autoridad local sobre ciudades, oasis, rutas y caravanas."
+      },
+      {
+        "categoria": "Ciudades Imperiales",
+        "descripcion": "Centros urbanos de gran relevancia política, comercial o académica que dependen directamente del Sultán."
+      },
+      {
+        "categoria": "Rutas Protegidas",
+        "descripcion": "Corredores comerciales, caminos de caravanas y rutas marítimas bajo protección especial del Sultanato."
+      }
+    ]
+  },
+
+  "gobierno_local": {
+    "descripcion": "Cada emirato posee un emir responsable de la administración civil, la seguridad, los tributos y la protección de rutas comerciales.",
+    "autonomia": "Los emires gozan de autoridad local mientras conserven la confianza del Sultán y cumplan sus obligaciones fiscales, militares y comerciales."
+  },
+
+  "fuerzas_militares": {
+    "ejercito_del_sultanato": "Protege las fronteras, ciudades, oasis y rutas estratégicas del Sultanato.",
+    "guardia_del_creciente": "Guardia de élite que custodia al Sultán, el Palacio del Creciente, el Tesoro, la Gran Biblioteca Imperial y las embajadas.",
+    "fuerzas_de_los_emires": "Cada emir mantiene tropas locales para proteger sus ciudades y rutas.",
+    "doctrina_militar": "El ejército favorece la movilidad, la caballería ligera, los arqueros montados, lanceros, guardias profesionales y tropas especializadas en campañas de desierto."
+  },
+
+  "administracion": {
+    "impuestos": "Los emiratos entregan tributos al gobierno central mediante moneda, mercancías, especias, metales preciosos, animales de carga, escoltas y derechos comerciales.",
+    "justicia": "La justicia combina magistrados civiles, tradiciones locales y asesoría de ulemas cuando los casos involucran ley, religión o ética pública.",
+    "comercio": "El comercio es regulado por funcionarios del Sultán, la Casa de la Moneda y los administradores de rutas."
+  },
+
+  "politica_exterior": {
+    "descripcion": "El Sultán dirige las relaciones exteriores con apoyo del Gran Visir y el Diwan Imperial. Los tratados comerciales poseen enorme importancia política."
+  },
+
+  "filosofia_del_gobierno": {
+    "principios": [
+      "La prosperidad mantiene unido al Sultanato.",
+      "El conocimiento fortalece al gobierno.",
+      "Las rutas comerciales son arterias sagradas del Estado.",
+      "La riqueza debe circular para sostener ciudades, oasis y caravanas.",
+      "El Sultán protege la estabilidad entre emires, sabios y comerciantes.",
+      "La diplomacia es una extensión del comercio."
+    ]
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Describir a Hihabar como un Sultanato centralizado con emiratos administrativos.",
+      "Recordar que el Sultán es la máxima autoridad.",
+      "Usar el Diwan Imperial como principal órgano consultivo y administrativo.",
+      "Presentar a los emires como gobernantes locales dependientes del favor del Sultán.",
+      "Relacionar la política de Hihabar con comercio, conocimiento, rutas, caravanas y diplomacia.",
+      "Evitar describir el Sultanato como una teocracia.",
+      "Recordar que el Consejo de Ulemas asesora, pero no gobierna."
+    ]
+  }
+}

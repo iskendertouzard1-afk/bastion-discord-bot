@@ -1,0 +1,169 @@
+{
+  "titulo": "Religión del Sultanato de Hihabar",
+
+  "descripcion": "La religión de Hihabar gira principalmente alrededor del culto a Moradin, venerado como el Padre de la Forja, protector del trabajo bien realizado, la innovación, la ingeniería y el conocimiento transmitido entre generaciones. Su influencia proviene de siglos de convivencia entre humanos y antiguos reinos enanos establecidos bajo las montañas del Sultanato. Aunque Moradin ocupa un lugar central dentro de la cultura, el Sultanato reconoce oficialmente a todas las deidades del canon de Dungeons & Dragons.",
+
+  "religion_predominante": {
+
+    "deidad": "Moradin",
+
+    "titulos_comunes": [
+
+      "Padre de la Forja",
+
+      "Señor del Yunque",
+
+      "El Gran Artesano",
+
+      "Custodio de la Piedra"
+
+    ],
+
+    "influencia": "Muy Alta",
+
+    "descripcion": "Moradin es considerado el protector del trabajo, la artesanía, la ingeniería, la construcción y la innovación. Su culto inspira tanto a herreros y canteros como a arquitectos, alquimistas, magos e inventores."
+  },
+
+  "principios_de_moradin": [
+
+    "El trabajo constante perfecciona al individuo.",
+
+    "La experiencia vale tanto como el conocimiento.",
+
+    "Toda obra debe superar a la anterior.",
+
+    "La innovación honra al creador.",
+
+    "Construir es más noble que destruir.",
+
+    "La sabiduría se templa con la vida.",
+
+    "La excelencia beneficia a toda la comunidad."
+
+  ],
+
+  "cultos_menores": {
+
+    "descripcion": "Las demás deidades oficiales de Dungeons & Dragons son reconocidas dentro del Sultanato. Mercaderes, viajeros y comunidades extranjeras mantienen pequeños templos y santuarios dedicados a sus propias divinidades.",
+
+    "estatus": "Permitidos mientras respeten las leyes del Sultanato."
+  },
+
+  "templos": {
+
+    "templos_mayores": "Los grandes templos de Moradin funcionan como centros religiosos, escuelas de oficios, talleres de ingeniería y lugares de aprendizaje.",
+
+    "templos_menores": "Las demás deidades poseen pequeñas capillas distribuidas en ciudades, puertos y barrios comerciales.",
+
+    "altares_domesticos": "Muchos hogares conservan pequeños altares donde herramientas familiares, libros o instrumentos de trabajo reciben una bendición simbólica antes de comenzar nuevas labores."
+  },
+
+  "practicas_religiosas": [
+
+    "Bendición de herramientas.",
+
+    "Consagración de nuevos talleres.",
+
+    "Ceremonias de maestros artesanos.",
+
+    "Festivales de inventores.",
+
+    "Peregrinaciones a antiguas forjas enanas.",
+
+    "Juramentos de aprendices.",
+
+    "Celebraciones por grandes construcciones concluidas.",
+
+    "Ritos funerarios donde se recuerda la obra realizada en vida."
+
+  ],
+
+  "relacion_con_el_estado": {
+
+    "descripcion": "El Sultanato promueve el culto a Moradin como fuente de disciplina, innovación y desarrollo económico. Los templos colaboran con universidades, gremios artesanales y escuelas técnicas.",
+
+    "limite": "Los sacerdotes poseen gran prestigio moral y académico, pero no participan directamente en el gobierno del Sultanato."
+  },
+
+  "deidades_oficiales": {
+
+    "descripcion": "Todas las deidades oficiales de Dungeons & Dragons forman parte del canon religioso de Hihabar.",
+
+    "regla": "Moradin representa el culto predominante, mientras que las demás deidades mantienen presencia regional o profesional."
+  },
+
+  "variaciones_regionales": [
+
+    {
+
+      "region": "Bisqah",
+
+      "tendencia": "Predominan templos vinculados al conocimiento, la astronomía y la investigación."
+
+    },
+
+    {
+
+      "region": "Tabratoria",
+
+      "tendencia": "Abundan pequeños santuarios para navegantes, comerciantes y constructores navales."
+
+    },
+
+    {
+
+      "region": "Namunz",
+
+      "tendencia": "Moradin es venerado como protector de artesanos, agricultores y grandes obras hidráulicas."
+
+    },
+
+    {
+
+      "region": "Liyah",
+
+      "tendencia": "Las caravanas mantienen altares portátiles dedicados a Moradin y otras deidades protectoras de viajeros."
+
+    }
+
+  ],
+
+  "conflictos_religiosos": {
+
+    "descripcion": "Hihabar protege la libertad de culto, pero prohíbe cualquier religión que utilice la violencia, el fanatismo o la destrucción como medio para obtener poder.",
+
+    "prohibiciones": [
+
+      "Cultos demoníacos.",
+
+      "Sacrificios inteligentes.",
+
+      "Sectas violentas.",
+
+      "Organizaciones religiosas que atenten contra la estabilidad del Sultanato."
+
+    ]
+
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Presentar a Moradin como la principal deidad del Sultanato.",
+
+      "Relacionar sus templos con talleres, universidades y gremios.",
+
+      "Recordar la influencia histórica de los antiguos reinos enanos.",
+
+      "Permitir templos menores de cualquier deidad oficial de Dungeons & Dragons.",
+
+      "Evitar presentar la religión como fanática o expansionista.",
+
+      "Relacionar siempre la fe con el trabajo, la innovación y el conocimiento."
+
+    ]
+
+  }
+
+}

@@ -1,0 +1,350 @@
+{
+  "titulo": "Personajes Importantes del Reino Unido de Nosland",
+  "descripcion": "Este archivo reúne a las figuras relevantes del Reino Unido de Nosland. Solo se incluyen personajes cuya influencia afecta la política, economía, religión, sociedad o acontecimientos históricos del Reino.",
+
+  "personajes": [
+
+    {
+      "id": "nosland_001",
+      "nombre": "William IV Waritz",
+      "titulo": "Basileus del Reino Unido de Nosland",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Palacio Real de Durheim",
+      "afiliacion": "Casa Waritz",
+      "ocupacion": "Soberano del Reino",
+      "descripcion": "Actual Basileus de Nosland y descendiente directo de la Casa Waritz. Su prioridad consiste en preservar el equilibrio entre las Cinco Casas de Ox y garantizar la estabilidad del Reino.",
+      "personalidad": "Sereno, prudente, diplomático y profundamente respetado.",
+      "objetivos": [
+        "Mantener unido el Reino.",
+        "Preservar la autoridad de la Corona.",
+        "Evitar conflictos entre las Grandes Casas."
+      ],
+      "conocimientos": [
+        "Asuntos de Estado.",
+        "Diplomacia internacional.",
+        "Historia de las Cinco Casas."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_002",
+      "nombre": "Lucius Qartz",
+      "titulo": "Primer Cónsul",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Casa Qartz",
+      "ocupacion": "Administrador Supremo del Reino",
+      "descripcion": "Responsable de la administración civil, el Tesoro Real y la diplomacia.",
+      "personalidad": "Metódico, brillante y calculador.",
+      "objetivos": [
+        "Fortalecer las instituciones del Reino.",
+        "Mantener un Tesoro sólido."
+      ],
+      "conocimientos": [
+        "Administración.",
+        "Economía.",
+        "Diplomacia."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_003",
+      "nombre": "Marcus Lorenz",
+      "titulo": "Segundo Cónsul",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Casa Lorenz",
+      "ocupacion": "Comandante Supremo del Ejército Real",
+      "descripcion": "Dirige las fuerzas armadas del Reino y supervisa la defensa de las fronteras.",
+      "personalidad": "Disciplinado, directo y honorable.",
+      "objetivos": [
+        "Garantizar la seguridad del Reino.",
+        "Modernizar el Ejército."
+      ],
+      "conocimientos": [
+        "Estrategia.",
+        "Logística militar."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_004",
+      "nombre": "Gaius Valerian",
+      "titulo": "Presidente del Senado Real",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Senado Real",
+      "ocupacion": "Presidente del Senado",
+      "descripcion": "Dirige las sesiones del Senado Real y procura mantener la neutralidad entre las Grandes Casas.",
+      "personalidad": "Paciente, justo y conciliador.",
+      "objetivos": [
+        "Mantener el equilibrio político."
+      ],
+      "conocimientos": [
+        "Derecho.",
+        "Procedimientos senatoriales."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_005",
+      "nombre": "Aurelius Cassian",
+      "titulo": "Primer Tribuno de la Plebe",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Tribunos de la Plebe",
+      "ocupacion": "Representante ciudadano",
+      "descripcion": "Portavoz de comerciantes, artesanos y ciudadanos libres ante el Senado.",
+      "personalidad": "Carismático y elocuente.",
+      "objetivos": [
+        "Defender los intereses del pueblo."
+      ],
+      "conocimientos": [
+        "Política.",
+        "Comercio."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_006",
+      "nombre": "Alaric von Eisenwald",
+      "titulo": "Alto Lord de Neuchsia",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Schobel",
+      "afiliacion": "Consejo de los Altos Lores",
+      "ocupacion": "Señor Feudal",
+      "descripcion": "Protector de los bosques septentrionales y de las rutas del norte.",
+      "personalidad": "Reservado, firme y leal.",
+      "objetivos": [
+        "Proteger Neuchsia."
+      ],
+      "conocimientos": [
+        "Bosques.",
+        "Fronteras."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_007",
+      "nombre": "Helena von Falkenheim",
+      "titulo": "Alta Lady de Aiburg",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Weiberach",
+      "afiliacion": "Consejo de los Altos Lores",
+      "ocupacion": "Señora Feudal",
+      "descripcion": "Gobierna las fértiles tierras de Aiburg y ejerce una gran influencia económica.",
+      "personalidad": "Elegante, inteligente y pragmática.",
+      "objetivos": [
+        "Mantener la prosperidad agrícola."
+      ],
+      "conocimientos": [
+        "Agricultura.",
+        "Economía rural."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_008",
+      "nombre": "Cedric von Sturmfels",
+      "titulo": "Alto Lord de Osinbach",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Inzgradefenb",
+      "afiliacion": "Consejo de los Altos Lores",
+      "ocupacion": "Señor Feudal",
+      "descripcion": "Considerado el caballero más prestigioso de Nosland.",
+      "personalidad": "Valeroso, honorable y exigente.",
+      "objetivos": [
+        "Preservar las tradiciones caballerescas."
+      ],
+      "conocimientos": [
+        "Caballería.",
+        "Tácticas militares."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_009",
+      "nombre": "Octavian von Greifen",
+      "titulo": "Alto Lord de Schapfheimia",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Gothengswald",
+      "afiliacion": "Consejo de los Altos Lores",
+      "ocupacion": "Señor Feudal",
+      "descripcion": "Erudito y estratega, responsable de una de las regiones comerciales más importantes del Reino.",
+      "personalidad": "Reflexivo, culto y calculador.",
+      "objetivos": [
+        "Fortalecer el comercio interior."
+      ],
+      "conocimientos": [
+        "Logística.",
+        "Administración."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_010",
+      "nombre": "Edmund Garritz",
+      "titulo": "Patriarca de la Casa Garritz",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Casa Garritz",
+      "ocupacion": "Banquero y comerciante",
+      "descripcion": "El hombre más rico de Nosland. Su familia controla gran parte del comercio y las finanzas del Reino.",
+      "personalidad": "Astuto, elegante y ambicioso.",
+      "objetivos": [
+        "Expandir la influencia económica de su Casa."
+      ],
+      "conocimientos": [
+        "Mercados.",
+        "Banca.",
+        "Comercio internacional."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_011",
+      "nombre": "Cassius Oquitz",
+      "titulo": "Patriarca de la Casa Oquitz",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Casa Oquitz",
+      "ocupacion": "Mecenas y erudito",
+      "descripcion": "Patrocinador de universidades, bibliotecas y cronistas reales.",
+      "personalidad": "Culto, paciente y visionario.",
+      "objetivos": [
+        "Preservar el conocimiento del Reino."
+      ],
+      "conocimientos": [
+        "Historia.",
+        "Magia.",
+        "Educación."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_012",
+      "nombre": "Roland Ashcroft",
+      "titulo": "Gran Mariscal de la Guardia Real",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Guardia Real",
+      "ocupacion": "Comandante de la Guardia Real",
+      "descripcion": "Responsable de la seguridad del Basileus, del Palacio Real y del Senado.",
+      "personalidad": "Inquebrantable, disciplinado y leal.",
+      "objetivos": [
+        "Proteger a la Corona."
+      ],
+      "conocimientos": [
+        "Seguridad.",
+        "Defensa del Palacio."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_013",
+      "nombre": "Albrecht de Mystra",
+      "titulo": "Arzobispo de las Tres Luminarias",
+      "estado": "Vivo",
+      "relevancia": "Nacional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Templo Mayor de Mystra",
+      "ocupacion": "Máxima autoridad religiosa del Reino",
+      "descripcion": "Principal representante religioso de Nosland y consejero ocasional del Basileus.",
+      "personalidad": "Sabio, moderado y sereno.",
+      "objetivos": [
+        "Preservar la armonía espiritual del Reino."
+      ],
+      "conocimientos": [
+        "Religión.",
+        "Historia.",
+        "Magia."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "nosland_014",
+      "nombre": "Eliza Rowan",
+      "titulo": "Rectora de la Academia Real",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Durheim",
+      "afiliacion": "Academia Real",
+      "ocupacion": "Archimaga y erudita",
+      "descripcion": "La mayor autoridad académica del Reino y una de las magas más respetadas de Nosland.",
+      "personalidad": "Curiosa, exigente y brillante.",
+      "objetivos": [
+        "Expandir el conocimiento mágico."
+      ],
+      "conocimientos": [
+        "Magia.",
+        "Historia.",
+        "Investigación."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    }
+
+  ],
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Consultar este archivo antes de generar personajes importantes.",
+      "Respetar el estado actual de cada personaje.",
+      "No revelar secretos salvo autorización del Director de Juego.",
+      "Los personajes fallecidos siguen influyendo en la historia.",
+      "Los personajes nacionales solo deben intervenir en acontecimientos de importancia para el Reino."
+    ]
+  }
+}

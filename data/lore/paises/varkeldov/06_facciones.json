@@ -1,0 +1,183 @@
+{
+  "facciones": [
+
+    {
+      "nombre": "Gremio de los Herreros Negros",
+
+      "tipo": "Gremio Artesanal",
+
+      "lider": "Maestro Oleg Brankov",
+
+      "sede": "Straugard",
+
+      "objetivos": [
+        "Fabricar las mejores armas y armaduras del reino.",
+        "Preservar las antiguas técnicas metalúrgicas.",
+        "Abastecer a la nobleza y al ejército."
+      ],
+
+      "ideologia": "Una espada mal forjada cuesta más vidas que una batalla perdida.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Boyardos",
+        "Caballeros"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "El gremio más respetado de Varkeldov. Sus maestros herreros trabajan el hierro procedente de las Montañas de Dragmir y abastecen a buena parte de la nobleza."
+    },
+
+    {
+
+      "nombre": "Liga de Comerciantes del Norte",
+
+      "tipo": "Liga Mercantil",
+
+      "lider": "Ivana Petrovic",
+
+      "sede": "Hålsvor",
+
+      "objetivos": [
+        "Mantener abiertas las rutas comerciales.",
+        "Garantizar el abastecimiento durante el invierno.",
+        "Negociar con Nosland y Hihabar."
+      ],
+
+      "ideologia": "Incluso el castillo más fuerte necesita pan.",
+
+      "influencia": "Media",
+
+      "aliados": [
+        "Burgomaestres",
+        "Boyardos"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Agrupa a los principales comerciantes del reino y mantiene caravanas que recorren los valles y puertos incluso durante el invierno."
+    },
+
+    {
+
+      "nombre": "Orden del Lobo Gris",
+
+      "tipo": "Orden Caballeresca",
+
+      "lider": "Sir Mikhail Orlov",
+
+      "sede": "Fortaleza de Skonlandvieja",
+
+      "objetivos": [
+        "Defender las fronteras.",
+        "Custodiar los pasos montañosos.",
+        "Proteger a la población durante las invasiones."
+      ],
+
+      "ideologia": "El deber pesa más que la gloria.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Gran Domnitor",
+        "Grandes Voivodas"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Orden militar formada por los mejores caballeros del reino. Sus miembros patrullan los caminos, responden al llamado del Gran Domnitor y sirven como ejemplo de disciplina y lealtad."
+    },
+
+    {
+
+      "nombre": "Hermandad de San Tyr",
+
+      "tipo": "Orden Religiosa",
+
+      "lider": "Padre Aleksander",
+
+      "sede": "Monasterio de Karsk",
+
+      "objetivos": [
+        "Asistir a los necesitados.",
+        "Preservar antiguos manuscritos.",
+        "Formar jueces y cronistas."
+      ],
+
+      "ideologia": "La justicia permanece cuando la espada descansa.",
+
+      "influencia": "Media",
+
+      "aliados": [
+        "Monasterios",
+        "Caballeros"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Una antigua orden monástica dedicada a Tyr. Sus miembros mantienen hospitales, bibliotecas y archivos históricos repartidos por todo el reino."
+    },
+
+    {
+
+      "nombre": "Liga de los Leñadores Libres",
+
+      "tipo": "Gremio Forestal",
+
+      "lider": "Yaroslav Borkin",
+
+      "sede": "Leitshamn",
+
+      "objetivos": [
+        "Administrar la explotación sostenible de los bosques.",
+        "Abastecer de madera a fortalezas y astilleros.",
+        "Proteger las rutas forestales."
+      ],
+
+      "ideologia": "El bosque alimenta al reino.",
+
+      "influencia": "Media",
+
+      "aliados": [
+        "Burgomaestres",
+        "Gremio de los Herreros Negros"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Controlan gran parte de la producción de madera del reino y conocen mejor que nadie los inmensos bosques de Varkeldov."
+    },
+
+    {
+
+      "nombre": "Cofradía de Navegantes del Oeste",
+
+      "tipo": "Hermandad Marítima",
+
+      "lider": "Capitana Elena Vukovic",
+
+      "sede": "Austerhavn",
+
+      "objetivos": [
+        "Mantener seguros los puertos.",
+        "Guiar embarcaciones entre los fiordos.",
+        "Explorar nuevas rutas marítimas."
+      ],
+
+      "ideologia": "Quien domina el mar nunca queda aislado.",
+
+      "influencia": "Media",
+
+      "aliados": [
+        "Liga de Comerciantes del Norte"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Hermandad de pilotos, pescadores y navegantes especializados en las peligrosas costas occidentales del reino."
+    }
+
+  ]
+}

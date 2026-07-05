@@ -1,0 +1,85 @@
+{
+  "titulo": "Calendario de Los Grandes Reinos",
+  "anio_actual": 956,
+  "era_actual": "Segunda Era",
+  "nombre_fecha": "Año 956 de la Segunda Era",
+
+  "inspiracion_temporal": {
+    "base": "Marte",
+    "duracion_anio_dias": 687,
+    "duracion_anio_semanas": 98,
+    "nota": "El calendario de campaña toma como referencia un año largo, similar al ciclo marciano, para permitir estaciones extensas y cambios climáticos graduales."
+  },
+
+  "semana_del_bastion": {
+    "acciones_por_semana": 27,
+    "descripcion": "Cada 27 acciones realizadas por los jugadores o habitantes del bastión avanza una semana en el calendario de Yugure.",
+    "uso_mecanico": "El avance semanal puede activar salarios, eventos del bastión, cambios de estación, rumores, noticias y clima regional."
+  },
+
+  "estaciones": [
+    {
+      "nombre": "Despertar",
+      "equivalente": "Primavera",
+      "semanas": "1-24",
+      "clima_general": "Lluvias moderadas, deshielo en regiones frías, caminos húmedos y crecimiento de cultivos."
+    },
+    {
+      "nombre": "Sol Alto",
+      "equivalente": "Verano",
+      "semanas": "25-49",
+      "clima_general": "Calor intenso en el sur, tormentas costeras, rutas comerciales activas y cosechas tempranas."
+    },
+    {
+      "nombre": "Hojas Rojas",
+      "equivalente": "Otoño",
+      "semanas": "50-74",
+      "clima_general": "Vientos secos, cosechas principales, migraciones, festivales y preparación para el frío."
+    },
+    {
+      "nombre": "Noche Blanca",
+      "equivalente": "Invierno",
+      "semanas": "75-98",
+      "clima_general": "Frío severo en el norte, nevadas en Nosland y montañas, mares peligrosos y menor actividad comercial."
+    }
+  ],
+
+  "regiones_climaticas": {
+    "Imperio de Yugure": {
+      "descripcion": "Clima templado y monzónico. Las regiones verdes y centrales reciben lluvias frecuentes, mientras que las zonas rojas y azules dependen más de rutas costeras y valles fértiles.",
+      "riesgos": ["lluvias intensas", "niebla", "tifones costeros", "deslizamientos en montaña"]
+    },
+    "Sultanato de Hihabar": {
+      "descripcion": "Clima cálido, seco y costero. Las lluvias son escasas fuera de temporadas concretas.",
+      "riesgos": ["sequías", "tormentas de arena", "calor extremo"]
+    },
+    "Región Libre de Kobe": {
+      "descripcion": "Clima marítimo. Sus ciudades dependen del comercio naval y de la estabilidad de los vientos.",
+      "riesgos": ["tormentas", "niebla marina", "marejadas"]
+    },
+    "Reino Unido de Nosland": {
+      "descripcion": "Clima frío, con inviernos largos y nevadas extensas.",
+      "riesgos": ["ventiscas", "hielo", "aislamiento de caminos"]
+    },
+    "Reino de Varkeldov": {
+      "descripcion": "Clima variado, con tierras frías, bosques densos y regiones montañosas.",
+      "riesgos": ["heladas", "lluvias persistentes", "niebla de bosque"]
+    }
+  },
+
+  "regla_para_la_ia": {
+    "objetivo": "Usar la semana actual, la estación y la región para generar clima, rumores, noticias y descripciones coherentes.",
+    "prioridad": [
+      "fecha actual de campaña",
+      "estación vigente",
+      "ubicación regional",
+      "clima propio del reino",
+      "evento narrativo"
+    ],
+    "prohibiciones": [
+      "No describir nieve en regiones cálidas salvo evento extraordinario.",
+      "No describir cosechas abundantes durante Noche Blanca salvo en regiones protegidas.",
+      "No ignorar la estación cuando se generen noticias o eventos del bastión."
+    ]
+  }
+}

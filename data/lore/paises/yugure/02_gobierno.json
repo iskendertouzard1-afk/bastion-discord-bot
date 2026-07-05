@@ -1,0 +1,123 @@
+{
+  "titulo": "Gobierno del Imperio de Yugure",
+
+  "forma_de_gobierno": {
+    "tipo": "Monarquía Imperial descentralizada",
+    "descripcion": "El Imperio de Yugure está gobernado por un Emperador que representa la máxima autoridad política, militar y ceremonial. Sin embargo, gran parte de la administración cotidiana recae en gobernantes regionales y casas nobles que conservan un alto grado de autonomía."
+  },
+
+  "emperador": {
+    "titulo": "Emperador de Yugure",
+    "autoridad": [
+      "Jefe de Estado",
+      "Comandante Supremo del Ejército Imperial",
+      "Máxima autoridad diplomática",
+      "Protector del equilibrio entre las regiones"
+    ],
+    "funcion": "Garantiza la estabilidad del Imperio y actúa como árbitro entre las grandes regiones y las casas nobles."
+  },
+
+"consejo_imperial": {
+  "nombre": "Teikoku Daimyō Kaigi (帝国大名会議)",
+  "nombre_comun": "Consejo Imperial de los Daimyō",
+
+  "descripcion": "Órgano consultivo de mayor jerarquía dentro del Imperio de Yugure. Está integrado por los daimyō de las Grandes Provincias Imperiales y por los gobernantes de los territorios autónomos. Sus reuniones son extraordinarias y únicamente pueden ser convocadas por el Shōgun Mikado.",
+
+  "funciones": [
+    "Asesorar al Shōgun Mikado en asuntos de Estado.",
+    "Coordinar la defensa del Imperio.",
+    "Resolver disputas entre provincias.",
+    "Debatir reformas de alcance imperial.",
+    "Ratificar tratados internos de gran importancia."
+  ],
+
+  "miembros": [
+    "Daimyō de Aka no Chiiki",
+    "Daimyō de Midori no Chiiki",
+    "Daimyō de Ao no Chiiki",
+    "Daimyō de Kiiro no Chiiki",
+    "Representante de Ithlondhil",
+    "Representante de Shinawa",
+    "Representante de Kobe"
+  ],
+
+  "autoridad": "El Consejo posee carácter consultivo. La decisión final corresponde siempre al Shōgun Mikado.",
+
+  "sede": "Palacio de las Mil Grullas"
+},
+
+  "estructura_del_imperio": {
+    "descripcion": "El Imperio está dividido en territorios con distintos grados de autonomía administrativa y militar.",
+
+    "territorios": [
+      {
+        "categoria": "Regiones Imperiales",
+        "descripcion": "Constituyen el núcleo político y económico del Imperio.",
+         "miembros": [
+    "Aka no Chiiki (Región Roja)",
+    "Midori no Chiiki (Región Verde)",
+    "Ao no Chiiki (Región Azul)",
+    "Kiiro no Chiiki (Región Amarilla)"
+        ]
+      },
+      {
+        "categoria": "Provincias Autónomas",
+        "descripcion": "Mantienen tradiciones, autoridades y privilegios propios mientras reconocen la soberanía imperial.",
+        "miembros": [
+          "Ithlondhil",
+          "Shinawa"
+        ]
+      },
+      {
+        "categoria": "Territorios Comerciales",
+        "descripcion": "Disfrutan de privilegios especiales debido a su importancia económica y estratégica.",
+        "miembros": [
+          "Kobe"
+        ]
+      }
+    ]
+  },
+
+  "gobierno_regional": {
+    "descripcion": "Cada territorio posee una autoridad local responsable de la administración civil, la recaudación de impuestos y la seguridad interna.",
+
+    "autonomia": "El grado de autonomía depende de acuerdos históricos entre cada territorio y la Corona Imperial."
+  },
+
+  "fuerzas_militares": {
+    "ejercito_imperial": "Protege las fronteras del Imperio y responde directamente al Emperador.",
+
+    "ejercitos_regionales": "Algunas regiones mantienen fuerzas propias para garantizar el orden interno.",
+
+    "caso_especial_ithlondhil": "La Provincia Autónoma de Ithlondhil conserva un ejército propio cuya organización y capacidad militar son poco conocidas fuera de sus fronteras."
+  },
+
+  "administracion": {
+    "impuestos": "Cada territorio aporta tributos al gobierno imperial según tratados históricos y su capacidad económica.",
+
+    "justicia": "Las leyes imperiales prevalecen sobre las locales, aunque algunas provincias autónomas conservan sistemas jurídicos tradicionales."
+  },
+
+  "politica_exterior": {
+    "descripcion": "Solo el Emperador y sus representantes pueden firmar tratados internacionales o declarar la guerra en nombre del Imperio."
+  },
+
+  "filosofia_del_gobierno": {
+    "principios": [
+      "La unidad del Imperio se mantiene respetando la identidad de cada territorio.",
+      "El equilibrio político es más valioso que la imposición por la fuerza.",
+      "La estabilidad se alcanza mediante el honor, la diplomacia y la responsabilidad compartida.",
+      "La diversidad cultural fortalece al Imperio cuando existe lealtad hacia la Corona."
+    ]
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "No describir al Imperio como un Estado centralizado absoluto.",
+      "Reconocer la autonomía de provincias como Ithlondhil y Shinawa.",
+      "Considerar a Kobe como un territorio de gran influencia comercial.",
+      "Recordar que el Emperador representa la máxima autoridad del Imperio.",
+      "Respetar las diferencias culturales entre los distintos territorios de Yugure."
+    ]
+  }
+}

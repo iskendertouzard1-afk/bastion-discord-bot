@@ -1,0 +1,402 @@
+{
+  "titulo": "Personajes Importantes del Reino de Varkeldov",
+  "descripcion": "Este archivo reúne a las figuras relevantes del Reino de Varkeldov. Solo se incluyen personajes cuya existencia influye de forma significativa en la política, la nobleza, la religión, la economía, la guerra o la historia del reino.",
+
+  "personajes": [
+    {
+      "id": "varkeldov_001",
+      "nombre": "Vladislav III Drăculești",
+      "titulo": "Gran Domnitor de Varkeldov",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Fortaleza de Skonlandvieja",
+      "afiliacion": "Corona de Varkeldov",
+      "ocupacion": "Soberano del Reino",
+      "descripcion": "Gobernante absoluto de Varkeldov. Su autoridad se sostiene sobre antiguos juramentos, temor nobiliario y una presencia casi legendaria.",
+      "personalidad": "Paciente, severo, elegante y profundamente calculador.",
+      "objetivos": [
+        "Mantener unido el Reino.",
+        "Preservar la autoridad de la Corona.",
+        "Evitar que los Voivodas fracturen el territorio."
+      ],
+      "conocimientos": [
+        "Historia secreta de Varkeldov.",
+        "Juramentos antiguos.",
+        "Linajes vampíricos."
+      ],
+      "secretos": [
+        "Es un vampiro antiguo de Skonland pura."
+      ],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_002",
+      "nombre": "Radu Volkov",
+      "titulo": "Gran Voivoda de Skovland",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Leitshamn",
+      "afiliacion": "Consejo de los Grandes Voivodas",
+      "ocupacion": "Gobernador militar",
+      "descripcion": "Veterano cazador y estratega que controla los grandes bosques occidentales.",
+      "personalidad": "Reservado, feroz y leal a sus propios juramentos.",
+      "objetivos": [
+        "Mantener seguros los bosques de Skovland.",
+        "Controlar las rutas forestales."
+      ],
+      "conocimientos": [
+        "Bosques antiguos.",
+        "Rutas ocultas.",
+        "Cacería de monstruos."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_003",
+      "nombre": "Alexandru Corvin",
+      "titulo": "Gran Voivoda de Dragmir",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Straugard",
+      "afiliacion": "Consejo de los Grandes Voivodas",
+      "ocupacion": "Gobernador militar",
+      "descripcion": "Protector de las Montañas de Dragmir y de los pasos orientales hacia Nosland.",
+      "personalidad": "Marcial, orgulloso y desconfiado.",
+      "objetivos": [
+        "Defender los pasos montañosos.",
+        "Mantener la producción minera."
+      ],
+      "conocimientos": [
+        "Fortificaciones.",
+        "Minería.",
+        "Defensa de montaña."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_004",
+      "nombre": "Mikhail Dragomir",
+      "titulo": "Gran Voivoda de Hrodan",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Hålsvor",
+      "afiliacion": "Consejo de los Grandes Voivodas",
+      "ocupacion": "Gobernador militar",
+      "descripcion": "Señor de los valles agrícolas que abastecen buena parte del reino.",
+      "personalidad": "Pragmático, paternal y firme.",
+      "objetivos": [
+        "Garantizar el alimento del Reino.",
+        "Mantener la lealtad de los Boyardos rurales."
+      ],
+      "conocimientos": [
+        "Agricultura.",
+        "Tributos.",
+        "Política boyarda."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_005",
+      "nombre": "Stefan Dragoș",
+      "titulo": "Gran Voivoda de la Costa Occidental",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Austerhavn",
+      "afiliacion": "Consejo de los Grandes Voivodas",
+      "ocupacion": "Gobernador militar",
+      "descripcion": "Antiguo almirante encargado de vigilar la Costa de los Mil Acantilados, sus faros y puertos fortificados.",
+      "personalidad": "Austero, directo y atento al peligro.",
+      "objetivos": [
+        "Proteger los puertos occidentales.",
+        "Mantener activos los faros del reino."
+      ],
+      "conocimientos": [
+        "Navegación.",
+        "Defensa costera.",
+        "Rutas marítimas."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_006",
+      "nombre": "Sir Mikhail Orlov",
+      "titulo": "Maestre de la Orden del Lobo Gris",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Fortaleza de Skonlandvieja",
+      "afiliacion": "Orden del Lobo Gris",
+      "ocupacion": "Comandante caballeresco",
+      "descripcion": "Líder de la orden caballeresca más prestigiosa de Varkeldov.",
+      "personalidad": "Disciplinado, honorable y silencioso.",
+      "objetivos": [
+        "Defender las fronteras.",
+        "Preservar el honor militar del Reino."
+      ],
+      "conocimientos": [
+        "Caballería.",
+        "Juramentos militares.",
+        "Amenazas fronterizas."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_007",
+      "nombre": "Padre Aleksander",
+      "titulo": "Prior de la Hermandad de San Tyr",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Monasterio de Karsk",
+      "afiliacion": "Hermandad de San Tyr",
+      "ocupacion": "Sacerdote y cronista",
+      "descripcion": "Guardián de archivos monásticos y consejero espiritual de caballeros y jueces.",
+      "personalidad": "Sereno, severo y compasivo en privado.",
+      "objetivos": [
+        "Preservar la justicia.",
+        "Custodiar manuscritos antiguos."
+      ],
+      "conocimientos": [
+        "Tyr.",
+        "Derecho señorial.",
+        "Crónicas antiguas."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_008",
+      "nombre": "Maestro Oleg Brankov",
+      "titulo": "Maestro del Gremio de los Herreros Negros",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Straugard",
+      "afiliacion": "Gremio de los Herreros Negros",
+      "ocupacion": "Maestro herrero",
+      "descripcion": "Dirige el gremio artesanal más respetado del reino y abastece de armas a numerosos nobles.",
+      "personalidad": "Exigente, orgulloso y poco tolerante con la mediocridad.",
+      "objetivos": [
+        "Preservar las técnicas metalúrgicas de Dragmir.",
+        "Mantener la independencia del gremio."
+      ],
+      "conocimientos": [
+        "Forja.",
+        "Armas.",
+        "Armaduras.",
+        "Metales raros."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_009",
+      "nombre": "Ivana Petrovic",
+      "titulo": "Líder de la Liga de Comerciantes del Norte",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Hålsvor",
+      "afiliacion": "Liga de Comerciantes del Norte",
+      "ocupacion": "Comerciante y negociadora",
+      "descripcion": "Controla importantes rutas comerciales y contratos de abastecimiento durante el invierno.",
+      "personalidad": "Astuta, práctica y difícil de intimidar.",
+      "objetivos": [
+        "Mantener abiertas las rutas comerciales.",
+        "Proteger contratos de largo plazo."
+      ],
+      "conocimientos": [
+        "Comercio.",
+        "Contratos antiguos.",
+        "Precios de invierno."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_010",
+      "nombre": "Elena Vukovic",
+      "titulo": "Capitana de la Cofradía de Navegantes del Oeste",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Austerhavn",
+      "afiliacion": "Cofradía de Navegantes del Oeste",
+      "ocupacion": "Capitana y piloto costera",
+      "descripcion": "Conoce los puertos, fiordos y acantilados occidentales mejor que casi cualquier noble.",
+      "personalidad": "Valiente, mordaz y leal a su tripulación.",
+      "objetivos": [
+        "Mantener segura la navegación occidental.",
+        "Proteger a los pilotos costeros."
+      ],
+      "conocimientos": [
+        "Navegación.",
+        "Faros.",
+        "Tormentas costeras.",
+        "Rutas marítimas ocultas."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_011",
+      "nombre": "Yaroslav Borkin",
+      "titulo": "Líder de la Liga de los Leñadores Libres",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Leitshamn",
+      "afiliacion": "Liga de los Leñadores Libres",
+      "ocupacion": "Jefe forestal",
+      "descripcion": "Administra cuadrillas de leñadores, exploradores y guardabosques en Skovland.",
+      "personalidad": "Rudo, honesto y profundamente supersticioso.",
+      "objetivos": [
+        "Proteger los bosques explotados.",
+        "Evitar conflictos con la nobleza forestal."
+      ],
+      "conocimientos": [
+        "Bosques.",
+        "Madera.",
+        "Rutas forestales.",
+        "Viejas leyendas."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_012",
+      "nombre": "Lady Katarina Valescu",
+      "titulo": "Boyarda de la Casa Valescu",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Castillo Valescu",
+      "afiliacion": "Casa Valescu",
+      "ocupacion": "Noble terrateniente",
+      "descripcion": "Boyarda influyente cuyo linaje mantiene contratos comerciales de más de un siglo.",
+      "personalidad": "Elegante, fría y extraordinariamente paciente.",
+      "objetivos": [
+        "Expandir la influencia de su casa.",
+        "Proteger sus contratos hereditarios."
+      ],
+      "conocimientos": [
+        "Nobleza vampírica.",
+        "Contratos antiguos.",
+        "Política de Boyardos."
+      ],
+      "secretos": [
+        "Pertenece a una línea vampírica de Clase C."
+      ],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_013",
+      "nombre": "Dorian Lupescu",
+      "titulo": "Castellano del Paso de Eivpass",
+      "estado": "Vivo",
+      "relevancia": "Regional",
+      "ubicacion": "Fortaleza de Eivpass",
+      "afiliacion": "Castellanos del Reino",
+      "ocupacion": "Comandante de fortaleza",
+      "descripcion": "Custodia uno de los pasos montañosos más importantes entre Varkeldov y Nosland.",
+      "personalidad": "Parco, vigilante y obsesionado con la preparación.",
+      "objetivos": [
+        "Mantener cerrado el paso ante amenazas extranjeras.",
+        "Evitar incursiones desde Nosland."
+      ],
+      "conocimientos": [
+        "Defensa de pasos.",
+        "Movimientos fronterizos.",
+        "Inviernos de montaña."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_014",
+      "nombre": "Mara Selenova",
+      "titulo": "Alta Sacerdotisa de Selûne",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Templo Lunar de Skonlandvieja",
+      "afiliacion": "Culto de Selûne",
+      "ocupacion": "Sacerdotisa",
+      "descripcion": "Principal autoridad religiosa del culto de Selûne en Varkeldov.",
+      "personalidad": "Calmada, misteriosa y maternal con los afligidos.",
+      "objetivos": [
+        "Mantener la unidad espiritual del reino.",
+        "Guiar a humanos, licántropos, dhampir y vampiros bajo una misma tradición lunar."
+      ],
+      "conocimientos": [
+        "Selûne.",
+        "Ritos lunares.",
+        "Linajes nocturnos.",
+        "Tradiciones licántropas."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    },
+
+    {
+      "id": "varkeldov_015",
+      "nombre": "Mircea Noctivar",
+      "titulo": "Consejero Arcano de Mystra",
+      "estado": "Vivo",
+      "relevancia": "Imperial",
+      "ubicacion": "Torre de Brumaclara",
+      "afiliacion": "Círculo de Mystra",
+      "ocupacion": "Mago y consejero arcano",
+      "descripcion": "Uno de los magos más respetados del reino, consultado por la nobleza en asuntos de magia antigua.",
+      "personalidad": "Discreto, analítico y desconfiado de los impulsivos.",
+      "objetivos": [
+        "Preservar el uso disciplinado de la magia.",
+        "Estudiar las antiguas protecciones del reino."
+      ],
+      "conocimientos": [
+        "Mystra.",
+        "Magia defensiva.",
+        "Fortalezas encantadas.",
+        "Historia arcana."
+      ],
+      "secretos": [],
+      "relaciones": [],
+      "ultima_actualizacion": "956 Segunda Era"
+    }
+  ],
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Consultar este archivo antes de generar personajes importantes.",
+      "Respetar el estado actual de cada personaje.",
+      "No revelar secretos salvo autorización del Director de Juego.",
+      "Los personajes fallecidos siguen influyendo en la historia.",
+      "No revelar la naturaleza vampírica del Gran Domnitor salvo autorización del Director de Juego.",
+      "Los NPC regionales solo deben aparecer cuando la escena, ciudad, rumor o conflicto los justifique."
+    ]
+  }
+}

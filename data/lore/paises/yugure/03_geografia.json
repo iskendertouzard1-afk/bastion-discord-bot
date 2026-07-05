@@ -1,0 +1,104 @@
+{
+  "titulo": "Geografía del Imperio de Yugure",
+
+  "descripcion": "El Imperio de Yugure ocupa la región central y oriental de Los Grandes Reinos. Gracias a su posición estratégica, constituye el principal punto de encuentro entre las grandes rutas comerciales, diplomáticas y militares del continente. Su territorio presenta una enorme diversidad de paisajes que han favorecido el desarrollo de culturas regionales muy distintas bajo una misma Corona Imperial.",
+
+  "ubicacion": {
+    "continente": "Los Grandes Reinos",
+    "posicion": "Centro y oriente del continente.",
+    "extension": "Es el territorio más extenso y poblado de Los Grandes Reinos."
+  },
+
+  "fronteras": {
+    "norte": "Mar Septentrional y costas del norte.",
+    "occidente": "Región Libre de Kobe y territorios fronterizos occidentales.",
+    "sur": "Sultanato de Hihabar y mares interiores.",
+    "oriente": "Mar del Amanecer."
+  },
+
+  "relieve": {
+    "descripcion": "El relieve combina grandes llanuras agrícolas, cadenas montañosas, bosques ancestrales, costas extensas y numerosas islas. La diversidad geográfica explica las diferencias culturales entre las regiones del Imperio.",
+
+    "elementos": [
+      "Cordilleras montañosas.",
+      "Bosques templados.",
+      "Llanuras agrícolas.",
+      "Grandes ríos navegables.",
+      "Lagos interiores.",
+      "Archipiélagos costeros.",
+      "Costas orientales abiertas al comercio marítimo."
+    ]
+  },
+
+  "hidrografia": {
+    "descripcion": "Los ríos constituyen las principales rutas comerciales interiores. Numerosas ciudades crecieron alrededor de puertos fluviales o marítimos."
+  },
+
+  "clima": {
+    "descripcion": "Predomina un clima templado con influencia marítima. Las estaciones están claramente diferenciadas y modifican el paisaje, el comercio, la agricultura y las rutas de viaje.",
+
+    "variaciones": [
+      "Las regiones del norte presentan inviernos más largos.",
+      "Las costas orientales reciben fuertes lluvias durante determinadas épocas del año.",
+      "Las montañas generan microclimas propios.",
+      "Las regiones agrícolas disfrutan de estaciones bien definidas que favorecen varias cosechas."
+    ]
+  },
+
+  "regiones_geograficas": [
+
+    {
+      "nombre": "Aka no Chiiki",
+      "nombre_comun": "Región Roja",
+      "descripcion": "Centro político y militar del Imperio. Alberga la capital imperial y numerosas fortalezas."
+    },
+
+    {
+      "nombre": "Midori no Chiiki",
+      "nombre_comun": "Región Verde",
+      "descripcion": "Bosques, valles fértiles y abundantes recursos naturales. Destaca por su producción agrícola y maderera."
+    },
+
+    {
+      "nombre": "Ao no Chiiki",
+      "nombre_comun": "Región Azul",
+      "descripcion": "Dominada por grandes costas, puertos y rutas marítimas. Es el principal centro naval del Imperio."
+    },
+
+    {
+      "nombre": "Kiiro no Chiiki",
+      "nombre_comun": "Región Amarilla",
+      "descripcion": "Amplias llanuras y regiones de producción agrícola que abastecen gran parte del Imperio."
+    },
+
+    {
+      "nombre": "Shinawa",
+      "descripcion": "Provincia autónoma situada al norte. Conserva una identidad cultural propia y administra sus asuntos internos bajo autoridad imperial."
+    },
+
+    {
+      "nombre": "Ithlondhil",
+      "descripcion": "Provincia Autónoma élfica. Sus bosques permanecen protegidos por antiguas tradiciones y un ejército del que muy poco se conoce. Aunque forma parte del Imperio, mantiene un elevado grado de independencia política y cultural."
+    },
+
+    {
+      "nombre": "Kobe",
+      "descripcion": "Territorio comercial que conecta las rutas occidentales con el corazón del Imperio. Su prosperidad depende del intercambio de mercancías y del tránsito constante de viajeros."
+    }
+
+  ],
+
+  "importancia_estrategica": {
+    "descripcion": "La posición central de Yugure convierte al Imperio en el principal intermediario comercial entre las grandes naciones. Buena parte de las mercancías que cruzan el continente pasan por alguno de sus caminos, puertos o ciudades."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Considerar siempre la diversidad geográfica del Imperio.",
+      "Relacionar el clima con la estación actual.",
+      "Generar habitantes coherentes con la región de procedencia.",
+      "Respetar las diferencias culturales entre Aka no Chiiki, Midori no Chiiki, Ao no Chiiki, Kiiro no Chiiki, Shinawa, Kobe e Ithlondhil.",
+      "Las grandes rutas comerciales suelen atravesar el territorio imperial."
+    ]
+  }
+}

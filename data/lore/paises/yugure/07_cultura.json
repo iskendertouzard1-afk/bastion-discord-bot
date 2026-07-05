@@ -1,0 +1,84 @@
+{
+  "titulo": "Cultura del Imperio de Yugure",
+
+  "descripcion": "La cultura de Yugure nació de la unión entre las antiguas tradiciones élficas y las costumbres desarrolladas por las civilizaciones humanas durante siglos de convivencia. El resultado es una sociedad profundamente influenciada por el honor, el deber, la disciplina y el respeto por los antepasados.",
+
+  "valores": [
+    "Honor.",
+    "Lealtad.",
+    "Respeto por los ancianos.",
+    "Disciplina.",
+    "Responsabilidad colectiva.",
+    "Armonía con la naturaleza.",
+    "Superación personal."
+  ],
+
+  "sociedad": {
+    "descripcion": "La posición social depende tanto del nacimiento como del mérito personal. Los juramentos poseen un enorme peso moral y romper la palabra dada supone una grave pérdida de honor."
+  },
+
+  "familia": {
+    "descripcion": "La familia constituye el núcleo de la sociedad yuguresa. El apellido representa el prestigio del linaje y las acciones individuales repercuten sobre el honor de toda la Casa."
+  },
+
+  "hospitalidad": {
+    "descripcion": "Los viajeros son recibidos con cortesía siempre que respeten las costumbres locales. La descortesía deliberada puede considerarse un insulto hacia toda la comunidad."
+  },
+
+  "tradiciones": [
+    "Ceremonias del té.",
+    "Festivales estacionales.",
+    "Respeto por los ancestros.",
+    "Duelo ceremonial.",
+    "Jardines contemplativos.",
+    "Poesía y caligrafía.",
+    "Artes marciales.",
+    "Festivales de cosecha."
+  ],
+
+  "arquitectura": {
+    "descripcion": "Predominan construcciones de madera y piedra con tejados curvos, jardines interiores, patios abiertos y una fuerte integración con el paisaje natural."
+  },
+
+  "vestimenta": {
+    "descripcion": "Las prendas tradicionales derivan de antiguas túnicas élficas adaptadas al clima del continente. Los colores, bordados y emblemas permiten identificar fácilmente la procedencia y el rango social de una persona."
+  },
+
+  "educacion": {
+    "descripcion": "El aprendizaje ocupa un lugar central dentro del Imperio. La lectura, la escritura, la estrategia, la filosofía y la historia son consideradas disciplinas fundamentales para la formación de cualquier servidor del Estado."
+  },
+
+  "idioma": {
+
+    "nombre": "Élfico Imperial",
+
+    "descripcion": "El idioma oficial del Imperio deriva directamente del antiguo élfico. Durante siglos evolucionó bajo la influencia de las lenguas humanas hasta desarrollar una pronunciación, entonación y expresiones propias inspiradas en la fonética japonesa. Aunque un elfo procedente de otros mundos puede comprender gran parte del idioma, reconocerá inmediatamente que se trata de un dialecto profundamente transformado.",
+
+    "escritura": "Conserva la escritura élfica tradicional.",
+
+    "particularidades": [
+      "Los nombres extranjeros suelen adaptarse fonéticamente al Élfico Imperial.",
+      "La pronunciación favorece sílabas abiertas similares al japonés.",
+      "Muchos títulos oficiales permanecen en su forma tradicional élfica."
+    ]
+  },
+
+  "religion_predominante": {
+    "deidad": "Pelor",
+    "descripcion": "La mayor parte de la población profesa la fe de Pelor como protector de la vida, las cosechas y la prosperidad. La veneración de otras deidades es aceptada siempre que no altere el equilibrio del Imperio."
+  },
+
+  "vision_del_mundo": {
+    "descripcion": "Los yugureses consideran que la estabilidad surge del equilibrio entre tradición, conocimiento y responsabilidad. El poder se entiende como un deber hacia la comunidad antes que como un privilegio individual."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Mantener una estética inspirada en el Japón feudal.",
+      "Recordar el origen élfico de la lengua.",
+      "Generar nombres coherentes con el Élfico Imperial.",
+      "Priorizar el honor y el deber como motores de la conducta.",
+      "Evitar referencias culturales propias de los Reinos Olvidados cuando contradigan el canon de Yugure."
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "titulo": "Cultura del Reino Unido de Nosland",
+
+  "descripcion": "La cultura de Nosland nació tras la caída del Reino de Ox y la reconstrucción del occidente del continente. A lo largo de los siglos combinó antiguas tradiciones caballerescas con instituciones inspiradas en las viejas repúblicas clásicas. El resultado es una sociedad donde el deber, la ciudadanía y el servicio al Reino poseen un enorme prestigio.",
+
+  "valores": [
+    "Honor.",
+    "Lealtad.",
+    "Deber.",
+    "Disciplina.",
+    "Servicio al Reino.",
+    "Respeto por la ley.",
+    "Responsabilidad cívica."
+  ],
+
+  "sociedad": {
+    "descripcion": "La nobleza ocupa un lugar importante dentro de la sociedad, aunque el mérito personal también permite alcanzar prestigio mediante el servicio militar, la administración o el comercio. La ciudadanía constituye un motivo de orgullo para los habitantes de la capital."
+  },
+
+  "familia": {
+    "descripcion": "Las grandes Casas conservan un enorme prestigio histórico, pero la familia continúa siendo la base de toda comunidad. El apellido representa el honor del linaje y el deber hacia las generaciones futuras."
+  },
+
+  "hospitalidad": {
+    "descripcion": "La hospitalidad es considerada una virtud caballeresca. Viajeros y peregrinos suelen recibir refugio dentro de ciudades y aldeas mientras respeten las leyes del Reino."
+  },
+
+  "tradiciones": [
+    "Juramentos de caballería.",
+    "Torneos.",
+    "Festivales de cosecha.",
+    "Ceremonias de investidura.",
+    "Juramento militar.",
+    "Celebraciones del Día de la Fundación.",
+    "Sesiones públicas del Senado Real."
+  ],
+
+  "arquitectura": {
+    "descripcion": "Predominan castillos, fortalezas, murallas, monasterios y villas fortificadas de estilo medieval. Durheim constituye la gran excepción: su arquitectura incorpora amplias avenidas, foros, edificios públicos, templos y plazas inspiradas en las antiguas ciudades clásicas."
+  },
+
+  "vestimenta": {
+    "descripcion": "La vestimenta cotidiana responde al estilo feudal propio de Nosland. Nobles y caballeros utilizan capas, jubones, cotas y armaduras ceremoniales. En Durheim, los ciudadanos pueden vestir la tradicional Toga de Ciudadano durante ceremonias oficiales y actos públicos."
+  },
+
+  "educacion": {
+    "descripcion": "La educación se desarrolla principalmente en monasterios, escuelas nobiliarias y academias patrocinadas por las Grandes Casas. La formación militar, la lectura, la historia y el derecho constituyen pilares fundamentales para quienes aspiran al servicio público."
+  },
+
+  "idioma": {
+
+    "nombre": "Lengua Franca",
+
+    "descripcion": "La Lengua Franca constituye el idioma oficial de Nosland y el principal medio de comunicación entre los Grandes Reinos. Salvo Yugure, prácticamente todas las naciones la emplean como lengua común para el comercio, la diplomacia y la administración.",
+
+    "escritura": "Alfabeto Franco.",
+
+    "particularidades": [
+      "Es el equivalente al idioma Común en términos prácticos.",
+      "La mayoría de documentos oficiales del continente se redactan en Lengua Franca.",
+      "Los habitantes de Yugure suelen hablarla como segunda lengua."
+    ]
+  },
+
+  "tratamientos": {
+    "descripcion": "El protocolo social ocupa un lugar importante dentro de la nobleza.",
+
+    "formas_de_trato": [
+      "Messer.",
+      "Mi Lord.",
+      "Mi Lady."
+    ]
+  },
+
+  "servicio_militar": {
+    "descripcion": "Todo ciudadano libre tiene la obligación de servir al Reino cuando la Corona convoca las levas. El servicio militar constituye una de las mayores expresiones de honor y compromiso con Nosland."
+  },
+
+  "poblacion": {
+
+    "descripcion": "Los humanos constituyen la inmensa mayoría de la población. También existen importantes comunidades de enanos, medianos y gnomos plenamente integradas en la sociedad. Los elfos son poco numerosos y otras razas aparecen únicamente en pequeñas aldeas o asentamientos aislados.",
+
+    "composicion": [
+
+      "Humanos (predominantes).",
+
+      "Enanos.",
+
+      "Medianos.",
+
+      "Gnomos.",
+
+      "Elfos (minoría).",
+
+      "Otras especies (muy escasas)."
+
+    ],
+
+    "convivencia": "La Corona procura mantener la convivencia entre las distintas comunidades mediante la diplomacia, aunque algunos Lores recurren al uso de la fuerza cuando consideran amenazado el orden del Reino."
+  },
+
+  "organizacion_social": {
+    "descripcion": "Nosland mantiene un sistema feudal. Cada feudo recauda tributos destinados a sostener su administración local y contribuye al Tesoro Real mediante impuestos enviados a Durheim."
+  },
+
+  "religion_predominante": {
+    "deidades": [
+      "Mystra",
+      "Pelor",
+      "Tyr"
+    ],
+    "descripcion": "Mystra es la deidad más venerada del Reino por su relación con el conocimiento y la magia. Pelor ocupa un lugar destacado entre agricultores y comunidades rurales, mientras que Tyr es especialmente respetado por jueces, caballeros y magistrados. La existencia de templos dedicados a otras deidades del canon oficial es común en las principales ciudades."
+  },
+
+  "vision_del_mundo": {
+    "descripcion": "Los noslandeses consideran que una nación fuerte surge de ciudadanos responsables, gobernantes justos y leyes respetadas. El honor se demuestra mediante el servicio al Reino y el cumplimiento de la palabra dada."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Mantener una estética medieval occidental.",
+      "Describir Durheim con una fuerte influencia de la arquitectura clásica.",
+      "Utilizar la Lengua Franca como idioma común del continente.",
+      "Recordar que el tratamiento respetuoso habitual es 'Messer', 'Mi Lord' o 'Mi Lady'.",
+      "Presentar a los caballeros y al servicio militar como elementos centrales de la identidad de Nosland.",
+      "Considerar a los humanos como la raza predominante, sin excluir la presencia integrada de otras especies."
+    ]
+  }
+}

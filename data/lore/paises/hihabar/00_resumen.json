@@ -1,0 +1,105 @@
+{
+  "titulo": "Resumen del Sultanato de Hihabar",
+
+  "descripcion": "El Sultanato de Hihabar constituye la mayor potencia comercial y académica de Los Grandes Reinos. Situado al sureste del continente, controla las principales rutas marítimas y caravaneras que conectan occidente y oriente. Su prosperidad descansa sobre el comercio, la investigación, la ingeniería y una administración altamente organizada bajo la autoridad del Sultán.",
+
+  "informacion_general": {
+
+    "nombre_oficial": "Sultanato de Hihabar",
+
+    "forma_de_gobierno": "Sultanato Imperial.",
+
+    "gobernante": "Sultán Jalil ibn Rashid.",
+
+    "capital": "Al-Qasr.",
+
+    "era_actual": "Segunda Era",
+
+    "año_actual": 956
+  },
+
+  "grandes_emiratos": [
+
+    "Tabratoria",
+
+    "Namunz",
+
+    "Liyah",
+
+    "Bisqah"
+
+  ],
+
+  "identidad": {
+
+    "cultura": "Civilización inspirada en las culturas de Anatolia, Persia y el Medio Oriente medieval, donde el conocimiento, la hospitalidad y el comercio constituyen la base de la sociedad.",
+
+    "idioma": "Lengua Franca.",
+
+    "escritura": "Caligrafía Aleph.",
+
+    "religion": "Predomina el culto a Moradin.",
+
+    "economia": "Basada en el comercio internacional, la investigación, la ingeniería y la innovación.",
+
+    "sociedad": "La sabiduría, el trabajo bien realizado, la hospitalidad y la prosperidad compartida representan los pilares de la vida cotidiana."
+  },
+
+  "instituciones": [
+
+    "Palacio del Creciente.",
+
+    "Diwan Imperial.",
+
+    "Consejo de Emires.",
+
+    "Consejo de Ulemas.",
+
+    "Gran Biblioteca Imperial.",
+
+    "Casa de la Moneda Imperial.",
+
+    "Guardia del Creciente."
+
+  ],
+
+  "instituciones_principales": [
+
+    "Gran Biblioteca Imperial",
+
+    "Casa de la Moneda Imperial",
+
+    "Guardia del Creciente",
+
+    "Consejo de Ulemas"
+
+  ],
+
+  "politica_exterior": {
+
+    "Yugure": "Amistosa",
+
+    "Nosland": "Suspicaz",
+
+    "Varkeldov": "Suspicaz"
+
+  },
+
+  "filosofia": "Hihabar considera que el conocimiento constituye la mayor riqueza de una civilización. El comercio acerca a los pueblos, la ciencia impulsa el progreso y la diplomacia preserva la prosperidad del Sultanato. Toda gran obra comienza con una idea y toda idea florece cuando puede compartirse libremente.",
+
+  "canon": {
+
+    "reglas": [
+
+      "El escenario utiliza Dungeons & Dragons 5.5 (2024) como base oficial.",
+
+      "El Codex únicamente modifica o amplía aquello que forma parte del mundo de Hihabar.",
+
+      "Cuando exista una contradicción entre el Codex y el material oficial, prevalecerá el Codex.",
+
+      "Toda información generada por la IA debe respetar la historia, personajes, geografía, política y cultura descritos en este repositorio."
+
+    ]
+  }
+
+}

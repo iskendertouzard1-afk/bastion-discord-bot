@@ -1,0 +1,143 @@
+{
+  "titulo": "Geografía del Reino de Varkeldov",
+
+  "descripcion": "El Reino de Varkeldov ocupa el suroeste de Los Grandes Reinos. Sus territorios están dominados por densos bosques, cordilleras antiguas, costas escarpadas y extensos valles separados por montañas. La naturaleza ha moldeado el carácter de sus habitantes, acostumbrados a largos inviernos, fortalezas aisladas y caminos difíciles.",
+
+  "ubicacion": {
+    "continente": "Los Grandes Reinos",
+    "posicion": "Suroeste del continente.",
+    "extension": "Uno de los territorios más extensos y agrestes de Los Grandes Reinos."
+  },
+
+  "fronteras": {
+    "norte": "Mar del Norte y archipiélagos occidentales.",
+    "oriente": "Reino Unido de Nosland.",
+    "sur": "Mar Austral.",
+    "occidente": "Gran Océano Occidental."
+  },
+
+  "relieve": {
+
+    "descripcion": "El relieve combina grandes bosques templados, cadenas montañosas, colinas, lagos, valles y costas profundamente recortadas. La mayor parte del territorio resulta difícil de atravesar, favoreciendo el surgimiento de fortalezas independientes y antiguos dominios nobiliarios.",
+
+    "elementos": [
+
+      "Cordilleras montañosas.",
+
+      "Bosques templados.",
+
+      "Bosques de coníferas.",
+
+      "Grandes valles.",
+
+      "Mesetas rocosas.",
+
+      "Acantilados costeros.",
+
+      "Fiordos.",
+
+      "Lagos glaciares.",
+
+      "Islas occidentales."
+
+    ]
+
+  },
+
+  "hidrografia": {
+
+    "descripcion": "Numerosos ríos nacen en las montañas y descienden hacia ambas costas formando lagos, gargantas y fértiles valles. Aunque algunos son navegables, la mayor parte del transporte continúa realizándose por caminos terrestres fortificados."
+
+  },
+
+  "clima": {
+
+    "descripcion": "Predomina un clima continental frío con fuerte influencia marítima. Los inviernos son largos y rigurosos, mientras que los veranos resultan breves y templados. La niebla, las lluvias y las primeras nevadas condicionan la vida cotidiana durante buena parte del año.",
+
+    "variaciones": [
+
+      "Las montañas permanecen nevadas gran parte del año.",
+
+      "Las costas occidentales reciben abundantes lluvias.",
+
+      "Los grandes bosques generan extensos bancos de niebla.",
+
+      "Los valles centrales concentran la mayor parte de la agricultura.",
+
+      "Las regiones septentrionales presentan inviernos especialmente severos."
+
+    ]
+
+  },
+
+  "regiones_geograficas": [
+
+    {
+
+      "nombre": "Bosques de Skovland",
+
+      "descripcion": "Inmensos bosques donde abundan los aserraderos, cazadores, monasterios aislados y antiguas fortalezas."
+
+    },
+
+    {
+
+      "nombre": "Montañas de Dragmir",
+
+      "descripcion": "Cadena montañosa que protege el corazón del reino. Alberga minas, fortalezas y numerosos pasos estratégicos."
+
+    },
+
+    {
+
+      "nombre": "Valles de Hrodan",
+
+      "descripcion": "Región más fértil de Varkeldov. Sus aldeas abastecen de trigo, cebada y ganado a la nobleza."
+
+    },
+
+    {
+
+      "nombre": "Costa de los Mil Acantilados",
+
+      "descripcion": "Costa rocosa donde pequeños puertos sobreviven protegidos por altos acantilados y castillos."
+
+    },
+
+    {
+
+      "nombre": "Islas del Cuervo",
+
+      "descripcion": "Archipiélago occidental conocido por sus pescadores, vigías costeros y antiguos faros."
+
+    }
+
+  ],
+
+  "importancia_estrategica": {
+
+    "descripcion": "La geografía convierte a Varkeldov en una fortaleza natural. Sus montañas, bosques y costas dificultan cualquier invasión, mientras que sus castillos dominan los pocos pasos que comunican el reino con el resto del continente."
+
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Describir Varkeldov como un reino frío, boscoso y montañoso.",
+
+      "Relacionar la niebla, el invierno y los bosques con la ambientación.",
+
+      "Las fortalezas suelen dominar colinas, puertos y pasos montañosos.",
+
+      "Los viajes terrestres resultan lentos y difíciles.",
+
+      "Los habitantes están acostumbrados a sobrevivir en un entorno hostil.",
+
+      "Evitar describir grandes llanuras abiertas similares a Nosland."
+
+    ]
+
+  }
+
+}

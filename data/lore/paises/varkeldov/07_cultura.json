@@ -1,0 +1,140 @@
+{
+  "titulo": "Cultura del Reino de Varkeldov",
+
+  "descripcion": "La cultura de Varkeldov se formó en una tierra fría, agreste y cubierta de bosques, montañas y fortalezas. Su sociedad es rigurosa, militar y profundamente marcada por la supervivencia. A diferencia de otros reinos, la población está compuesta principalmente por humanos, licántropos, dhampir y vampiros nobles, quienes ocupan un lugar central en la estructura histórica del reino.",
+
+  "valores": [
+    "Lealtad.",
+    "Resistencia.",
+    "Disciplina.",
+    "Honor familiar.",
+    "Deber militar.",
+    "Respeto por los juramentos.",
+    "Supervivencia ante la adversidad."
+  ],
+
+  "sociedad": {
+    "descripcion": "La sociedad varkeldoviana es jerárquica, austera y militarizada. La nobleza conserva enorme poder sobre castillos, aldeas, minas y bosques. Los vampiros de linaje noble son respetados y temidos, mientras que humanos, licántropos y dhampir forman parte habitual de la vida del reino."
+  },
+
+  "especies_principales": {
+    "descripcion": "Varkeldov posee una composición poblacional muy distinta a la de otros Grandes Reinos. Muchas especies comunes en otras regiones son escasas o inexistentes aquí.",
+    "grupos": [
+      "Humanos.",
+      "Licántropos.",
+      "Dhampir.",
+      "Vampiros."
+    ]
+  },
+
+  "jerarquia_vampirica": {
+    "descripcion": "Los vampiros de Varkeldov son celosos de su especie y protegen cuidadosamente sus linajes. Muchos pertenecen a antiguas casas nobles.",
+    "clases": [
+      {
+        "clase": "Clase A",
+        "nombre": "Skonland pura",
+        "descripcion": "Vampiros inmortales de linaje antiguo. Representan la cúspide de la nobleza vampírica."
+      },
+      {
+        "clase": "Clase B",
+        "nombre": "Milenarios",
+        "descripcion": "Vampiros con milenios de existencia. Poseen enorme poder, memoria histórica y prestigio."
+      },
+      {
+        "clase": "Clase C",
+        "nombre": "Centenarios",
+        "descripcion": "Vampiros con siglos de vida. Suelen ocupar posiciones nobiliarias, militares o cortesanas."
+      },
+      {
+        "clase": "Dhampir",
+        "nombre": "Hijos de vampiros",
+        "descripcion": "Descendientes de vampiros. Viven entre el mundo mortal y la aristocracia nocturna."
+      }
+    ]
+  },
+
+  "familia": {
+    "descripcion": "La familia y el linaje son pilares de la identidad varkeldoviana. Los juramentos hechos por una casa noble pueden conservarse durante siglos, y una traición puede manchar a toda una estirpe."
+  },
+
+  "hospitalidad": {
+    "descripcion": "La hospitalidad existe, pero suele estar precedida por cautela. Los viajeros son observados antes de ser aceptados. Una vez recibidos bajo techo, el anfitrión tiene el deber de ofrecer fuego, alimento y protección durante la noche."
+  },
+
+  "tradiciones": [
+    "Juramentos de Skonland.",
+    "Veladas junto al fuego.",
+    "Cantos fúnebres de invierno.",
+    "Duelos nobiliarios.",
+    "Vigilias lunares.",
+    "Bendición de fortalezas.",
+    "Procesiones con velas.",
+    "Ritos de protección contra la noche."
+  ],
+
+
+"ceremonia_del_primer_lunar": {
+  "nombre": "Ceremonia del Primer Lunar",
+  "descripcion": "Cada anochecer, cuando la primera luna aparece sobre el horizonte, muchas comunidades de Varkeldov guardan unos instantes de silencio antes de reanudar sus actividades. Humanos, licántropos, dhampir y vampiros participan en este antiguo gesto como recordatorio de que todos comparten una misma tierra y un mismo destino. Para algunos constituye una breve oración; para otros, una muestra de respeto hacia los antepasados o un momento de reflexión personal.",
+  "simbolismo": [
+    "Unidad entre los pueblos del reino.",
+    "Respeto por los ciclos de la luna.",
+    "Recuerdo de los ancestros.",
+    "Renovación de los juramentos.",
+    "Aceptación del deber que comienza con la llegada de la noche."
+  ]
+},
+
+  "arquitectura": {
+    "descripcion": "Predominan castillos de piedra oscura, fortalezas sobre montañas, monasterios amurallados, aldeas de madera, torres de vigilancia y criptas familiares. Las construcciones suelen ser robustas, defensivas y adaptadas al frío."
+  },
+
+  "vestimenta": {
+    "descripcion": "La vestimenta favorece telas gruesas, pieles, capas pesadas, botas altas, guantes, broches familiares y colores oscuros. La nobleza utiliza prendas ceremoniales con bordados rojos, plateados o negros."
+  },
+
+  "educacion": {
+    "descripcion": "La educación se centra en historia familiar, estrategia, defensa, administración de tierras, religión y disciplina militar. Los nobles aprenden genealogía, derecho señorial y mando desde jóvenes."
+  },
+
+  "idioma": {
+    "nombre": "Lengua Franca",
+    "descripcion": "La Lengua Franca se utiliza para la administración, el comercio y la diplomacia. En Varkeldov posee una pronunciación áspera y numerosos términos regionales vinculados a la nobleza, la guerra, los bosques y la vida nocturna.",
+    "escritura": "Alfabeto Franco.",
+    "particularidades": [
+      "Los títulos nobiliarios conservan formas propias de Varkeldov.",
+      "Los juramentos suelen escribirse y conservarse durante generaciones.",
+      "Las casas nobles mantienen archivos genealógicos muy antiguos."
+    ]
+  },
+
+  "religion_predominante": {
+    "deidades": [
+      "Selûne",
+      "Mystra",
+      "Tyr"
+    ],
+    "descripcion": "Selûne y Mystra son ampliamente veneradas en el reino, especialmente por su relación con la noche, la luna, la magia y los misterios antiguos. Tyr tiene una presencia fuerte en el norte, donde se asocia con justicia, juramentos y defensa de las comunidades."
+  },
+
+  "cultos_marginales": {
+    "deidad": "Tiamat",
+    "descripcion": "Existen pequeños cultos dedicados a Tiamat, aunque son mal vistos por la mayoría de la población y vigilados por autoridades religiosas y nobles."
+  },
+
+  "vision_del_mundo": {
+    "descripcion": "Los varkeldovianos consideran que la vida es una prueba constante de resistencia. La confianza se gana lentamente, los juramentos deben cumplirse y cada generación tiene el deber de proteger lo que heredó de sus antepasados."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Mantener una estética inspirada en Rumania, Moldavia, Valaquia y Europa oriental.",
+      "Describir la cultura como fría, militar, austera y melancólica.",
+      "Recordar que humanos, licántropos, dhampir y vampiros son las especies más importantes del reino.",
+      "Presentar a los vampiros como nobles celosos de sus linajes.",
+      "No revelar secretos vampíricos concretos salvo autorización del Director de Juego.",
+      "Relacionar la religión con Selûne, Mystra y Tyr.",
+      "Usar castillos, bosques, niebla, nieve, campanas y juramentos como elementos culturales frecuentes."
+    ]
+  }
+}

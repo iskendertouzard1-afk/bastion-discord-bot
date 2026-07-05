@@ -1,0 +1,189 @@
+{
+  "titulo": "Regiones Geográficas del Reino Unido de Nosland",
+
+  "descripcion": "El Reino Unido de Nosland no se encuentra dividido en provincias políticas como Yugure. Su territorio está organizado en feudos autónomos gobernados por Lores que responden directamente al Basileus. No obstante, por razones históricas y geográficas, los habitantes distinguen cinco grandes regiones que agrupan feudos con características similares.",
+
+  "estructura_administrativa": {
+
+    "division_principal": "Feudo",
+
+    "agrupacion_geografica": "Región",
+
+    "gobernante_local": "Lord",
+
+    "autoridad_suprema": "Basileus William IV Waritz",
+
+    "titulo": "Basileus del Reino Unido de Nosland",
+
+    "descripcion": "Máxima autoridad del reino y protector de la Corona. Gobierna junto al Senado Real y los Cónsules, garantizando la unidad de los numerosos feudos que conforman Nosland."
+  },
+
+  "regiones": [
+
+    {
+
+      "nombre": "Neuchsia",
+
+      "ciudad_principal": "Schobel",
+
+      "alto_lord": {
+
+        "nombre": "Lord Alaric von Eisenwald",
+
+        "titulo": "Alto Lord de Schobel",
+
+        "descripcion": "Veterano noble del norte. Administra los extensos bosques de Neuchsia y protege las rutas costeras que conectan el reino con el Mar Septentrional."
+      },
+
+      "identidad": "Bosques templados, explotación forestal, puertos pesqueros y fortalezas costeras.",
+
+      "caracteristicas": [
+
+        "Principal productor de madera del reino.",
+
+        "Importantes puertos pesqueros.",
+
+        "Castillos construidos sobre acantilados.",
+
+        "Clima más frío que el resto de Nosland."
+
+      ]
+
+    },
+
+    {
+
+      "nombre": "Aiburg",
+
+      "ciudad_principal": "Weiberach",
+
+      "alto_lord": {
+
+        "nombre": "Lady Helena von Falkenheim",
+
+        "titulo": "Alto Lord de Weiberach",
+
+        "descripcion": "Una de las nobles más influyentes del Senado Real. Su familia controla algunas de las tierras agrícolas más fértiles del reino."
+      },
+
+      "identidad": "Grandes llanuras agrícolas, pequeñas aldeas y antiguos monasterios.",
+
+      "caracteristicas": [
+
+        "Principal productor de cereales.",
+
+        "Extensos viñedos.",
+
+        "Numerosos molinos.",
+
+        "Importantes mercados rurales."
+
+      ]
+
+    },
+
+    {
+
+      "nombre": "Osinbach",
+
+      "ciudad_principal": "Inzgradefenb",
+
+      "alto_lord": {
+
+        "nombre": "Lord Cedric von Sturmfels",
+
+        "titulo": "Alto Lord de Inzgradefenb",
+
+        "descripcion": "Caballero legendario y protector de las praderas del sur. Es uno de los mayores defensores de la tradición caballeresca noslandesa."
+      },
+
+      "identidad": "Praderas abiertas, ganadería, órdenes de caballería y castillos fronterizos.",
+
+      "caracteristicas": [
+
+        "Cría de caballos de guerra.",
+
+        "Grandes torneos caballerescos.",
+
+        "Fortalezas defensivas.",
+
+        "Órdenes militares."
+
+      ]
+
+    },
+
+    {
+
+      "nombre": "Schapfheimia",
+
+      "ciudad_principal": "Gothengswald",
+
+      "alto_lord": {
+
+        "nombre": "Lord Octavian von Greifen",
+
+        "titulo": "Alto Lord de Gothengswald",
+
+        "descripcion": "Erudito y estratega. Ha impulsado la construcción de caminos, academias militares y centros de comercio que conectan buena parte del reino."
+      },
+
+      "identidad": "Centro comercial, fortalezas interiores y red principal de caminos.",
+
+      "caracteristicas": [
+
+        "Principal red de carreteras.",
+
+        "Mercados permanentes.",
+
+        "Academias militares.",
+
+        "Gran concentración de artesanos."
+
+      ]
+
+    },
+
+    {
+
+      "nombre": "Distrito de la Corona",
+
+      "ciudad_principal": "Durheim",
+
+      "alto_lord": {
+
+        "nombre": "William IV Waritz",
+
+        "titulo": "Basileus de Nosland",
+
+        "descripcion": "La capital no pertenece a ningún feudo. Es administrada directamente por la Corona y alberga el Palacio Real, el Senado, la residencia de los Cónsules y las principales instituciones del reino."
+      },
+
+      "identidad": "Centro político, administrativo y diplomático de Nosland.",
+
+      "caracteristicas": [
+
+        "Sede del Basileus.",
+
+        "Senado Real.",
+
+        "Palacio de la Corona.",
+
+        "Principal centro diplomático del reino."
+
+      ]
+
+    }
+
+  ],
+
+  "autoridad_real": {
+
+    "nombre": "William IV Waritz",
+
+    "titulo": "Basileus del Reino Unido de Nosland",
+
+    "descripcion": "Actual soberano del Reino Unido de Nosland. Custodio de la Corona y máxima autoridad política, militar y judicial del reino. Su gobierno mantiene el delicado equilibrio entre la autoridad real, el Senado y los numerosos Lores feudales."
+  }
+
+}

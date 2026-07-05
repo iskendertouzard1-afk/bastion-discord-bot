@@ -1,0 +1,278 @@
+{
+  "titulo": "Economía del Reino Unido de Nosland",
+
+  "descripcion": "La economía de Nosland se fundamenta en el sistema feudal. Cada feudo administra sus propias tierras, recauda tributos y sostiene a su población mediante la agricultura, la ganadería y la producción artesanal. La Corona coordina el comercio entre los feudos y protege las grandes rutas que unen el occidente con el resto de Los Grandes Reinos.",
+
+  "modelo_economico": {
+
+    "tipo": "Economía feudal con libre comercio interno.",
+
+    "descripcion": "Los Lores administran la producción y los impuestos de sus feudos. Una parte de esos tributos se entrega al Tesoro Real para financiar el Ejército, las obras públicas y la administración del Reino."
+  },
+
+  "economia_interna": {
+
+    "descripcion": "Cada región geográfica concentra actividades predominantes, aunque todos los feudos buscan mantener cierto grado de autosuficiencia.",
+
+    "regiones": [
+
+      {
+
+        "nombre": "Neuchsia",
+
+        "especializacion": [
+
+          "Silvicultura.",
+
+          "Madera.",
+
+          "Pesca.",
+
+          "Pieles.",
+
+          "Construcción naval."
+
+        ]
+
+      },
+
+      {
+
+        "nombre": "Aiburg",
+
+        "especializacion": [
+
+          "Agricultura.",
+
+          "Ganadería.",
+
+          "Cereales.",
+
+          "Viñedos.",
+
+          "Molinos."
+
+        ]
+
+      },
+
+      {
+
+        "nombre": "Osinbach",
+
+        "especializacion": [
+
+          "Cría de caballos.",
+
+          "Ganadería.",
+
+          "Forja.",
+
+          "Armas.",
+
+          "Órdenes de caballería."
+
+        ]
+
+      },
+
+      {
+
+        "nombre": "Schapfheimia",
+
+        "especializacion": [
+
+          "Artesanos.",
+
+          "Mercados.",
+
+          "Manufacturas.",
+
+          "Academias.",
+
+          "Comercio interior."
+
+        ]
+
+      },
+
+      {
+
+        "nombre": "Distrito de la Corona",
+
+        "especializacion": [
+
+          "Administración.",
+
+          "Finanzas.",
+
+          "Diplomacia.",
+
+          "Grandes mercados.",
+
+          "Servicios."
+
+        ]
+
+      }
+
+    ]
+  },
+
+  "tributos": {
+
+    "descripcion": "Todos los feudos entregan tributos periódicos al Tesoro Real como muestra de lealtad al Basileus y para sostener las instituciones del Reino.",
+
+    "formas": [
+
+      "Moneda.",
+
+      "Grano.",
+
+      "Ganado.",
+
+      "Caballos.",
+
+      "Hierro.",
+
+      "Madera.",
+
+      "Armas.",
+
+      "Soldados."
+
+    ]
+  },
+
+  "comercio_exterior": {
+
+    "descripcion": "Nosland mantiene relaciones comerciales con todos los Grandes Reinos. Sus exportaciones agrícolas y metalúrgicas son altamente valoradas, mientras que importa bienes de lujo y productos que no se producen en el occidente.",
+
+    "principales_socios": [
+
+      {
+
+        "pais": "Imperio de Yugure",
+
+        "relacion": "Amistosa",
+
+        "intercambio": [
+
+          "Seda.",
+
+          "Papel.",
+
+          "Porcelana.",
+
+          "Té."
+
+        ]
+
+      },
+
+      {
+
+        "pais": "Sultanato de Hihabar",
+
+        "relacion": "Amistosa",
+
+        "intercambio": [
+
+          "Especias.",
+
+          "Perfumes.",
+
+          "Cristal.",
+
+          "Incienso."
+
+        ]
+
+      },
+
+      {
+
+        "pais": "Reino de Varkeldov",
+
+        "relacion": "Neutral",
+
+        "intercambio": [
+
+          "Piedra.",
+
+          "Minerales.",
+
+          "Carbón.",
+
+          "Plata."
+
+        ]
+
+      }
+
+    ]
+  },
+
+  "exportaciones_reales": [
+
+    "Cereales.",
+
+    "Caballos.",
+
+    "Lana.",
+
+    "Hierro.",
+
+    "Armas.",
+
+    "Herramientas.",
+
+    "Madera.",
+
+    "Vino.",
+
+    "Quesos."
+
+  ],
+
+  "infraestructura": {
+
+    "descripcion": "La economía depende de una extensa red de caminos reales que conectan los principales feudos con Durheim. Los puertos occidentales permiten el comercio marítimo mientras que numerosos puentes y ríos facilitan el transporte interior."
+  },
+
+  "filosofia_economica": {
+
+    "descripcion": "La fortaleza del Reino reside en la autosuficiencia de sus feudos y en la cooperación entre la Corona y la nobleza. El comercio es considerado una herramienta para fortalecer la prosperidad del Reino, mientras que la tierra continúa siendo la principal fuente de riqueza y prestigio."
+  },
+
+  "principios": [
+
+    "La tierra constituye la base de toda riqueza.",
+
+    "Todo feudo debe contribuir al Reino mediante tributos.",
+
+    "Los caminos reales pertenecen a la Corona.",
+
+    "La prosperidad de cada feudo fortalece la estabilidad del Reino."
+
+  ],
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Relacionar la economía con las cosechas y las estaciones.",
+
+      "Los Lores administran la producción de sus feudos.",
+
+      "La caballería depende de la cría de caballos de Osinbach.",
+
+      "Durheim actúa como el principal centro financiero y político del Reino.",
+
+      "Las guerras pueden interrumpir el suministro de tributos y el comercio."
+
+    ]
+
+  }
+
+}

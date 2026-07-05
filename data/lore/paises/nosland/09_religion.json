@@ -1,0 +1,205 @@
+{
+  "titulo": "Religión del Reino Unido de Nosland",
+
+  "descripcion": "La religión en Nosland se caracteriza por la convivencia de tres grandes cultos ampliamente aceptados: Mystra, Pelor y Tyr. Aunque Mystra ocupa el lugar predominante como protectora del conocimiento y de la civilización, el Reino reconoce oficialmente a todas las deidades del canon de Dungeons & Dragons. Los templos constituyen centros de enseñanza, justicia, asistencia y vida comunitaria.",
+
+  "religion_predominante": {
+
+    "deidad": "Mystra",
+
+    "titulos_comunes": [
+
+      "Dama de la Magia",
+
+      "Guardiana del Conocimiento",
+
+      "Señora del Tejido",
+
+      "Luz del Saber"
+
+    ],
+
+    "influencia": "Alta",
+
+    "descripcion": "Mystra es considerada la patrona del conocimiento, la magia y el progreso intelectual. Sus templos mantienen bibliotecas, escuelas, archivos y centros de estudio repartidos por todo el Reino."
+  },
+
+  "cultos_principales": [
+
+    {
+
+      "deidad": "Pelor",
+
+      "descripcion": "Pelor es venerado principalmente en aldeas, monasterios y comunidades agrícolas. Su culto protege las cosechas, la salud y la vida cotidiana del pueblo."
+
+    },
+
+    {
+
+      "deidad": "Tyr",
+
+      "descripcion": "Tyr ocupa un lugar privilegiado entre caballeros, magistrados, jueces y miembros del Senado. Representa la justicia, el honor y el cumplimiento de la ley."
+
+    }
+
+
+    
+  ],
+
+  "las_tres_luminarias_del_reino": {
+  "descripcion": "Nombre cultural con el que los noslandeses se refieren a Mystra, Tyr y Pelor cuando aparecen juntos en ceremonias oficiales, edificios públicos y juramentos solemnes. No constituye un panteón separado; es una forma tradicional de expresar los tres pilares espirituales del Reino.",
+
+  "luminarias": [
+    {
+      "deidad": "Mystra",
+      "simbolo": "La mente iluminada",
+      "significado": "Conocimiento, magia, educación y memoria."
+    },
+    {
+      "deidad": "Tyr",
+      "simbolo": "La balanza firme",
+      "significado": "Justicia, ley, juramento y honor."
+    },
+    {
+      "deidad": "Pelor",
+      "simbolo": "El sol sobre los campos",
+      "significado": "Vida, cosecha, salud y comunidad."
+    }
+  ],
+
+  "uso_cultural": "Las Tres Luminarias suelen representarse en tribunales, academias, monasterios, salones senatoriales y ceremonias de juramento militar."
+},
+
+  "cultos_menores": {
+
+    "descripcion": "Las demás deidades oficiales de Dungeons & Dragons son reconocidas dentro del Reino. Sus templos suelen responder a profesiones, gremios, órdenes religiosas o tradiciones locales.",
+
+    "estatus": "Permitidos mientras respeten las leyes del Reino."
+  },
+
+  "templos": {
+
+    "templos_mayores": "Los grandes templos de Mystra, Pelor y Tyr funcionan como centros religiosos, educativos y de asistencia comunitaria.",
+
+    "templos_menores": "Las demás deidades poseen capillas y pequeños templos repartidos entre ciudades y aldeas.",
+
+    "altares_domesticos": "Muchas familias mantienen pequeños altares dedicados a la deidad protectora de su oficio o linaje."
+  },
+
+  "practicas_religiosas": [
+
+    "Misas comunitarias.",
+
+    "Juramentos ante Tyr.",
+
+    "Bendición de cosechas.",
+
+    "Festivales estacionales.",
+
+    "Peregrinaciones.",
+
+    "Consagración de caballeros.",
+
+    "Ceremonias académicas dedicadas a Mystra.",
+
+    "Ritos funerarios."
+
+  ],
+
+  "relacion_con_el_estado": {
+
+    "descripcion": "La Corona mantiene una estrecha colaboración con los grandes templos, aunque ninguna iglesia gobierna formalmente el Reino. Los sacerdotes asesoran a magistrados, caballeros y gobernantes cuando su experiencia resulta necesaria.",
+
+    "limite": "Las autoridades religiosas poseen influencia moral, pero la autoridad política pertenece al Basileus, al Senado y a las instituciones del Reino."
+  },
+
+  "deidades_oficiales": {
+
+    "descripcion": "Todas las deidades oficiales de Dungeons & Dragons forman parte del canon religioso de Nosland.",
+
+    "regla": "Los cultos de Mystra, Pelor y Tyr predominan claramente sobre el resto."
+  },
+
+  "variaciones_regionales": [
+
+    {
+
+      "region": "Neuchsia",
+
+      "tendencia": "Predominan pequeños monasterios de Pelor y capillas dedicadas a deidades de la naturaleza y los viajeros."
+
+    },
+
+    {
+
+      "region": "Aiburg",
+
+      "tendencia": "La vida religiosa gira alrededor de Pelor como protector de las cosechas y de las familias campesinas."
+
+    },
+
+    {
+
+      "region": "Osinbach",
+
+      "tendencia": "Tyr es especialmente venerado por caballeros, órdenes militares y fortalezas fronterizas."
+
+    },
+
+    {
+
+      "region": "Schapfheimia",
+
+      "tendencia": "Gran presencia de templos de Mystra vinculados a escuelas, escribanos y centros de aprendizaje."
+
+    },
+
+    {
+
+      "region": "Distrito de la Corona",
+
+      "tendencia": "Durheim alberga las grandes catedrales de Mystra, Tyr y Pelor, además de templos dedicados a numerosas deidades menores."
+
+    }
+
+  ],
+
+  "conflictos_religiosos": {
+
+    "descripcion": "Nosland protege la libertad de culto dentro de los límites establecidos por la ley. Son perseguidas las organizaciones que utilicen la religión para justificar actos criminales o amenacen la estabilidad del Reino.",
+
+    "prohibiciones": [
+
+      "Cultos demoníacos.",
+
+      "Sacrificios inteligentes.",
+
+      "Sectas violentas.",
+
+      "Organizaciones religiosas que desafíen la autoridad de la Corona mediante la fuerza."
+
+    ]
+
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Presentar a Mystra como la deidad predominante del Reino.",
+
+      "Relacionar a Tyr con caballeros, jueces y magistrados.",
+
+      "Relacionar a Pelor con aldeas, monasterios y agricultura.",
+
+      "Permitir templos de cualquier deidad oficial de Dungeons & Dragons.",
+
+      "No inventar nuevas religiones sin autorización del Codex.",
+
+      "Utilizar la religión como parte de la vida cotidiana, la educación y la administración de justicia."
+
+    ]
+
+  }
+
+}

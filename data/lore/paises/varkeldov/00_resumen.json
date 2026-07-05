@@ -1,0 +1,105 @@
+{
+  "titulo": "Resumen del Reino de Varkeldov",
+
+  "descripcion": "El Reino de Varkeldov constituye la gran potencia defensiva de Los Grandes Reinos. Situado al occidente del continente, sus bosques, montañas y fortalezas han forjado una sociedad austera, disciplinada y profundamente ligada a los antiguos juramentos. Gobernado por el Gran Domnitor y una poderosa nobleza militar, Varkeldov ha construido su estabilidad sobre la lealtad, la tradición y la protección de sus fronteras.",
+
+  "informacion_general": {
+
+    "nombre_oficial": "Reino de Varkeldov",
+
+    "forma_de_gobierno": "Gran Principado Nobiliario.",
+
+    "gobernante": "Gran Domnitor Vladislav III Drăculești.",
+
+    "capital": "Skonland.",
+
+    "era_actual": "Segunda Era",
+
+    "año_actual": 956
+
+  },
+
+  "grandes_regiones": [
+
+    "Bosques de Skovland",
+
+    "Montañas de Dragmir",
+
+    "Valles de Hrodan",
+
+    "Costa de los Mil Acantilados"
+
+  ],
+
+  "identidad": {
+
+    "cultura": "Civilización inspirada en los principados de Rumania, Moldavia y Europa Oriental medieval. La disciplina, la fortaleza y la memoria de los antepasados constituyen la base de la sociedad.",
+
+    "idioma": "Lengua Franca.",
+
+    "escritura": "Alfabeto Franco.",
+
+    "religion": "Predominan los cultos a Selûne, Mystra y Tyr.",
+
+    "economia": "Basada en recursos naturales, metalurgia, contratos de largo plazo y comercio protegido.",
+
+    "sociedad": "Jerárquica, militarizada y profundamente respetuosa de los juramentos, el linaje y la autoridad."
+  },
+
+  "instituciones": [
+
+    "Corona del Gran Domnitor.",
+
+    "Consejo de los Grandes Voivodas.",
+
+    "Orden del Lobo Gris.",
+
+    "Hermandad de San Tyr.",
+
+    "Gremio de los Herreros Negros.",
+
+    "Liga de Comerciantes del Norte."
+
+  ],
+
+  "instituciones_principales": [
+
+    "Consejo de los Grandes Voivodas",
+
+    "Orden del Lobo Gris",
+
+    "Hermandad de San Tyr",
+
+    "Gremio de los Herreros Negros"
+
+  ],
+
+  "politica_exterior": {
+
+    "Imperio de Yugure": "Neutral",
+
+    "Reino Unido de Nosland": "Enemiga",
+
+    "Sultanato de Hihabar": "Suspicaz"
+
+  },
+
+  "filosofia": "Varkeldov considera que la fortaleza de un reino no reside únicamente en sus murallas, sino en la palabra de quienes las defienden. Los juramentos sostienen a las familias, la disciplina protege al pueblo y la memoria de los antepasados guía a cada generación. La confianza se construye lentamente, pero perdura mucho más que cualquier conquista.",
+
+  "canon": {
+
+    "reglas": [
+
+      "El escenario utiliza Dungeons & Dragons 5.5 (2024) como base oficial.",
+
+      "El Codex únicamente modifica o amplía aquello que forma parte del mundo de Varkeldov.",
+
+      "Cuando exista una contradicción entre el Codex y el material oficial, prevalecerá el Codex.",
+
+      "Toda información generada por la IA debe respetar la historia, personajes, geografía, política y cultura descritos en este repositorio."
+
+    ]
+
+  }
+
+}

@@ -1,0 +1,132 @@
+{
+  "titulo": "Leyes y Justicia del Reino de Varkeldov",
+
+  "descripcion": "El sistema jurídico de Varkeldov busca preservar la estabilidad del reino, el cumplimiento de los juramentos y la continuidad de los antiguos linajes. La justicia corresponde a Boyardos, Voivodas y autoridades del Gran Domnitor, quienes consideran tanto la ley como el deber, la reputación y las circunstancias del acusado.",
+
+  "principios_fundamentales": [
+
+    "La autoridad del Gran Domnitor constituye la máxima fuente de legitimidad.",
+
+    "Todo juramento posee fuerza legal.",
+
+    "La lealtad al Reino prevalece sobre los intereses personales.",
+
+    "La nobleza tiene el deber de proteger a quienes viven bajo su amparo.",
+
+    "Toda casa responde por el honor de sus miembros.",
+
+    "Las costumbres regionales son respetadas siempre que no contradigan las leyes del Reino.",
+
+    "La estabilidad de Varkeldov está por encima de cualquier ambición individual."
+
+  ],
+
+  "delitos_graves": [
+
+    "Traición al Reino.",
+
+    "Perjurio o ruptura deliberada de un juramento solemne.",
+
+    "Espionaje para potencias extranjeras.",
+
+    "Asesinato premeditado.",
+
+    "Bandolerismo organizado.",
+
+    "Profanación de templos o monasterios.",
+
+    "Corrupción de autoridades.",
+
+    "Invocación de entidades demoníacas.",
+
+    "Uso deliberado de magia que amenace a la población.",
+
+    "Quebrantar la protección otorgada a un huésped.",
+
+    "Incitar una guerra entre casas nobles."
+
+  ],
+
+  "castigos": [
+
+    "Multas.",
+
+    "Restitución del daño.",
+
+    "Confiscación de bienes.",
+
+    "Pérdida de títulos nobiliarios.",
+
+    "Destierro.",
+
+    "Servicio militar obligatorio.",
+
+    "Prisión.",
+
+    "Pérdida del derecho a portar armas.",
+
+    "Ejecución en casos excepcionales."
+
+  ],
+
+  "autoridades": {
+
+    "locales": "Burgomaestres, Castellanos y jueces señoriales.",
+
+    "territoriales": "Boyardos y Voivodas.",
+
+    "regionales": "Grandes Voivodas.",
+
+    "reales": "El Gran Domnitor y su Corte."
+
+  },
+
+  "juramentos": {
+
+    "descripcion": "Los juramentos constituyen uno de los pilares jurídicos de Varkeldov. Romper deliberadamente una promesa realizada ante testigos, una autoridad o una deidad supone una grave deshonra y puede implicar consecuencias legales además de sociales."
+
+  },
+
+  "hospitalidad": {
+
+    "descripcion": "Todo viajero aceptado bajo el techo de una casa noble, monasterio o fortaleza recibe protección hasta el amanecer siguiente. Atentar contra un huésped protegido constituye uno de los mayores agravios dentro de la tradición varkeldoviana."
+
+  },
+
+  "magia": {
+
+    "descripcion": "La magia es legal y respetada. Su uso se regula cuando pone en peligro la seguridad del reino, altera juramentos, amenaza fortalezas o provoca daños deliberados."
+
+  },
+
+  "nobleza": {
+
+    "descripcion": "Los privilegios de la nobleza implican también responsabilidades. Boyardos, Voivodas y Grandes Voivodas deben garantizar justicia, protección y sustento dentro de sus dominios."
+
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "La justicia busca preservar la estabilidad del Reino.",
+
+      "Los juramentos tienen enorme peso legal y social.",
+
+      "Las penas deben proteger el equilibrio entre las casas nobles.",
+
+      "La hospitalidad constituye un deber sagrado.",
+
+      "Los Boyardos resuelven la mayoría de conflictos locales.",
+
+      "Los Grandes Voivodas intervienen en asuntos regionales.",
+
+      "Los grandes crímenes pueden llegar hasta la Corte del Gran Domnitor.",
+
+      "Los conflictos entre linajes suelen resolverse mediante mediación, compensación o duelo autorizado antes que mediante guerra abierta."
+
+    ]
+
+  }
+
+}

@@ -1,0 +1,17 @@
+{
+  "titulo": "Bestiario",
+
+  "descripcion": "El mundo utiliza como referencia oficial el bestiario publicado para Dungeons & Dragons 5.5 (2024). Todas las criaturas oficiales existen en el escenario salvo que el Codex indique explícitamente lo contrario.",
+
+  "reglas": [
+
+    "Las estadísticas oficiales prevalecen sobre cualquier descripción narrativa.",
+
+    "La IA utilizará las criaturas oficiales como referencia.",
+
+    "Las variantes propias del escenario aparecerán únicamente cuando existan archivos específicos dentro del Codex.",
+
+    "Si una criatura pertenece al canon oficial y no posee una variante local, debe interpretarse exactamente como aparece en los manuales oficiales."
+
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "titulo": "Gobierno del Reino Unido de Nosland",
+
+  "forma_de_gobierno": {
+    "tipo": "Monarquía Consular",
+    "descripcion": "El Reino Unido de Nosland combina la autoridad hereditaria del Basileus con antiguas instituciones inspiradas en la tradición republicana. El gobierno es compartido entre la Corona, el Senado y los Cónsules, creando un equilibrio entre nobleza, administración civil y representación ciudadana."
+  },
+
+  "basileus": {
+    "nombre": "William IV Waritz",
+    "titulo": "Basileus del Reino Unido de Nosland",
+
+    "autoridad": [
+      "Jefe de Estado.",
+      "Comandante Supremo de las Fuerzas Reales.",
+      "Máxima autoridad diplomática.",
+      "Árbitro entre los grandes feudos.",
+      "Protector de las Leyes del Reino."
+    ],
+
+    "funcion": "Representa la unidad del Reino Unido de Nosland y garantiza el equilibrio entre la Corona, el Senado y los distintos señores feudales."
+  },
+
+  "senado_real": {
+
+    "nombre": "Senado Real de Nosland",
+
+    "descripcion": "Principal órgano deliberativo del reino. Está integrado por los Lores de cada feudo y por los Tribunos de la Plebe. Debe aprobar las grandes reformas del reino, supervisar la administración y asesorar al Basileus en asuntos de Estado.",
+
+    "funciones": [
+
+      "Debatir las leyes del reino.",
+
+      "Aprobar impuestos extraordinarios.",
+
+      "Ratificar tratados importantes.",
+
+      "Supervisar la administración del reino.",
+
+      "Asesorar al Basileus."
+
+    ],
+
+    "miembros": [
+
+      "Lores de cada feudo.",
+
+      "Tribunos de la Plebe."
+
+    ],
+
+    "autoridad": "El Senado asesora al Basileus y participa en la elaboración de las leyes, aunque la Corona conserva la autoridad suprema."
+  },
+
+"consejo_de_los_altos_lores": {
+
+  "descripcion": "Institución tradicional convocada únicamente por el Basileus cuando el Reino enfrenta asuntos de trascendencia excepcional. Lo integran los cuatro Altos Lores de los grandes feudos históricos de Nosland. Aunque no posee funciones legislativas permanentes, sus recomendaciones ejercen una enorme influencia política y militar.",
+
+  "miembros": [
+
+    "Alto Lord de Neuchsia",
+
+    "Alto Lord de Aiburg",
+
+    "Alto Lord de Osinbach",
+
+    "Alto Lord de Schapfheimia"
+
+  ],
+
+  "funciones": [
+
+    "Asesorar al Basileus durante crisis nacionales.",
+
+    "Coordinar la movilización de los grandes feudos.",
+
+    "Mediar disputas entre la alta nobleza.",
+
+    "Emitir recomendaciones sobre sucesiones, guerras y tratados."
+
+  ],
+
+  "convocatoria": "Solo el Basileus puede convocar al Consejo de los Altos Lores."
+},
+
+  "consules": {
+
+    "descripcion": "Los Cónsules son los magistrados supremos del Reino. Son elegidos por el Senado Real y confirmados por el Basileus para dirigir la administración y las fuerzas armadas.",
+
+    "primer_consul": {
+
+      "nombre": "Lucius Qartz",
+
+      "cargo": "Primer Cónsul",
+
+      "responsabilidades": [
+
+        "Administración del reino.",
+
+        "Tesoro Real.",
+
+        "Diplomacia.",
+
+        "Obras públicas."
+
+      ]
+
+    },
+
+    "segundo_consul": {
+
+      "nombre": "Marcus Lorenz",
+
+      "cargo": "Segundo Cónsul",
+
+      "responsabilidades": [
+
+        "Ejército Real.",
+
+        "Fortificaciones.",
+
+        "Defensa de fronteras.",
+
+        "Movilización militar."
+
+      ]
+
+    }
+
+  },
+
+  "tribunos_de_la_plebe": {
+
+    "descripcion": "Representantes elegidos por las ciudades para defender los intereses de comerciantes, artesanos y ciudadanos libres. Pueden presentar propuestas al Senado y denunciar abusos de autoridad.",
+
+    "funcion": "Garantizar que la voz del pueblo tenga representación dentro del gobierno."
+  },
+
+  "estructura_del_reino": {
+
+    "descripcion": "Nosland se organiza como una unión de feudos autónomos. Cada ciudad importante constituye un feudo gobernado por un Lord que responde directamente ante la Corona.",
+
+    "territorios": [
+
+      {
+
+        "categoria": "Feudos Reales",
+
+        "descripcion": "Cada ciudad principal constituye un feudo con administración, ejército y justicia propios bajo juramento de lealtad al Basileus."
+
+      }
+
+    ]
+
+  },
+
+  "gobierno_local": {
+
+    "descripcion": "Cada feudo es administrado por un Lord que ejerce autoridad civil, militar y judicial dentro de sus dominios.",
+
+    "autonomia": "Los Lores administran sus tierras con amplia libertad mientras respeten las leyes del reino y mantengan su juramento de lealtad a la Corona."
+  },
+
+  "fuerzas_militares": {
+
+    "ejercito_real": "Protege las fronteras del reino y responde directamente al Basileus y al Segundo Cónsul.",
+
+    "levas_feudales": "Cada Lord mantiene sus propias tropas y está obligado a aportar soldados cuando la Corona convoca al Reino.",
+
+    "caballeria": "La caballería pesada constituye el mayor orgullo militar de Nosland y simboliza el honor de la nobleza."
+  },
+
+  "administracion": {
+
+    "impuestos": "Cada feudo recauda tributos locales y entrega una parte al Tesoro Real.",
+
+    "justicia": "La justicia cotidiana corresponde a los Lores, mientras que los grandes conflictos pueden ser revisados por magistrados reales o por el propio Basileus."
+  },
+
+  "politica_exterior": {
+
+    "descripcion": "La política exterior corresponde al Basileus con el asesoramiento del Senado Real y del Primer Cónsul."
+  },
+
+  "filosofia_del_gobierno": {
+
+    "principios": [
+
+      "La Corona protege la unidad del Reino.",
+
+      "La nobleza gobierna con responsabilidad hacia sus vasallos.",
+
+      "Las leyes deben preservar el equilibrio entre autoridad y representación.",
+
+      "El servicio al reino constituye el mayor honor de un ciudadano.",
+
+      "La fuerza militar existe para defender la paz y garantizar la estabilidad."
+
+    ]
+
+  },
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Describir a Nosland como una monarquía feudal con instituciones inspiradas en la tradición romana.",
+
+      "Recordar que cada ciudad importante constituye un feudo.",
+
+      "El Basileus representa la máxima autoridad del reino.",
+
+      "El Senado Real participa activamente en el gobierno.",
+
+      "Los Cónsules administran el reino y dirigen sus principales funciones.",
+
+      "La caballería constituye el principal símbolo militar de Nosland."
+
+    ]
+
+  }
+
+}

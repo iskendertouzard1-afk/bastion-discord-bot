@@ -1,0 +1,106 @@
+{
+  "titulo": "Resumen del Reino Unido de Nosland",
+
+  "descripcion": "El Reino Unido de Nosland es la gran potencia del occidente de Los Grandes Reinos. Su fortaleza descansa sobre un sistema feudal unido por una sólida Corona, antiguas instituciones senatoriales y una nobleza caballeresca. La estabilidad del Reino depende del equilibrio entre el Basileus, las Cinco Casas de Ox y los numerosos Lores que gobiernan sus feudos.",
+
+  "informacion_general": {
+
+    "nombre_oficial": "Reino Unido de Nosland",
+
+    "forma_de_gobierno": "Monarquía Consular.",
+
+    "gobernante": "Basileus William IV Waritz.",
+
+    "capital": "Durheim.",
+
+    "era_actual": "Segunda Era",
+
+    "año_actual": 956
+  },
+
+  "regiones_geograficas": [
+
+    "Neuchsia",
+
+    "Aiburg",
+
+    "Osinbach",
+
+    "Schapfheimia",
+
+    "Distrito de la Corona"
+
+  ],
+
+  "identidad": {
+
+    "cultura": "Civilización feudal inspirada en la Europa medieval con instituciones heredadas de antiguas tradiciones clásicas.",
+
+    "idioma": "Lengua Franca.",
+
+    "religion": "Predomina el culto a Mystra, acompañado por Tyr y Pelor como las Tres Luminarias del Reino.",
+
+    "economia": "Basada en la agricultura, la ganadería, el sistema feudal y una extensa red comercial terrestre.",
+
+    "sociedad": "El honor, la ley, el servicio al Reino y la lealtad a la Corona constituyen los pilares de la vida noslandesa."
+  },
+
+  "instituciones": [
+
+    "Corona del Basileus.",
+
+    "Senado Real.",
+
+    "Consejo de los Altos Lores.",
+
+    "Consulado.",
+
+    "Tribunos de la Plebe.",
+
+    "Ejército Real."
+
+  ],
+
+  "facciones_principales": [
+
+    "Casa Waritz",
+
+    "Casa Lorenz",
+
+    "Casa Qartz",
+
+    "Casa Garritz",
+
+    "Casa Oquitz"
+
+  ],
+
+  "politica_exterior": {
+
+    "Yugure": "Amistosa",
+
+    "Varkeldov": "Enemiga",
+
+    "Hihabar": "Suspicaz"
+
+  },
+
+  "filosofia": "Nosland considera que la fortaleza de un Reino nace del cumplimiento de la ley, la responsabilidad de sus gobernantes y el compromiso de cada ciudadano con la Corona. La tierra, el honor y el servicio público representan la base de su prosperidad.",
+
+  "canon": {
+
+    "reglas": [
+
+      "El escenario utiliza Dungeons & Dragons 5.5 (2024) como base oficial.",
+
+      "El Codex únicamente modifica o amplía aquello que forma parte del mundo de Nosland.",
+
+      "Cuando exista una contradicción entre el Codex y el material oficial, prevalecerá el Codex.",
+
+      "Toda información generada por la IA debe respetar la historia, personajes, geografía, política y cultura descritos en este repositorio."
+
+    ]
+
+  }
+
+}

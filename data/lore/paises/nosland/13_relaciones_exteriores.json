@@ -1,0 +1,74 @@
+{
+  "titulo": "Relaciones Exteriores del Reino Unido de Nosland",
+
+  "descripcion": "El Reino Unido de Nosland mantiene una política exterior orientada a preservar la estabilidad del Reino, garantizar la seguridad de sus fronteras y proteger las rutas comerciales que conectan el occidente con el resto de Los Grandes Reinos. La diplomacia constituye el primer recurso del Basileus, aunque el Reino nunca descuida su capacidad militar.",
+
+  "politica_exterior": {
+    "principios": [
+      "Garantizar la seguridad del Reino.",
+      "Proteger las rutas comerciales.",
+      "Mantener la autoridad de la Corona.",
+      "Resolver disputas mediante la diplomacia cuando sea posible.",
+      "Responder con firmeza ante amenazas externas."
+    ]
+  },
+
+  "relaciones": [
+
+    {
+      "pais": "Imperio de Yugure",
+
+      "estado": "Amistosa",
+
+      "descripcion": "Nosland y Yugure mantienen una de las relaciones diplomáticas más sólidas del continente. El comercio, los intercambios académicos y la cooperación política fortalecen una alianza que beneficia a ambas potencias.",
+
+      "comercio": "Muy Alto",
+
+      "riesgo_militar": "Muy Bajo"
+    },
+
+    {
+      "pais": "Reino de Varkeldov",
+
+      "estado": "Enemiga",
+
+      "descripcion": "Las relaciones permanecen deterioradas debido a antiguas disputas territoriales y frecuentes tensiones fronterizas. Aunque no existe una guerra abierta, ambos reinos mantienen una constante vigilancia militar.",
+
+      "comercio": "Muy Bajo",
+
+      "riesgo_militar": "Alto"
+    },
+
+    {
+      "pais": "Sultanato de Hihabar",
+
+      "estado": "Suspicaz",
+
+      "descripcion": "Nosland observa con cautela el crecimiento comercial y marítimo del Sultanato. Las relaciones diplomáticas continúan abiertas, aunque la desconfianza limita la cooperación entre ambas naciones.",
+
+      "comercio": "Medio",
+
+      "riesgo_militar": "Medio"
+    }
+
+  ],
+
+  "doctrina_diplomatica": {
+    "descripcion": "La Corona considera que la paz constituye el camino preferible para el desarrollo del Reino, siempre que no comprometa la seguridad de sus ciudadanos ni la soberanía de sus feudos. El Reino mantiene un ejército preparado para responder a cualquier amenaza exterior."
+  },
+
+  "representacion": {
+    "descripcion": "Las relaciones diplomáticas son dirigidas por el Basileus con el asesoramiento del Primer Cónsul y del Senado Real. Los Altos Lores pueden recibir delegaciones extranjeras dentro de sus dominios, aunque únicamente la Corona puede ratificar tratados internacionales."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Generar visitantes extranjeros de acuerdo con las relaciones diplomáticas vigentes.",
+      "Favorecer el intercambio comercial con Yugure.",
+      "Presentar a Varkeldov como un rival político y militar.",
+      "Describir las relaciones con Hihabar como prudentes y diplomáticamente reservadas.",
+      "Las relaciones diplomáticas pueden modificarse mediante acontecimientos futuros del Codex."
+    ]
+  }
+
+}

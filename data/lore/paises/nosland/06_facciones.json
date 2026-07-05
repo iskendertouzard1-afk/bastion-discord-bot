@@ -1,0 +1,169 @@
+{
+
+"las_cinco_casas_de_ox": {
+  "descripcion": "Las Cinco Casas de Ox descienden de los cinco hijos del último monarca del Reino de Ox. Desde la fundación de Nosland han ocupado los principales cargos políticos, militares, administrativos, económicos y culturales del reino. Aunque cooperan para preservar la estabilidad de la Corona, sus intereses particulares generan alianzas y tensiones dentro del Senado Real.",
+  "casas": [
+    "Casa Waritz",
+    "Casa Lorenz",
+    "Casa Qartz",
+    "Casa Garritz",
+    "Casa Oquitz"
+  ]
+},
+
+  "facciones": [
+
+
+    
+    {
+      "nombre": "Casa Waritz",
+
+      "tipo": "Casa Fundadora",
+
+      "lider": "Basileus William IV Waritz",
+
+      "sede": "Palacio Real de Durheim",
+
+      "objetivos": [
+        "Mantener la unidad del Reino Unido de Nosland.",
+        "Preservar la estabilidad entre las Grandes Casas.",
+        "Garantizar el equilibrio político del Senado Real.",
+        "Proteger la legitimidad de la Corona."
+      ],
+
+      "ideologia": "La Corona existe para mantener unido al Reino. Ninguna Casa debe imponerse sobre las demás.",
+
+      "influencia": "Muy Alta",
+
+      "aliados": [
+        "Senado Real",
+        "Consejo de los Altos Lores"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "La Casa Waritz desciende directamente del primogénito del último rey de Ox. Desde la fundación de Nosland ocupa el Trono del Basileus y ejerce como garante del equilibrio entre las Casas Fundadoras. Su autoridad se basa tanto en la tradición como en la legitimidad histórica."
+    },
+
+    {
+      "nombre": "Casa Lorenz",
+
+      "tipo": "Casa Fundadora",
+
+      "lider": "Marcus Lorenz",
+
+      "sede": "Villa Senatorial Lorenz, Durheim",
+
+      "objetivos": [
+        "Fortalecer el Ejército Real.",
+        "Modernizar las fortificaciones del reino.",
+        "Mantener seguras las fronteras.",
+        "Preservar el prestigio militar de Nosland."
+      ],
+
+      "ideologia": "Un reino fuerte solo puede existir bajo una defensa sólida y una nobleza disciplinada.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Ejército Real",
+        "Casa Waritz"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Descendientes del segundo hijo del rey de Ox. La Casa Lorenz ha dedicado generaciones al servicio militar del reino. Tradicionalmente ocupa cargos relacionados con la defensa y es considerada la principal autoridad estratégica de Nosland."
+    },
+
+    {
+      "nombre": "Casa Qartz",
+
+      "tipo": "Casa Fundadora",
+
+      "lider": "Lucius Qartz",
+
+      "sede": "Domus Qartz, Durheim",
+
+      "objetivos": [
+        "Perfeccionar la administración del reino.",
+        "Fortalecer el Tesoro Real.",
+        "Garantizar la estabilidad económica.",
+        "Impulsar la diplomacia."
+      ],
+
+      "ideologia": "El orden administrativo sostiene la prosperidad del Reino.",
+
+      "influencia": "Muy Alta",
+
+      "aliados": [
+        "Senado Real",
+        "Casa Waritz"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Descendientes del tercer hijo del rey de Ox. La Casa Qartz es reconocida por formar administradores, juristas y diplomáticos. Durante siglos ha ocupado los principales cargos civiles del Reino y ejerce una enorme influencia dentro del Senado."
+    },
+
+    {
+      "nombre": "Casa Garritz",
+
+      "tipo": "Casa Fundadora",
+
+      "lider": "Edmund Garritz",
+
+      "sede": "Palacio Mercantil Garritz, Durheim",
+
+      "objetivos": [
+        "Expandir las rutas comerciales.",
+        "Incrementar la riqueza del reino.",
+        "Financiar nuevas empresas.",
+        "Mantener la estabilidad económica."
+      ],
+
+      "ideologia": "La prosperidad del Reino depende del comercio y la iniciativa privada.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Gremios Mercantiles",
+        "Mercaderes de Nosland"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Descendientes del cuarto hijo del rey de Ox. La Casa Garritz controla buena parte del comercio interior y mantiene relaciones comerciales con todos los Grandes Reinos. Su poder proviene de su inmensa riqueza y de la influencia que ejerce sobre numerosos gremios."
+    },
+
+    {
+      "nombre": "Casa Oquitz",
+
+      "tipo": "Casa Fundadora",
+
+      "lider": "Cassius Oquitz",
+
+      "sede": "Academia Oquitz, Durheim",
+
+      "objetivos": [
+        "Preservar el conocimiento del reino.",
+        "Financiar universidades.",
+        "Promover el desarrollo científico.",
+        "Conservar los archivos históricos de Nosland."
+      ],
+
+      "ideologia": "El conocimiento constituye el mayor legado que puede dejar una civilización.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Universidades",
+        "Cronistas Reales"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "Descendientes del quinto hijo del rey de Ox. La Casa Oquitz financia escuelas, bibliotecas, cartógrafos y cronistas. Aunque rara vez busca protagonismo político, ejerce una enorme influencia cultural e intelectual sobre el Reino."
+    }
+
+  ]
+}

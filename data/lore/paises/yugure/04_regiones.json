@@ -1,0 +1,182 @@
+{
+  "titulo": "Grandes Provincias del Imperio de Yugure",
+
+  "descripcion": "El Imperio de Yugure se encuentra dividido en Grandes Provincias Imperiales. Cada una posee una identidad histórica, cultural y militar propia. Aunque todas reconocen la autoridad del Emperador y del Shōgun Imperial, sus gobernantes disfrutan de un amplio margen para administrar sus territorios.",
+
+  "estructura_administrativa": {
+
+    "provincia": "Gran Provincia Imperial",
+
+    "subdivision": "Prefectura",
+
+    "gobernante": "Daimyō",
+
+    "autoridad_suprema": "Shōgun Akihito no Mikado",
+
+     "titulo": "Shōgun Mikado Akihito",
+
+     "descripcion": "Actual soberano del Imperio de Yugure. Portador de la Corona Imperial y único depositario de la autoridad civil, militar y ceremonial del Imperio. Anciano, refinado y gravemente enfermo, permanece la mayor parte del tiempo recluido en el Palacio de las Mil Grullas. La corte mantiene en secreto el verdadero deterioro de su salud, pues su muerte podría romper el delicado equilibrio político entre los grandes daimyō."
+    
+  },
+
+  "provincias": [
+
+    {
+
+      "nombre": "Midori no Chiiki",
+
+      "nombre_comun": "Región Verde",
+
+      "capital": "Nisho",
+
+      "gobernante": {
+
+        "nombre": "Lady Harunobu Takeda",
+
+        "titulo": "Daimyō de Midori no Chiiki",
+
+        "descripcion": "Estratega brillante y una de las figuras militares más respetadas del occidente imperial. Defiende las antiguas tradiciones de Yugure y considera que la creciente influencia política de Aka no Chiiki amenaza el equilibrio histórico del Imperio. La muerte de su hijo Renjirō elevó la tensión entre clanes a un punto crítico."
+      },
+
+      "prefecturas": [
+
+        "Tokani",
+
+        "Nisho",
+
+        "Shiranaizu",
+
+        "Mitonoe"
+
+      ],
+
+      "identidad": "Bosques, agricultura, tradición samurái y defensa del legado imperial."
+
+    },
+
+    {
+
+      "nombre": "Aka no Chiiki",
+
+      "nombre_comun": "Región Roja",
+
+      "capital": "Yubetsu",
+
+      "gobernante": {
+
+        "nombre": "Masanori Akagawa",
+
+        "titulo": "Daimyō de Aka no Chiiki",
+
+        "descripcion": "Principal dirigente de los clanes rojos. Un político reservado, extremadamente inteligente y maestro de la diplomacia. Prefiere gobernar mediante alianzas comerciales y una extensa red de espías antes que mediante campañas militares."
+      },
+
+      "prefecturas": [
+
+        "Kayawaga",
+
+        "Oita",
+
+        "Yubetsu",
+
+        "Shifu"
+
+      ],
+
+      "identidad": "Centro político, administrativo y económico del Imperio."
+
+    },
+
+    {
+
+      "nombre": "Ao no Chiiki",
+
+      "nombre_comun": "Región Azul",
+
+      "capital": "Kokura",
+
+      "gobernante": {
+
+        "nombre": "Lord Daigo Mizuhara",
+
+        "titulo": "Daimyō de Ao no Chiiki",
+
+        "descripcion": "Veterano administrador y navegante. Considera que el conocimiento es la mayor riqueza del Imperio y protege tanto las rutas marítimas como las academias de investigación."
+      },
+
+      "prefecturas": [
+
+        "Kokura",
+
+        "Oku",
+
+        "Miji",
+
+        "Nishiwa",
+
+        "Kama",
+
+        "Yake",
+
+        "Yamatsu"
+
+      ],
+
+      "particularidades": [
+
+        "Yake alberga importantes centros de investigación.",
+
+        "Yamatsu conserva algunas de las bibliotecas más grandes de Los Grandes Reinos.",
+
+        "Yake y Yamatsu no mantienen ejércitos permanentes y gozan de protección especial otorgada por el Emperador."
+
+      ],
+
+      "identidad": "Comercio marítimo, conocimiento, navegación e innovación."
+
+    },
+
+    {
+
+      "nombre": "Kiiro no Chiiki",
+
+      "nombre_comun": "Región Amarilla",
+
+      "capital": "Kanu",
+
+      "gobernante": {
+
+        "nombre": "Lady Chiyome Saitō",
+
+        "titulo": "Daimyō de Kiiro no Chiiki",
+
+        "descripcion": "Gobernante pragmática y excelente administradora. Bajo su mandato, la región se convirtió en el principal corredor comercial del oriente imperial sin descuidar el entrenamiento de la caballería más prestigiosa de Yugure."
+      },
+
+      "prefecturas": [
+
+        "Sarajira",
+
+        "Kanu",
+
+        "Matsuno",
+
+        "Seto"
+
+      ],
+
+      "identidad": "Grandes rutas comerciales, mercados imperiales y caballería pesada."
+    }
+
+  ],
+
+  "autoridad_imperial": {
+
+    "nombre": "Shōgun Akihito no Mikado",
+
+    "titulo": "Gobernante Supremo del Imperio de Yugure",
+
+    "descripcion": "Actual gobernante de Yugure. Anciano, refinado y gravemente enfermo. Permanece la mayor parte del tiempo en el Palacio de las Mil Grullas mientras la corte oculta el deterioro de su salud. Muchos consideran que su muerte desencadenará una guerra civil entre los grandes clanes."
+  }
+
+}

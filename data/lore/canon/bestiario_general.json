@@ -1,0 +1,37 @@
+{
+  "titulo": "Bestiario General",
+
+  "descripcion": "El escenario de Los Grandes Reinos utiliza como base el bestiario oficial publicado para Dungeons & Dragons 5.5. Salvo indicación expresa dentro del Codex, todas las criaturas oficiales existen en este mundo y conservan sus estadísticas, habilidades, alineamientos, tipos de criatura y comportamiento descritos en los manuales oficiales.",
+
+  "canon": {
+    "fuente_principal": "Monster Manual (Dungeons & Dragons 5.5)",
+    "otras_fuentes": [
+      "Suplementos oficiales de Dungeons & Dragons",
+      "Aventuras oficiales",
+      "Bestiarios publicados por Wizards of the Coast"
+    ]
+  },
+
+  "principios": [
+    "Las criaturas oficiales forman parte del canon del escenario.",
+    "Las estadísticas oficiales nunca se modifican salvo que una criatura específica tenga una versión propia dentro del Codex.",
+    "La distribución geográfica de las criaturas puede variar respecto a otros escenarios oficiales.",
+    "Cada reino posee especies más comunes según su clima, geografía y cultura.",
+    "La existencia de una criatura no implica necesariamente una población abundante dentro de Los Grandes Reinos."
+  ],
+
+  "criaturas_unicas": {
+    "descripcion": "El Codex puede introducir criaturas originales propias del escenario. Estas convivirán con el bestiario oficial sin sustituirlo.",
+    "prioridad": "Cuando exista una versión propia de una criatura, prevalecerá la descrita en el Codex."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Utilizar preferentemente criaturas oficiales de Dungeons & Dragons.",
+      "Elegir especies coherentes con el entorno geográfico.",
+      "Respetar el comportamiento descrito en el Monster Manual.",
+      "Evitar introducir criaturas extremadamente raras cuando una especie común resulte más apropiada.",
+      "Las criaturas inteligentes deben actuar conforme a su cultura, motivaciones y alineamiento."
+    ]
+  }
+}

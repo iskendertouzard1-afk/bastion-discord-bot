@@ -1,0 +1,101 @@
+{
+  "titulo": "Resumen del Imperio de Yugure",
+
+  "descripcion": "Yugure es la mayor potencia política, económica y cultural de Los Grandes Reinos. Situado en el centro del continente, gobierna una extensa red de provincias con identidades propias unidas bajo la autoridad del Shōgun Mikado. Su estabilidad depende del equilibrio entre tradición, comercio, conocimiento y diplomacia.",
+
+  "informacion_general": {
+
+    "nombre_oficial": "Imperio de Yugure",
+
+    "forma_de_gobierno": "Monarquía Imperial descentralizada.",
+
+    "gobernante": "Shōgun Mikado Akihito.",
+
+    "capital": "Hashitawa.",
+
+    "era_actual": "Segunda Era",
+
+    "año_actual": 956
+  },
+
+  "grandes_provincias": [
+
+    "Aka no Chiiki (Región Roja)",
+
+    "Midori no Chiiki (Región Verde)",
+
+    "Ao no Chiiki (Región Azul)",
+
+    "Kiiro no Chiiki (Región Amarilla)",
+
+    "Ithlondhil",
+
+    "Shinawa",
+
+    "Kobe"
+
+  ],
+
+  "identidad": {
+
+    "cultura": "Civilización élfica evolucionada con una estética, filosofía y costumbres inspiradas en el Japón feudal.",
+
+    "idioma": "Élfico Imperial.",
+
+    "religion": "Predomina el culto a Pelor.",
+
+    "economia": "Basada en el comercio entre provincias y en el intercambio internacional.",
+
+    "sociedad": "El honor, la palabra dada y la responsabilidad hacia la comunidad constituyen los pilares de la vida cotidiana."
+  },
+
+  "instituciones": [
+
+    "Corte Imperial.",
+
+    "Consejo Imperial de los Daimyō.",
+
+    "Ejército Imperial.",
+
+    "Grandes Provincias Imperiales."
+  ],
+
+  "facciones_principales": [
+
+    "Corte Imperial",
+
+    "Pacto de Jade",
+
+    "Liga Carmesí",
+
+    "Red de la Cigarra Roja"
+
+  ],
+
+  "politica_exterior": {
+
+    "Nosland": "Amistosa",
+
+    "Varkeldov": "Neutral",
+
+    "Hihabar": "Amistosa"
+
+  },
+
+  "filosofia": "Yugure prospera gracias al equilibrio entre sus provincias. La autoridad imperial mantiene unidas culturas diversas mediante la diplomacia, el comercio y el respeto por las tradiciones regionales.",
+
+  "canon": {
+
+    "reglas": [
+
+      "El escenario utiliza Dungeons & Dragons 5.5 (2024) como base oficial.",
+
+      "El Codex únicamente modifica o amplía aquello que forma parte del mundo de Yugure.",
+
+      "Cuando exista una contradicción entre el Codex y el material oficial, prevalecerá el Codex.",
+
+      "Toda información generada por la IA debe respetar la historia, personajes, geografía y política descritos en este repositorio."
+
+    ]
+  }
+}

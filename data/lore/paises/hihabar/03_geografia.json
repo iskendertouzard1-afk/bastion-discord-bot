@@ -1,0 +1,96 @@
+{
+  "titulo": "Geografía del Sultanato de Hihabar",
+
+  "descripcion": "El Sultanato de Hihabar ocupa el extremo suroriental de Los Grandes Reinos. Su territorio conecta el continente con las rutas marítimas del sur y constituye el principal puente entre caravanas terrestres y puertos internacionales. Aunque es conocido por sus oasis y desiertos, la mayor parte del Sultanato está formada por fértiles llanuras, montañas boscosas y extensos valles fluviales.",
+
+  "ubicacion": {
+    "continente": "Los Grandes Reinos",
+    "posicion": "Sureste del continente.",
+    "extension": "Uno de los territorios más diversos geográficamente de Los Grandes Reinos."
+  },
+
+  "fronteras": {
+    "norte": "Imperio de Yugure.",
+    "occidente": "Mar Occidental y rutas marítimas.",
+    "sur": "Mar del Sol.",
+    "oriente": "Grandes Desiertos Orientales y costas del Mar Interior."
+  },
+
+  "relieve": {
+    "descripcion": "El relieve combina cordilleras, fértiles planicies, colinas, oasis, grandes ríos y una franja desértica al extremo oriental. Esta diversidad permitió el surgimiento de importantes ciudades comerciales y centros de conocimiento.",
+
+    "elementos": [
+      "Cordilleras boscosas.",
+      "Valles fértiles.",
+      "Grandes ríos.",
+      "Lagos interiores.",
+      "Mesetas.",
+      "Bosques mediterráneos.",
+      "Costa rocosa.",
+      "Puertos naturales.",
+      "Oasis.",
+      "Desiertos orientales."
+    ]
+  },
+
+  "hidrografia": {
+    "descripcion": "Los grandes ríos nacen en las montañas septentrionales y recorren el Sultanato hasta desembocar en los mares del sur. Gracias a ellos prosperan ciudades, cultivos y rutas comerciales interiores."
+  },
+
+  "clima": {
+    "descripcion": "Predomina un clima mediterráneo cálido con estaciones claramente diferenciadas. Las lluvias se concentran durante el otoño e invierno, mientras que los veranos son secos. El norte presenta bosques templados y las regiones montañosas reciben nevadas durante el invierno.",
+
+    "variaciones": [
+      "El norte posee bosques húmedos y clima templado.",
+      "Las montañas presentan inviernos fríos y abundantes nieves.",
+      "Las costas disfrutan de clima mediterráneo.",
+      "Las grandes llanuras permiten una agricultura muy productiva.",
+      "Los desiertos orientales reciben escasas precipitaciones y concentran oasis y antiguas rutas caravaneras."
+    ]
+  },
+
+  "regiones_geograficas": [
+
+    {
+      "nombre": "Altiplanos del Creciente",
+      "descripcion": "Región montañosa situada al norte. Alberga numerosos bosques, fortalezas y los nacimientos de los principales ríos del Sultanato."
+    },
+
+    {
+      "nombre": "Llanuras de Zafir",
+      "descripcion": "Grandes extensiones agrícolas que abastecen a las principales ciudades del Sultanato con cereales, olivos, viñedos y ganado."
+    },
+
+    {
+      "nombre": "Costa de las Mil Velas",
+      "descripcion": "Principal región marítima. Sus puertos conectan Hihabar con todos los Grandes Reinos mediante intensas rutas comerciales."
+    },
+
+    {
+      "nombre": "Meseta del Ámbar",
+      "descripcion": "Territorio de colinas y antiguas ciudades caravaneras. Conecta el interior con los puertos del sur."
+    },
+
+    {
+      "nombre": "Desiertos de Al-Qamar",
+      "descripcion": "Amplias regiones áridas donde prosperan oasis, fortalezas aisladas y las rutas de las grandes caravanas."
+    }
+
+  ],
+
+  "importancia_estrategica": {
+    "descripcion": "Hihabar controla las principales rutas comerciales entre el continente, los mares del sur y los desiertos orientales. Mercaderes, embajadores, peregrinos y estudiosos atraviesan continuamente sus caminos."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "No describir Hihabar únicamente como un reino desértico.",
+      "Recordar que la mayor parte de su población vive en regiones fértiles.",
+      "Relacionar las ciudades costeras con comercio marítimo.",
+      "Relacionar el norte con bosques, montañas y nacimientos de ríos.",
+      "Reservar los grandes desiertos para el extremo oriental del Sultanato.",
+      "Utilizar la geografía para explicar la prosperidad comercial del país."
+    ]
+  }
+
+}

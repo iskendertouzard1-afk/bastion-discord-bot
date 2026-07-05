@@ -1,0 +1,190 @@
+{
+  "facciones": [
+
+    {
+      "nombre": "Corte Imperial",
+
+      "tipo": "Gobierno Central",
+
+      "lider": "Shōgun Mikado Akihito",
+
+      "sede": "Palacio de las Mil Grullas, Hashitawa",
+
+      "objetivos": [
+        "Mantener la unidad del Imperio.",
+        "Garantizar la paz entre las Grandes Provincias.",
+        "Proteger la legitimidad del Shōgun Mikado.",
+        "Preservar el equilibrio político del Imperio."
+      ],
+
+      "ideologia": "El Imperio solo puede prosperar mientras las Grandes Provincias permanezcan unidas bajo una única autoridad imperial.",
+
+      "influencia": "Muy Alta",
+
+      "aliados": [
+        "Consejo Imperial de los Daimyō",
+        "Ejército Imperial"
+      ],
+
+      "rivales": [],
+
+      "descripcion": "La Corte Imperial constituye el corazón político de Yugure. Desde el Palacio de las Mil Grullas administra el Imperio, supervisa la diplomacia y coordina las relaciones entre las Grandes Provincias. El verdadero estado de salud del Shōgun Mikado permanece oculto incluso para gran parte de la nobleza. La estabilidad del Imperio depende de su permanencia en el trono."
+    },
+
+    {
+      "nombre": "Pacto de Jade",
+
+      "tipo": "Alianza de Clanes",
+
+      "lider": "Lady Harunobu Takeda",
+
+      "sede": "Nisho, Midori no Chiiki",
+
+      "objetivos": [
+        "Preservar las antiguas tradiciones de Yugure.",
+        "Proteger la autonomía de Midori no Chiiki.",
+        "Limitar la creciente influencia política de Aka no Chiiki.",
+        "Mantener el honor samurái como base del gobierno."
+      ],
+
+      "ideologia": "La fortaleza del Imperio reside en el respeto por las tradiciones, el honor y el equilibrio entre las provincias.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Diversos clanes occidentales.",
+        "Casas nobles conservadoras."
+      ],
+
+      "rivales": [
+        "Liga Carmesí"
+      ],
+
+      "descripcion": "El Pacto de Jade reúne a numerosos clanes de Midori no Chiiki bajo el liderazgo de Lady Harunobu Takeda. Su influencia política ha crecido durante décadas gracias al prestigio militar de sus miembros y a la fidelidad que despiertan entre los samuráis occidentales. Tras la muerte de Renjirō Takeda, las relaciones con la Liga Carmesí se deterioraron profundamente."
+    },
+
+    {
+      "nombre": "Liga Carmesí",
+
+      "tipo": "Coalición Política",
+
+      "lider": "Masanori Akagawa",
+
+      "sede": "Yubetsu, Aka no Chiiki",
+
+      "objetivos": [
+        "Fortalecer la autoridad del gobierno central.",
+        "Expandir la influencia de Aka no Chiiki.",
+        "Consolidar el comercio imperial.",
+        "Controlar la información política del Imperio."
+      ],
+
+      "ideologia": "La prosperidad de Yugure depende de un gobierno fuerte, una administración eficiente y una economía unificada.",
+
+      "influencia": "Muy Alta",
+
+      "aliados": [
+        "Red de la Cigarra Roja",
+        "Importantes casas mercantiles."
+      ],
+
+      "rivales": [
+        "Pacto de Jade"
+      ],
+
+      "descripcion": "La Liga Carmesí domina la política de Aka no Chiiki. Su poder rara vez se manifiesta mediante la guerra abierta; prefiere la diplomacia, el comercio y una compleja red de alianzas. Muchos consideran que el verdadero poder de la Liga reside en la información que obtiene antes que cualquier otro."
+    },
+
+    {
+      "nombre": "Red de la Cigarra Roja",
+
+      "tipo": "Organización Secreta",
+
+      "lider": "Identidad desconocida",
+
+      "sede": "Desconocida",
+
+      "objetivos": [
+        "Obtener información para la Liga Carmesí.",
+        "Eliminar amenazas contra la estabilidad política.",
+        "Infiltrar organizaciones rivales.",
+        "Controlar rutas clandestinas de comunicación."
+      ],
+
+      "ideologia": "La información es el arma más poderosa del Imperio.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Liga Carmesí"
+      ],
+
+      "rivales": [
+        "Pacto de Jade"
+      ],
+
+      "descripcion": "La Red de la Cigarra Roja opera en las sombras desde hace generaciones. Sus miembros incluyen espías, mensajeros, asesinos, falsificadores y saboteadores. Muy pocos conocen la identidad de sus dirigentes. Se rumorea que incluso algunos miembros de la Corte Imperial ignoran el alcance real de su influencia."
+    },
+
+    {
+      "nombre": "Círculo del Horizonte",
+
+      "tipo": "Liga Marítima",
+
+      "lider": "Lord Daigo Mizuhara",
+
+      "sede": "Kokura, Ao no Chiiki",
+
+      "objetivos": [
+        "Garantizar la seguridad de las rutas marítimas.",
+        "Promover la investigación y el intercambio de conocimiento.",
+        "Proteger las grandes bibliotecas de Yake y Yamatsu.",
+        "Favorecer el comercio naval."
+      ],
+
+      "ideologia": "El conocimiento y el comercio fortalecen más al Imperio que la guerra.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Universidades de Yake.",
+        "Bibliotecas de Yamatsu."
+      ],
+
+      "rivales": [],
+
+      "descripcion": "El Círculo del Horizonte reúne navegantes, eruditos, cartógrafos y comerciantes. Aunque posee escasa influencia militar, controla buena parte del conocimiento científico y geográfico del Imperio."
+    },
+
+    {
+      "nombre": "Hermandad del Sol Dorado",
+
+      "tipo": "Confederación Comercial",
+
+      "lider": "Lady Chiyome Saitō",
+
+      "sede": "Kanu, Kiiro no Chiiki",
+
+      "objetivos": [
+        "Mantener abiertas las rutas comerciales.",
+        "Proteger las caravanas imperiales.",
+        "Controlar los grandes mercados del este.",
+        "Garantizar el suministro agrícola."
+      ],
+
+      "ideologia": "La prosperidad del Imperio depende del comercio libre y de la estabilidad económica.",
+
+      "influencia": "Alta",
+
+      "aliados": [
+        "Mercaderes imperiales.",
+        "Caballería de Kiiro no Chiiki."
+      ],
+
+      "rivales": [],
+
+      "descripcion": "La Hermandad del Sol Dorado coordina las grandes caravanas del oriente imperial. Su influencia económica rivaliza con la de muchas casas nobles, y sus acuerdos comerciales pueden alterar el equilibrio político de regiones enteras."
+    }
+
+  ]
+}

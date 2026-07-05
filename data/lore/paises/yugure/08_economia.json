@@ -1,0 +1,196 @@
+{
+  "titulo": "Economía del Imperio de Yugure",
+
+  "descripcion": "La economía de Yugure se sostiene sobre un delicado equilibrio entre las Grandes Provincias Imperiales. Ninguna región produce todos los recursos necesarios para abastecerse por sí misma, por lo que el comercio interno constituye el principal motor de la prosperidad del Imperio. Gracias a su posición geográfica en el centro de Los Grandes Reinos, Yugure también actúa como el mayor intermediario comercial del continente.",
+
+  "modelo_economico": {
+    "tipo": "Economía feudal con comercio imperial regulado.",
+
+    "descripcion": "Las Grandes Provincias administran la producción local mientras la Corte Imperial supervisa las rutas comerciales, recauda tributos y garantiza la seguridad de los principales caminos."
+  },
+
+  "economia_interna": {
+
+    "descripcion": "Cada Gran Provincia posee recursos y actividades económicas especializadas que complementan a las demás.",
+
+    "provincias": [
+
+      {
+        "nombre": "Midori no Chiiki",
+
+        "especializacion": [
+          "Agricultura.",
+          "Arroz.",
+          "Silvicultura.",
+          "Madera.",
+          "Papel.",
+          "Bambú.",
+          "Seda."
+        ]
+      },
+
+      {
+        "nombre": "Aka no Chiiki",
+
+        "especializacion": [
+          "Administración imperial.",
+          "Artesanos.",
+          "Manufacturas.",
+          "Forja.",
+          "Armería.",
+          "Mercados políticos."
+        ]
+      },
+
+      {
+        "nombre": "Ao no Chiiki",
+
+        "especializacion": [
+          "Puertos.",
+          "Pesca.",
+          "Astilleros.",
+          "Cartografía.",
+          "Construcción naval.",
+          "Investigación.",
+          "Bibliotecas."
+        ]
+      },
+
+      {
+        "nombre": "Kiiro no Chiiki",
+
+        "especializacion": [
+          "Caravanas.",
+          "Grandes mercados.",
+          "Cría de caballos.",
+          "Producción agrícola.",
+          "Distribución comercial."
+        ]
+      }
+
+    ]
+  },
+
+  "tributos": {
+
+    "descripcion": "Las Grandes Provincias entregan tributos periódicos a la Corte Imperial como muestra de lealtad y para sostener la administración del Imperio.",
+
+    "formas": [
+      "Moneda.",
+      "Arroz.",
+      "Caballos.",
+      "Hierro.",
+      "Madera.",
+      "Armas.",
+      "Soldados."
+    ]
+  },
+
+  "comercio_exterior": {
+
+    "descripcion": "La posición estratégica de Yugure convierte al Imperio en el principal intermediario comercial entre las grandes naciones del continente.",
+
+    "principales_socios": [
+
+      {
+        "pais": "Reino Unido de Nosland",
+
+        "relacion": "Amistosa",
+
+        "intercambio": [
+          "Minerales.",
+          "Hierro.",
+          "Lana.",
+          "Herramientas."
+        ]
+      },
+
+      {
+        "pais": "Sultanato de Hihabar",
+
+        "relacion": "Amistosa",
+
+        "intercambio": [
+          "Especias.",
+          "Perfumes.",
+          "Cristal.",
+          "Incienso."
+        ]
+      },
+
+      {
+        "pais": "Reino de Varkeldov",
+
+        "relacion": "Neutral",
+
+        "intercambio": [
+          "Piedra.",
+          "Maderas nobles.",
+          "Plata.",
+          "Vino."
+        ]
+      }
+
+    ]
+  },
+
+  "exportaciones_imperiales": [
+
+    "Seda.",
+
+    "Papel.",
+
+    "Té.",
+
+    "Porcelana.",
+
+    "Acero.",
+
+    "Artesanías.",
+
+    "Libros.",
+
+    "Instrumentos de precisión.",
+
+    "Arroz."
+  ],
+
+  "infraestructura": {
+
+    "descripcion": "La economía depende de una extensa red de caminos imperiales, puertos marítimos y rutas fluviales protegidas por las autoridades provinciales y el Ejército Imperial."
+  },
+
+  "filosofia_economica": {
+
+    "descripcion": "La prosperidad del Imperio depende del equilibrio entre las Grandes Provincias. Ninguna región produce todo lo necesario para sostenerse por sí misma; el comercio interno constituye el principal vínculo que mantiene unida a Yugure. El intercambio constante de bienes, conocimientos y personas fortalece tanto la estabilidad económica como la cohesión política del Imperio."
+  },
+
+  "principios": [
+
+    "La estabilidad vale más que la riqueza inmediata.",
+
+    "El comercio fortalece la unidad del Imperio.",
+
+    "Los caminos imperiales son patrimonio de toda la Corona.",
+
+    "La prosperidad colectiva prevalece sobre el beneficio individual cuando la estabilidad del Imperio está en riesgo."
+  ],
+
+  "uso_por_la_ia": {
+
+    "reglas": [
+
+      "Relacionar siempre la economía con la estación del año.",
+
+      "Considerar las relaciones diplomáticas al generar noticias comerciales.",
+
+      "Las rutas comerciales son fundamentales para el abastecimiento del Imperio.",
+
+      "Las crisis climáticas pueden afectar la producción agrícola y los precios.",
+
+      "Las guerras o conflictos diplomáticos pueden alterar el comercio exterior.",
+
+      "Cada Gran Provincia debe generar bienes acordes con su especialización económica."
+    ]
+  }
+}

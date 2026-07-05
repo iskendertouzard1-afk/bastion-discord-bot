@@ -1,0 +1,73 @@
+{
+  "titulo": "Relaciones Exteriores del Imperio de Yugure",
+
+  "descripcion": "El Imperio de Yugure mantiene una política exterior basada en el equilibrio entre las grandes potencias del continente. La diplomacia, el comercio y la estabilidad de las fronteras constituyen los principales objetivos de la Corona Imperial. Aunque existen diferencias políticas entre los reinos, el mantenimiento de la paz suele prevalecer sobre el conflicto abierto.",
+
+  "politica_exterior": {
+    "principios": [
+      "Preservar la estabilidad de Los Grandes Reinos.",
+      "Favorecer el comercio internacional.",
+      "Resolver disputas mediante la diplomacia antes que por la guerra.",
+      "Proteger las fronteras imperiales.",
+      "Mantener el equilibrio entre las grandes potencias."
+    ]
+  },
+
+  "relaciones": [
+
+    {
+      "pais": "Reino Unido de Nosland",
+
+      "estado": "Amistosa",
+
+      "descripcion": "Nosland es uno de los principales socios diplomáticos y comerciales de Yugure. Ambas naciones mantienen relaciones estables y colaboran para garantizar la seguridad de las rutas comerciales del norte.",
+
+      "comercio": "Alto",
+
+      "riesgo_militar": "Bajo"
+    },
+
+    {
+      "pais": "Reino de Varkeldov",
+
+      "estado": "Neutral",
+
+      "descripcion": "Las relaciones son cordiales aunque distantes. Ambos reinos mantienen intercambios comerciales limitados y una política de respeto mutuo sobre sus fronteras.",
+
+      "comercio": "Medio",
+
+      "riesgo_militar": "Bajo"
+    },
+
+    {
+      "pais": "Sultanato de Hihabar",
+
+      "estado": "Amistosa",
+
+      "descripcion": "Yugure y Hihabar mantienen una intensa relación comercial basada principalmente en el intercambio marítimo. Las caravanas y flotas mercantes viajan regularmente entre ambos territorios.",
+
+      "comercio": "Muy Alto",
+
+      "riesgo_militar": "Muy Bajo"
+    }
+
+  ],
+
+  "doctrina_diplomatica": {
+    "descripcion": "Yugure evita intervenir en conflictos extranjeros siempre que no amenacen directamente la estabilidad del Imperio o el libre comercio. La Corte Imperial considera que una guerra prolongada debilita a todas las naciones involucradas."
+  },
+
+  "representacion": {
+    "descripcion": "Las relaciones diplomáticas son dirigidas por la Corte Imperial en nombre del Shōgun Mikado. Los daimyō pueden recibir delegaciones extranjeras, pero los tratados internacionales únicamente adquieren validez con la aprobación de la Corona Imperial."
+  },
+
+  "uso_por_la_ia": {
+    "reglas": [
+      "Generar visitantes extranjeros de acuerdo con las relaciones diplomáticas vigentes.",
+      "Favorecer el intercambio comercial con Nosland y Hihabar.",
+      "Presentar a Varkeldov como un vecino respetuoso pero políticamente distante.",
+      "Evitar describir conflictos militares abiertos salvo que el Director de Juego los establezca.",
+      "Las relaciones diplomáticas pueden modificarse mediante acontecimientos futuros del Codex."
+    ]
+  }
+}
